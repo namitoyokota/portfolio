@@ -112,9 +112,19 @@
   margin: 20px;
 }
 
-.page {
-  font-weight: 500;
+.activepage {
+  font-weight: 800;
   margin-right: 20px;
+}
+
+.page {
+  opacity: 0.5;
+  margin-right: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.page:hover {
+  opacity: 1;
 }
 
 .navpane {
