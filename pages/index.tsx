@@ -53,7 +53,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
           <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
             <div className={styles.blog}>
               <h5>{index + 1}</h5>
-              <h3>{blog.title}</h3>
+              <h3 className={styles.blogtitle}>{blog.title}</h3>
               <p className={styles.date}>
                 {format(parseISO(blog.date!), 'MMMM dd, yyyy')}
               </p>
