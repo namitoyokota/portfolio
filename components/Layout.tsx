@@ -29,12 +29,54 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
       </main>
       <footer>
         <div className={styles.footerpane}>
-          <p>GitHub</p>
-          <p>VSCO</p>
-          <p>Twitter</p>
-          <p>YouTube</p>
-          <p>LinkedIn</p>
-          <p>Instagram</p>
+
+          {/* GitHub */}
+          <a className={styles.sociallink}
+              href="https://github.com/namitoyokota"
+              target="_blank"
+              rel="noreferrer" >
+            <p>GitHub</p>
+          </a>
+
+          {/* YouTube */}
+          <a className={styles.sociallink}
+              href="https://www.youtube.com/channel/UCZAUzc4Ez1cmv6XMe2Hx1jA"
+              target="_blank"
+              rel="noreferrer" >
+            <p>YouTube</p>
+          </a>
+
+          {/* LinkedIn */}
+          <a className={styles.sociallink}
+              href="https://www.linkedin.com/in/namitoyokota/"
+              target="_blank"
+              rel="noreferrer" >
+            <p>LinkedIn</p>
+          </a>
+
+          {/* Twitter */}
+          <a className={styles.sociallink}
+              href="https://twitter.com/namitoyokota"
+              target="_blank"
+              rel="noreferrer" >
+            <p>Twitter</p>
+          </a>
+
+          {/* VSCO */}
+          <a className={styles.sociallink}
+              href="https://vsco.co/yokota-namito"
+              target="_blank"
+              rel="noreferrer" >
+            <p>VSCO</p>
+          </a>
+
+          {/* Resume */}
+          <a className={styles.sociallink}
+              href="/resume.pdf"
+              download >
+            <p>Resume</p>
+          </a>
+
         </div>
       </footer>
     </div>
