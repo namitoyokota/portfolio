@@ -42,18 +42,11 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
-}
-
-.title,
-.description {
-  text-align: center;
+  font-size: 3rem;
 }
 
 .description {
-  margin: 4rem 0;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  color: grey;
 }
 
 .code {
@@ -113,4 +106,116 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.content {
+  margin: 20px;
+}
+
+.page {
+  font-weight: 500;
+  margin-right: 20px;
+}
+
+.navpane {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  height: 100px;
+}
+
+.aboutpane {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 50px 0;
+}
+
+@media only screen and (min-width: 640px) {
+  .aboutpane {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+  }
+}
+
+.abouttext {
+  align-self: end;
+}
+
+.profileimg {
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  border-radius: 30px;
+}
+
+.projectspane {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 25px 0 50px;
+}
+
+@media only screen and (min-width: 640px) {
+  .projectspane {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+  }
+}
+
+.project {
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  border-radius: 10px;
+  border: 3px solid #e6e6e6;
+  transition: 0.5s ease-in-out;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+}
+
+.project:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.projectheader {
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-items: center;
+}
+
+.date {
+  font-size: 0.8rem;
+  text-overflow: ellipsis; 
+  overflow: hidden; 
+  white-space: nowrap;
+}
+
+.blogspane {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0 50px;
+}
+
+.blog {
+  display: grid;
+  grid-template-columns: min-content auto min-content;
+  align-items: center;
+  border-bottom: 2px solid rgba(230, 230, 230, 0.2);
+  column-gap: 10px;
+  transition: 0.5s ease-in-out;
+}
+
+.blog:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.blogheader {
+  display: grid;
+  grid-template-columns: auto min-content;
+  align-items: center;
+}
+
+.footerpane {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 30px 0 50px;
 }
