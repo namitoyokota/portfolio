@@ -24,3 +24,8 @@ button {
 h1, h2, h3, h4, h5, p {
   margin: 10px 0;
 }
+
+iframe {
+  width: 100%;
+  border-radius: 5px;
+}
