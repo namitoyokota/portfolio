@@ -40,7 +40,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
             <div className={styles.project}>
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <p className={styles.date}>{format(parseISO(project.date), 'MMMM dd, yyyy')}</p>
+              <p className={styles.date}>{format(parseISO(project.date!), 'MMMM dd, yyyy')}</p>
             </div>
           </Link>
         ))}
@@ -55,7 +55,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
               <h5>{index + 1}</h5>
               <h3>{blog.title}</h3>
               <p className={styles.date}>
-                {format(parseISO(blog.date), 'MMMM dd, yyyy')}
+                {format(parseISO(blog.date!), 'MMMM dd, yyyy')}
               </p>
             </div>
           </Link>

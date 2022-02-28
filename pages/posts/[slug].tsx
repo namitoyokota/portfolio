@@ -1,6 +1,7 @@
 import { format, parseISO } from 'date-fns';
 import fs from 'fs';
 import matter from 'gray-matter';
+// @ts-ignore
 import mdxPrism from 'mdx-prism';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { serialize } from 'next-mdx-remote/serialize';
@@ -43,7 +44,7 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
           {frontMatter.title}
         </h1>
         <p>
-          {format(parseISO(frontMatter.date), 'MMMM dd, yyyy')}
+          {format(parseISO(frontMatter.date!), 'MMMM dd, yyyy')}
         </p>
         <div>
           <MDXRemote {...source} components={components} />
@@ -54,7 +55,7 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
+  const postFilePath = path.join(POSTS_PATH, `${params?.slug}.mdx`);
   const source = fs.readFileSync(postFilePath);
 
   const { content, data } = matter(source);
