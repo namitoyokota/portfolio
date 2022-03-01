@@ -129,7 +129,7 @@
 
 .navpane {
   display: grid;
-  grid-template-columns: min-content auto min-content;
+  grid-template-columns: repeat(2, min-content) auto min-content;
   align-items: center;
   height: 100px;
 }
@@ -237,4 +237,21 @@
 .sociallink:hover {
   color: grey;
   cursor: pointer;
+}
+
+.imagerow {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.imagecolumn {
+  flex: 50%;
+  max-width: 50%;
+}
+
+.imagecolumn img {
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
 }
