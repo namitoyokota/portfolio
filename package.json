@@ -1,6 +1,6 @@
 {
-  "name": "portfolio-v2",
-  "private": true,
+  "name": "namito.xyz",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
