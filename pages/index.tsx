@@ -18,8 +18,8 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
       <div className={styles.aboutpane}>
         <div className={styles.abouttext}>
           <h1 className={styles.title}>Namito Yokota</h1>
-          <p>Frontend Web Developer at Hexagon Safety & Infrastructure</p>
-          <p className={styles.description}>This website is still in the works!</p>
+          <p>A curious developer striving to be better each day!</p>
+          <p className={styles.description}>Angular, Typescript, HTML, CSS</p>
         </div>
         <Image
           className={styles.profileimg}
