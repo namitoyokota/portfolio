@@ -2,6 +2,7 @@ import NextHead from 'next/head';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { MetaProps } from '../types/layout';
+import Analytics from './Analytics';
 
 export const WEBSITE_HOST_URL = 'https://namito.xyz';
 
@@ -17,6 +18,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
 
   return (
     <NextHead>
+      <Analytics />
       <title>{meta.title}</title>
       <link rel="icon" href="/images/profile-1.png" />
       <meta content={meta.description} name="description" />
