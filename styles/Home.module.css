@@ -129,7 +129,7 @@
 
 .navpane {
   display: grid;
-  grid-template-columns: repeat(3, min-content) auto 25px;
+  grid-template-columns: repeat(1, min-content) auto 25px;
   align-items: center;
   height: 100px;
 }
@@ -186,7 +186,7 @@
 
 .project:hover {
   cursor: pointer;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .projectheader {
@@ -219,7 +219,7 @@
 
 .blog:hover {
   cursor: pointer;
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .blogtitle {
