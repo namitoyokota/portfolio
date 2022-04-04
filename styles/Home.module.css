@@ -132,6 +132,7 @@
   grid-template-columns: repeat(2, min-content) auto 25px;
   align-items: center;
   height: 50px;
+  margin-bottom: 75px;
 }
 
 .themeicon {
@@ -141,7 +142,7 @@
 .aboutpane {
   display: grid;
   grid-template-columns: 100%;
-  margin: 50px 0;
+  margin-bottom: 50px;
 }
 
 @media only screen and (min-width: 640px) {
@@ -151,8 +152,8 @@
   }
 }
 
-.abouttext {
-  align-self: end;
+.header {
+  margin: 50px 0;
 }
 
 .profileimg {

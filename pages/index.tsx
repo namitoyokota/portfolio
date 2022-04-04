@@ -16,7 +16,7 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
   return (
     <Layout>
       <div className={styles.aboutpane}>
-        <div className={styles.abouttext}>
+        <div>
           <h1 className={styles.title}>Namito Yokota</h1>
           <p>A curious developer striving to be better each day!</p>
           <p className={styles.description}>Angular, Typescript, HTML, CSS</p>
