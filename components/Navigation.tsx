@@ -18,6 +18,11 @@ const Navigation = (): JSX.Element => {
           <h4>Jesus</h4>
         </a>
       </Link>
+      <Link href="https://www.namito.wiki" passHref>
+        <a className={styles.page} target="_blank" rel="noopener noreferrer">
+          <h4>Search</h4>
+        </a>
+      </Link>
     </>
   );
 };

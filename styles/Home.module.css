@@ -129,7 +129,7 @@
 
 .navpane {
   display: grid;
-  grid-template-columns: repeat(1, min-content) auto 25px;
+  grid-template-columns: repeat(2, min-content) auto 25px;
   align-items: center;
   height: 50px;
 }
