@@ -13,6 +13,11 @@ const Navigation = (): JSX.Element => {
           <h4>Home</h4>
         </a>
       </Link>
+      <Link href="/dashboard">
+        <a className={router.asPath == "/dashboard" ? styles.activepage : styles.page}>
+          <h4>Dashboard</h4>
+        </a>
+      </Link>
       <Link href="/jesus">
         <a className={router.asPath == "/jesus" ? styles.activepage : styles.page}>
           <h4>Jesus</h4>
