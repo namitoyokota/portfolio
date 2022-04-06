@@ -19,6 +19,8 @@
     "rehype-autolink-headings": "^6.1.1",
     "rehype-slug": "^5.0.1",
     "remark-code-titles": "^0.1.2",
+    "swr": "^1.2.2",
+    "unsplash-js": "6.3.0",
     "use-sound": "^4.0.1"
   },
   "devDependencies": {

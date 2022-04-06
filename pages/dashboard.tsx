@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { Repository } from '../types/repository';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
+import useSWR from 'swr';
+import fetcher from '../lib/fetcher';
+import { Unsplash } from '../types/unsplash';
 
 export const Dashboard = (): JSX.Element => {
 
@@ -16,6 +19,19 @@ export const Dashboard = (): JSX.Element => {
 
   /** Public API endpoint to get repositories list */
   const GITHUB_API_ENDPOINT = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+
+  /** Download count on Unplash account */
+  let downloads = 0;
+
+  /** View count on Unplash account */
+  let views = 0;
+
+  /** Fetch user statistics from Unsplash */
+  const { data } = useSWR<Unsplash>('/api/unsplash', fetcher);
+  if (data) {
+    downloads = data?.downloads;
+    views = data?.views;
+  }
 
   /** Fetches repositories from GitHub API */
   useEffect(() => {
@@ -52,6 +68,14 @@ export const Dashboard = (): JSX.Element => {
         <div className={styles.boardcard}>
             <p className={styles.description}>GitHub</p>
             <h2>{starCount} Stars</h2>
+        </div>
+        <div className={styles.boardcard}>
+            <p className={styles.description}>Unsplash</p>
+            <h2>{downloads} Downloads</h2>
+        </div>
+        <div className={styles.boardcard}>
+            <p className={styles.description}>Unsplash</p>
+            <h2>{views} Views</h2>
         </div>
       </div>
 
