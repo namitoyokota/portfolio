@@ -1,8 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Repository } from '../types/repository';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 
 export const Dashboard = (): JSX.Element => {
+
+  /** Number of repositories under my GitHub Account */
+  const [repoCount, setRepoCount] = useState(0);
+
+  /** Number of stars across all of my repositories */
+  const [starCount, setStarCount] = useState(0);
+
+  /** Current GitHub username for my account */
+  const GITHUB_USERNAME = 'namitoyokota';
+
+  /** Public API endpoint to get repositories list */
+  const GITHUB_API_ENDPOINT = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+
+  /** Fetches repositories from GitHub API */
+  useEffect(() => {
+    fetch(GITHUB_API_ENDPOINT)
+      .then((res) => res.json())
+      .then((data: Repository[]) => {
+        let starCount = 0;
+        data.forEach((repo: Repository) =>  {
+          starCount += repo.stargazers_count;
+        });
+
+        setStarCount(starCount);
+        setRepoCount(data.length);
+      });
+  }, [GITHUB_API_ENDPOINT]);
+
   return (
     <Layout
       customMeta={{
@@ -17,16 +46,12 @@ export const Dashboard = (): JSX.Element => {
 
       <div className={styles.board}>
         <div className={styles.boardcard}>
-            <p className={styles.description}>Item 1</p>
-            <h2>Heading 1</h2>
+            <p className={styles.description}>GitHub</p>
+            <h2>{repoCount} Repositories</h2>
         </div>
         <div className={styles.boardcard}>
-            <p className={styles.description}>Item 2</p>
-            <h2>Heading 2</h2>
-        </div>
-        <div className={styles.boardcard}>
-            <p className={styles.description}>Item 3</p>
-            <h2>Heading 3</h2>
+            <p className={styles.description}>GitHub</p>
+            <h2>{starCount} Stars</h2>
         </div>
       </div>
 
