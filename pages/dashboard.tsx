@@ -47,7 +47,7 @@ export const Dashboard = (): JSX.Element => {
       <div className={styles.board}>
         <div className={styles.boardcard}>
             <p className={styles.description}>GitHub</p>
-            <h2>{repoCount} Repositories</h2>
+            <h2>{repoCount} Repos</h2>
         </div>
         <div className={styles.boardcard}>
             <p className={styles.description}>GitHub</p>
