@@ -6,7 +6,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const unsplash = new Unsplash({
-    accessKey: process.env.UNSPLASH_ACCESS_TOKEN
+    accessKey: process.env.UNSPLASH_ACCESS_TOKEN || ''
   });
 
   const userStats = await unsplash.users.statistics('namitoyokota');

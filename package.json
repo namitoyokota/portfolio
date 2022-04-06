@@ -8,7 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/unsplash-js": "^7.0.0",
+    "@types/unsplash-js": "6.3.0",
     "date-fns": "^2.28.0",
     "gray-matter": "^4.0.3",
     "mdx-prism": "^0.3.4",
