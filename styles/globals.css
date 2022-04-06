@@ -7,7 +7,7 @@ body {
 }
 
 ::selection {
-  background: #fbffa6;
+  background: rgba(246, 255, 84, .5);
 }
 
 a {
