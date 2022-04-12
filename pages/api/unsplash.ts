@@ -12,6 +12,8 @@ export default async function handler(
   const userStats = await unsplash.users.statistics('namitoyokota');
   const { downloads, views } = await toJson(userStats);
 
+  // TODO: unsplash.users.photos
+
   return res.status(200).json({
     downloads: downloads.total,
     views: views.total
