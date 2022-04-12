@@ -63,19 +63,19 @@ export const Dashboard = (): JSX.Element => {
       <div className={styles.board}>
         <div className={styles.boardcard}>
             <p className={styles.description}>GitHub Repos</p>
-            <h2>{repoCount}</h2>
+            <h2>{repoCount.toLocaleString()}</h2>
         </div>
         <div className={styles.boardcard}>
             <p className={styles.description}>GitHub Stars</p>
-            <h2>{starCount}</h2>
+            <h2>{starCount.toLocaleString()}</h2>
         </div>
         <div className={styles.boardcard}>
             <p className={styles.description}>Unsplash Downloads</p>
-            <h2>{downloads}</h2>
+            <h2>{downloads.toLocaleString()}</h2>
         </div>
         <div className={styles.boardcard}>
             <p className={styles.description}>Unsplash Views</p>
-            <h2>{views}</h2>
+            <h2>{views.toLocaleString()}</h2>
         </div>
       </div>
 
