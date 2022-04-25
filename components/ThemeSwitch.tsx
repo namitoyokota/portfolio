@@ -18,10 +18,10 @@ const ThemeSwitch = (): JSX.Element => {
   return (
     <Image
       className={styles.themeicon}
-      alt="Sun Glasses"
+      alt="theme"
       height="25px"
       width="25px"
-      src={ isDark ? "/glasses.png" : "/face.png" }
+      src={ isDark ? "/icons/dark.svg" : "/icons/light.svg" }
       onClick={() => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
         play()
