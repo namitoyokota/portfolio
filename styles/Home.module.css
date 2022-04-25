@@ -47,6 +47,9 @@
 
 .description {
   color: grey;
+  display: grid;
+  grid-template-columns: auto 15px;
+  column-gap: 5px;
 }
 
 .code {

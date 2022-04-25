@@ -5,8 +5,15 @@ import styles from '../styles/Home.module.css';
 import useSWR from 'swr';
 import fetcher from '../lib/fetcher';
 import { Unsplash } from '../types/unsplash';
+import Image from 'next/image';
 
 export const Dashboard = (): JSX.Element => {
+
+  /** URL used for GitHub cards */
+  const GITHUB_URL = 'https://github.com/namitoyokota?tab=repositories';
+
+  /** URL used for Unplash cards */
+  const UNSPLASH_URL = 'https://unsplash.com/@namitoyokota';
 
   /** Number of repositories under my GitHub Account */
   const [repoCount, setRepoCount] = useState(0);
@@ -61,22 +68,54 @@ export const Dashboard = (): JSX.Element => {
       </div>
 
       <div className={styles.board}>
-        <div className={styles.boardcard}>
-            <p className={styles.description}>GitHub Repos</p>
+        <a className={styles.boardcard} href={GITHUB_URL} target="_blank" rel="noreferrer">
+            <p className={styles.description}>
+              <span>GitHub Repos</span>
+              <Image
+                alt="github"
+                height="15px"
+                width="15px"
+                src={ "/icons/github.svg" }
+              />
+            </p>
             <h2>{repoCount.toLocaleString()}</h2>
-        </div>
-        <div className={styles.boardcard}>
-            <p className={styles.description}>GitHub Stars</p>
+        </a>
+        <a className={styles.boardcard} href={GITHUB_URL} target="_blank" rel="noreferrer">
+            <p className={styles.description}>
+              <span>GitHub Stars</span>
+              <Image
+                alt="github"
+                height="15px"
+                width="15px"
+                src={ "/icons/github.svg" }
+              />
+            </p>
             <h2>{starCount.toLocaleString()}</h2>
-        </div>
-        <div className={styles.boardcard}>
-            <p className={styles.description}>Unsplash Downloads</p>
+        </a>
+        <a className={styles.boardcard} href={UNSPLASH_URL} target="_blank" rel="noreferrer">
+            <p className={styles.description}>
+              <span>Unsplash Downloads</span>
+              <Image
+                alt="unsplash"
+                height="15px"
+                width="15px"
+                src={ "/icons/camera.svg" }
+              />
+            </p>
             <h2>{downloads.toLocaleString()}</h2>
-        </div>
-        <div className={styles.boardcard}>
-            <p className={styles.description}>Unsplash Views</p>
+        </a>
+        <a className={styles.boardcard} href={UNSPLASH_URL} target="_blank" rel="noreferrer">
+            <p className={styles.description}>
+              <span>Unsplash Views</span>
+              <Image
+                alt="unsplash"
+                height="15px"
+                width="15px"
+                src={ "/icons/camera.svg" }
+              />
+            </p>
             <h2>{views.toLocaleString()}</h2>
-        </div>
+        </a>
       </div>
 
     </Layout>
