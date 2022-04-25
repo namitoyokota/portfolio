@@ -38,12 +38,12 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             <p>GitHub</p>
           </a>
 
-          {/* YouTube */}
+          {/* Goodreads */}
           <a className={styles.sociallink}
-              href="https://www.youtube.com/channel/UCZAUzc4Ez1cmv6XMe2Hx1jA"
+              href="https://www.goodreads.com/user/show/111816710-namito-yokota"
               target="_blank"
               rel="noreferrer" >
-            <p>YouTube</p>
+            <p>Goodreads</p>
           </a>
 
           {/* LinkedIn */}
