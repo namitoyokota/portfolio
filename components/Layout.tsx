@@ -59,7 +59,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
               href="https://twitter.com/namitoyokota"
               target="_blank"
               rel="noreferrer" >
-            <p>Twitter</p>
+            <p>Ideas</p>
           </a>
 
           {/* VSCO */}
