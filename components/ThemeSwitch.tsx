@@ -1,6 +1,5 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/image';
-import useSound from 'use-sound';
 import styles from '../styles/Home.module.css';
 
 const ThemeSwitch = (): JSX.Element => {
@@ -9,9 +8,6 @@ const ThemeSwitch = (): JSX.Element => {
 
     /** Indicates current state of theme */
     const isDark = theme === 'dark';
-
-    /** Plays click sound on button press */
-    const [play] = useSound('/sound/stop.mp3');
 
     return (
         <Image
@@ -22,7 +18,6 @@ const ThemeSwitch = (): JSX.Element => {
             src={isDark ? '/icons/dark.svg' : '/icons/light.svg'}
             onClick={() => {
                 setTheme(theme === 'dark' ? 'light' : 'dark');
-                play();
             }}
         />
     );
