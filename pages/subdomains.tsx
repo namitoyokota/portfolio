@@ -13,6 +13,18 @@ export const Subdomains = (): JSX.Element => {
     /** List of subdomains to display in HTML */
     const subdomains = [
         {
+            title: 'Search 🔥',
+            description: 'Universal search engine for my second brain',
+            iconPath: '/icons/search.svg',
+            url: 'https://search.namito.wiki',
+        } as Subdomain,
+        {
+            title: 'Books ✨',
+            description: 'Book recommendations, summaries, and notes',
+            iconPath: '/icons/books.svg',
+            url: 'https://books.namito.wiki',
+        } as Subdomain,
+        {
             title: 'Standups',
             description: 'A history of my standups',
             iconPath: '/icons/standups.svg',
@@ -37,7 +49,7 @@ export const Subdomains = (): JSX.Element => {
             url: 'https://degree.namito.wiki',
         } as Subdomain,
         {
-            title: 'Photos',
+            title: 'Photos ⭐',
             description: 'My photography portfolio',
             iconPath: '/icons/photos.svg',
             url: 'https://photos.namito.wiki',
@@ -55,22 +67,10 @@ export const Subdomains = (): JSX.Element => {
             url: 'https://quotes.namito.wiki',
         } as Subdomain,
         {
-            title: 'Books',
-            description: 'Book recommendations, summaries, and notes',
-            iconPath: '/icons/books.svg',
-            url: 'https://books.namito.wiki',
-        } as Subdomain,
-        {
             title: 'Jeep',
             description: 'Should you take your doors off?',
             iconPath: '/icons/jeep.svg',
             url: 'https://jeep.namito.wiki',
-        } as Subdomain,
-        {
-            title: 'Search',
-            description: 'Universal search engine for my second brain',
-            iconPath: '/icons/search.svg',
-            url: 'https://search.namito.wiki',
         } as Subdomain,
         {
             title: 'Bowling',
