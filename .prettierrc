@@ -1,0 +1,22 @@
+{
+    "endOfLine": "auto",
+    "printWidth": 140,
+    "semi": true,
+    "singleQuote": true,
+    "useTabs": false,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "overrides": [
+        {
+            "files": [
+                "client-vendor-data-service.interface.ts",
+                "create-new-issue.service.ts",
+                "endpoints.ts",
+                "request-information-service.interface.ts"
+            ],
+            "options": {
+                "printWidth": 10000
+            }
+        }
+    ]
+}
