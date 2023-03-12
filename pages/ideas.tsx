@@ -6,11 +6,11 @@ import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 import { PostType } from '../types/post';
 
-type IndexProps = {
+type IdeasProps = {
     posts: PostType[];
 };
 
-export const Ideas = ({ posts }: IndexProps): JSX.Element => {
+export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
     return (
         <Layout
             customMeta={{

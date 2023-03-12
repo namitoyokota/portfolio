@@ -1,17 +1,9 @@
-import { format, parseISO } from 'date-fns';
-import { GetStaticProps } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { getAllPosts } from '../api/posts';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
-import { PostType } from '../types/post';
 
-type IndexProps = {
-    posts: PostType[];
-};
-
-export const Index = ({ posts }: IndexProps): JSX.Element => {
+export const Index = (): JSX.Element => {
     return (
         <Layout>
             <div className={styles.aboutpane}>
@@ -58,32 +50,8 @@ export const Index = ({ posts }: IndexProps): JSX.Element => {
                     </a>
                 </Link>
             </div>
-
-            <h1>Blogs</h1>
-            <p className={styles.description}>These are my notes on all kinds of different books and thoughts :)</p>
-            <div className={styles.blogspane}>
-                {posts
-                    .filter((post) => post.type === 'blog')
-                    .map((blog, index) => (
-                        <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                            <div className={styles.blog}>
-                                <h5>{index + 1}</h5>
-                                <h3 className={styles.blogtitle}>{blog.title}</h3>
-                                <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                            </div>
-                        </Link>
-                    ))}
-            </div>
         </Layout>
     );
-};
-
-export const getStaticProps: GetStaticProps = async () => {
-    const posts = getAllPosts(['date', 'description', 'slug', 'title', 'type']);
-
-    return {
-        props: { posts },
-    };
 };
 
 export default Index;
