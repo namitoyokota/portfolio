@@ -14,69 +14,75 @@ export const Subdomains = (): JSX.Element => {
     const subdomains = [
         {
             title: 'Standups',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'A history of my standups',
+            iconPath: '/icons/standups.svg',
             url: 'https://standups.namito.wiki',
         } as Subdomain,
         {
             title: 'Brags',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'A collection of my brag documents',
+            iconPath: '/icons/brags.svg',
             url: 'https://brags.namito.wiki',
         } as Subdomain,
         {
             title: 'Resume',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'Web version of my resume',
+            iconPath: '/icons/resume.svg',
             url: 'https://resume.namito.wiki',
         } as Subdomain,
         {
             title: 'Degree',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'All courses from my CS degree',
+            iconPath: '/icons/degree.svg',
             url: 'https://degree.namito.wiki',
         } as Subdomain,
         {
             title: 'Photos',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'My photography portfolio',
+            iconPath: '/icons/photos.svg',
             url: 'https://photos.namito.wiki',
         } as Subdomain,
         {
             title: 'Art',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'My art portfolio',
+            iconPath: '/icons/art.svg',
             url: 'https://art.namito.wiki',
         } as Subdomain,
         {
             title: 'Quotes',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'A list of inspirational quotes',
+            iconPath: '/icons/quotes.svg',
             url: 'https://quotes.namito.wiki',
         } as Subdomain,
         {
             title: 'Books',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'Book recommendations, summaries, and notes',
+            iconPath: '/icons/books.svg',
             url: 'https://books.namito.wiki',
         } as Subdomain,
         {
             title: 'Jeep',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'Should you take your doors off?',
+            iconPath: '/icons/jeep.svg',
             url: 'https://jeep.namito.wiki',
         } as Subdomain,
         {
             title: 'Search',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'Universal search engine for my second brain',
+            iconPath: '/icons/search.svg',
             url: 'https://search.namito.wiki',
         } as Subdomain,
         {
             title: 'Bowling',
-            description: '[Description]',
-            iconPath: '/icons/github.svg',
+            description: 'Bowling score calculator',
+            iconPath: '/icons/bowling.svg',
             url: 'https://bowling.namito.wiki',
+        } as Subdomain,
+        {
+            title: 'Pray',
+            description: 'A prayer board',
+            iconPath: '/icons/pray.svg',
+            url: 'https://pray.namito.wiki',
         } as Subdomain,
     ];
 
@@ -92,8 +98,8 @@ export const Subdomains = (): JSX.Element => {
             </div>
 
             <div className={styles.board}>
-                {subdomains.map((subdomain) => (
-                    <a className={styles.subdomaincard} href={subdomain.url} target="_blank" rel="noreferrer">
+                {subdomains.map((subdomain, index) => (
+                    <a key={index} className={styles.subdomaincard} href={subdomain.url} target="_blank" rel="noreferrer">
                         <div className={styles.subdomainheader}>
                             <h3>{subdomain.title}</h3>
                             <Image alt="github" height="15px" width="15px" src={subdomain.iconPath} />
