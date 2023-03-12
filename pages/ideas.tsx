@@ -19,21 +19,19 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
         >
             <div className={styles.header}>
                 <h1 className={styles.title}>Ideas</h1>
-                <p className={styles.description}></p>
+                <p className={styles.description}>Notes of my random thoughts</p>
             </div>
 
             <div className={styles.blogspane}>
-                {posts
-                    .filter((post) => post.type === 'blog')
-                    .map((blog, index) => (
-                        <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                            <div className={styles.blog}>
-                                <h5>{index + 1}</h5>
-                                <h3 className={styles.blogtitle}>{blog.title}</h3>
-                                <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                            </div>
-                        </Link>
-                    ))}
+                {posts.map((blog, index) => (
+                    <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
+                        <div className={styles.blog}>
+                            <h5>{index + 1}</h5>
+                            <h3 className={styles.blogtitle}>{blog.title}</h3>
+                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
+                        </div>
+                    </Link>
+                ))}
             </div>
         </Layout>
     );

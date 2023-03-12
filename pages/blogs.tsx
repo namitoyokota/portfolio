@@ -10,7 +10,7 @@ export const Blogs = (): JSX.Element => {
         >
             <div className={styles.header}>
                 <h1 className={styles.title}>Blogs</h1>
-                <p className={styles.description}></p>
+                <p className={styles.description}>Coming Soon!</p>
             </div>
         </Layout>
     );

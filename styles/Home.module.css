@@ -181,7 +181,7 @@
     display: grid;
     grid-template-rows: min-content auto min-content;
     border-radius: 10px;
-    border: 2px solid #e6e6e6;
+    border: 2px solid rgba(230, 230, 230, 0.2);
     transition: 0.1s ease-in-out;
     padding: 5px 15px;
     margin-bottom: 10px;
@@ -189,7 +189,7 @@
 
 .project:hover {
     cursor: pointer;
-    transform: scale(1.03);
+    transform: scale(0.98);
 }
 
 .projectheader {
@@ -222,7 +222,7 @@
 
 .blog:hover {
     cursor: pointer;
-    transform: scale(1.01);
+    color: grey;
 }
 
 .blogtitle {
@@ -253,6 +253,12 @@
     border: 1px solid rgba(230, 230, 230, 0.2);
     border-radius: 5px;
     padding: 15px 20px;
+    transition: 0.1s ease-in-out;
+}
+
+.subdomaincard:hover {
+    cursor: pointer;
+    transform: scale(0.98);
 }
 
 .subdomaincard h3 {
