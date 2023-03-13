@@ -18,7 +18,7 @@ export const Index = (): JSX.Element => {
                     height="150px"
                     width="150px"
                     quality={100}
-                    src="/images/profile-3.png"
+                    src="/images/profile-1.png"
                     objectFit="contain"
                 />
             </div>
