@@ -213,7 +213,7 @@
 
 .blog {
     display: grid;
-    grid-template-columns: min-content auto min-content;
+    grid-template-columns: auto min-content;
     align-items: center;
     border-bottom: 2px solid rgba(230, 230, 230, 0.2);
     column-gap: 10px;
