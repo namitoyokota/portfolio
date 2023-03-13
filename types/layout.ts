@@ -1,5 +1,7 @@
-import { PostType } from './post';
-
-export interface MetaProps extends Pick<PostType, 'date' | 'subtitle' | 'title'> {
+export interface MetaProps {
+    title?: string;
+    description?: string;
+    image?: string;
     type?: string;
+    date?: string;
 }

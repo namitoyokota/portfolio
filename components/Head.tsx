@@ -9,7 +9,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
     const router = useRouter();
     const meta: MetaProps = {
         title: 'Namito Yokota',
-        subtitle: 'Frotnend Web Developer at Hexagon Safety and Infrastructure',
+        description: 'Frontend Web Developer at Hexagon Safety and Infrastructure',
         image: `${WEBSITE_HOST_URL}/images/meta.png`,
         type: 'website',
         ...customMeta,

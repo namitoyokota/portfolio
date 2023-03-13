@@ -1,16 +1,10 @@
-import React from 'react';
 import styles from '../styles/Home.module.css';
-import { MetaProps } from '../types/layout';
+import { LayoutProps } from '../types/layout-props';
 import Head from './Head';
 import Navigation from './Navigation';
 import ThemeSwitch from './ThemeSwitch';
 
-type LayoutProps = {
-    children: React.ReactNode;
-    customMeta?: MetaProps;
-};
-
-export const WEBSITE_HOST_URL = 'https://namito.xyz';
+export const WEBSITE_HOST_URL = 'https://namito.wiki';
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
     return (
@@ -38,15 +32,6 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                             LinkedIn
                         </a>
                     </div>
-                    {/* <h3>About Me</h3>
-
-                    <span>
-                        <p>I'm most active on</p>I'm most active on
-                        <a href="/resume.pdf" download>
-                            GitHub
-                        </a>
-                        and LinkedIn so connect with me on there! The best way to connect me is via email.
-                    </span> */}
 
                     <p className={styles.copyright}>© 2023 Namito Yokota</p>
                 </div>

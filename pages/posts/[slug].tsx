@@ -4,7 +4,7 @@ import matter from 'gray-matter';
 // @ts-ignore
 import mdxPrism from 'mdx-prism';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import Head from 'next/head';
 import Image from 'next/image';
@@ -14,7 +14,7 @@ import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
-import { PostType } from '../../types/post';
+import { PostPageProps } from '../../types/post-page-props';
 import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
 
 const components = {
@@ -23,15 +23,10 @@ const components = {
     Link,
 };
 
-type PostPageProps = {
-    source: MDXRemoteSerializeResult;
-    frontMatter: PostType;
-};
-
 const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
     const customMeta: MetaProps = {
         title: `${frontMatter.title} - Namito Yokota`,
-        subtitle: frontMatter.description,
+        description: frontMatter.subtitle,
         image: `${WEBSITE_HOST_URL}${frontMatter.image}`,
         date: frontMatter.date,
         type: 'article',
