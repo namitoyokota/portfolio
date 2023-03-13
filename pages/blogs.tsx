@@ -24,7 +24,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
         >
             <div className={styles.header}>
                 <h1 className={styles.title}>Blogs</h1>
-                <p className={styles.description}>My coding knowledge :)</p>
+                <p className={styles.description}>Sharing my coding knowledge</p>
             </div>
 
             <h5>2023</h5>
