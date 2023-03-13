@@ -30,7 +30,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
             {posts.map((post: Post) => (
                 <Link key={post._id} href={`https://blog.namito.wiki/${post.slug}`}>
                     <a className={styles.blog} target="_blank" rel="noopener noreferrer">
-                        <h4 className={styles.blogtitle}>{post.title}</h4>
+                        <p className={styles.blogtitle}>{post.title}</p>
                         <p className={styles.date}>{format(parseISO(post.dateAdded!), 'MMMM dd, yyyy')}</p>
                     </a>
                 </Link>
