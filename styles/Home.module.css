@@ -211,11 +211,14 @@
     align-items: center;
     border-bottom: 1px solid rgba(230, 230, 230, 0.2);
     column-gap: 10px;
+    transition: 0.15s ease-in-out;
 }
 
 .blog:hover {
     cursor: pointer;
-    border-color: rgba(246, 255, 84, 0.5);
+    padding-left: 10px;
+    color: rgb(55, 169, 255);
+    /* border-color: rgba(246, 255, 84, 0.5); */
 }
 
 .blogtitle {

@@ -104,7 +104,7 @@ export const Tools = (): JSX.Element => {
                             <h3>{tool.title}</h3>
                             <Image alt="github" height="15px" width="15px" src={tool.iconPath} />
                         </div>
-                        <span className={styles.description}>{tool.description}</span>
+                        <span className={styles.description}>{tool.subtitle}</span>
                     </a>
                 ))}
             </div>
