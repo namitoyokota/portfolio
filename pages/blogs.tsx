@@ -27,6 +27,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                 <p className={styles.description}>My coding knowledge :)</p>
             </div>
 
+            <h5>2023</h5>
             {posts.map((post: Post) => (
                 <Link key={post._id} href={`https://blog.namito.wiki/${post.slug}`}>
                     <a className={styles.blog} target="_blank" rel="noopener noreferrer">

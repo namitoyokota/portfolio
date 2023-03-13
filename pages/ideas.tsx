@@ -22,16 +22,15 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                 <p className={styles.description}>Notes of my random thoughts</p>
             </div>
 
-            <div className={styles.blogspane}>
-                {posts.map((blog, index) => (
-                    <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                        <div className={styles.blog}>
-                            <p className={styles.blogtitle}>{blog.title}</p>
-                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                        </div>
-                    </Link>
-                ))}
-            </div>
+            <h5>2023</h5>
+            {posts.map((blog) => (
+                <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
+                    <div className={styles.blog}>
+                        <p className={styles.blogtitle}>{blog.title}</p>
+                        <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
+                    </div>
+                </Link>
+            ))}
         </Layout>
     );
 };

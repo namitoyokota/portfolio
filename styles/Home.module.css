@@ -205,12 +205,6 @@
     white-space: nowrap;
 }
 
-.blogspane {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 0 50px;
-}
-
 .blog {
     display: grid;
     grid-template-columns: auto min-content;
