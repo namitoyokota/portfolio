@@ -19,9 +19,9 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link>
 
-            <Link href="/subdomains">
-                <a className={router.asPath == '/subdomains' ? styles.activepage : styles.page}>
-                    <h4>Subdomains</h4>
+            <Link href="/tools">
+                <a className={router.asPath == '/tools' ? styles.activepage : styles.page}>
+                    <h4>Tools</h4>
                 </a>
             </Link>
 

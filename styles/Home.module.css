@@ -236,7 +236,7 @@
     }
 }
 
-.subdomaincard {
+.toolcard {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -247,16 +247,16 @@
     transition: 0.1s ease-in-out;
 }
 
-.subdomaincard:hover {
+.toolcard:hover {
     cursor: pointer;
     transform: scale(0.98);
 }
 
-.subdomaincard h3 {
+.toolcard h3 {
     margin: 0;
 }
 
-.subdomainheader {
+.toolheader {
     display: flex;
     column-gap: 10px;
     justify-content: space-between;
