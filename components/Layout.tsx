@@ -29,40 +29,26 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             </main>
             <footer>
                 <div className={styles.footerpane}>
-                    {/* GitHub */}
-                    <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
-                        <p>GitHub</p>
-                    </a>
+                    <div className={styles.sociallinks}>
+                        <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
+                            GitHub
+                        </a>
 
-                    {/* Goodreads */}
-                    <a
-                        className={styles.sociallink}
-                        href="https://www.goodreads.com/user/show/111816710-namito-yokota"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        <p>Goodreads</p>
-                    </a>
+                        <a className={styles.sociallink} href="https://www.linkedin.com/in/namito/" target="_blank" rel="noreferrer">
+                            LinkedIn
+                        </a>
+                    </div>
+                    {/* <h3>About Me</h3>
 
-                    {/* LinkedIn */}
-                    <a className={styles.sociallink} href="https://www.linkedin.com/in/namitoyokota/" target="_blank" rel="noreferrer">
-                        <p>LinkedIn</p>
-                    </a>
+                    <span>
+                        <p>I'm most active on</p>I'm most active on
+                        <a href="/resume.pdf" download>
+                            GitHub
+                        </a>
+                        and LinkedIn so connect with me on there! The best way to connect me is via email.
+                    </span> */}
 
-                    {/* Twitter */}
-                    <a className={styles.sociallink} href="https://twitter.com/namitoyokota" target="_blank" rel="noreferrer">
-                        <p>Ideas</p>
-                    </a>
-
-                    {/* VSCO */}
-                    <a className={styles.sociallink} href="https://vsco.co/yokota-namito" target="_blank" rel="noreferrer">
-                        <p>VSCO</p>
-                    </a>
-
-                    {/* Resume */}
-                    <a className={styles.sociallink} href="/resume.pdf" download>
-                        <p>Resume</p>
-                    </a>
+                    <p className={styles.copyright}>© 2023 Namito Yokota</p>
                 </div>
             </footer>
         </div>
