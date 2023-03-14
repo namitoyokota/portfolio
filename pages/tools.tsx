@@ -84,6 +84,24 @@ export const Tools = (): JSX.Element => {
             iconPath: '/icons/pray.svg',
             url: 'https://pray.namito.wiki',
         } as Tool,
+        {
+            title: 'Runs',
+            subtitle: 'My running log',
+            iconPath: '/icons/runs.svg',
+            url: 'https://runs.namito.wiki',
+        } as Tool,
+        {
+            title: 'Caption Recorder',
+            subtitle: 'Tool for recording caption for film',
+            iconPath: '/icons/cc.svg',
+            url: 'https://cc.namito.wiki',
+        } as Tool,
+        {
+            title: 'Pomodoro Timer',
+            subtitle: 'Timer for following pomodoro method',
+            iconPath: '/icons/pmdr.svg',
+            url: 'https://pmdr.namito.wiki',
+        } as Tool,
     ];
 
     return (
