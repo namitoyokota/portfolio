@@ -30,12 +30,12 @@ export const Tools = (): JSX.Element => {
             iconPath: '/icons/standups.svg',
             url: 'https://standups.namito.wiki',
         } as Tool,
-        {
-            title: 'Brags',
-            subtitle: 'A collection of my brag documents',
-            iconPath: '/icons/brags.svg',
-            url: 'https://brags.namito.wiki',
-        } as Tool,
+        // {
+        //     title: 'Brags',
+        //     subtitle: 'A collection of my brag documents',
+        //     iconPath: '/icons/brags.svg',
+        //     url: 'https://brags.namito.wiki',
+        // } as Tool,
         {
             title: 'Resume',
             subtitle: 'Web version of my resume',
@@ -48,18 +48,18 @@ export const Tools = (): JSX.Element => {
             iconPath: '/icons/degree.svg',
             url: 'https://degree.namito.wiki',
         } as Tool,
-        {
-            title: 'Photos ⭐',
-            subtitle: 'My photography portfolio',
-            iconPath: '/icons/photos.svg',
-            url: 'https://photos.namito.wiki',
-        } as Tool,
-        {
-            title: 'Art',
-            subtitle: 'My art portfolio',
-            iconPath: '/icons/art.svg',
-            url: 'https://art.namito.wiki',
-        } as Tool,
+        // {
+        //     title: 'Photos ⭐',
+        //     subtitle: 'My photography portfolio',
+        //     iconPath: '/icons/photos.svg',
+        //     url: 'https://photos.namito.wiki',
+        // } as Tool,
+        // {
+        //     title: 'Art',
+        //     subtitle: 'My art portfolio',
+        //     iconPath: '/icons/art.svg',
+        //     url: 'https://art.namito.wiki',
+        // } as Tool,
         {
             title: 'Quotes',
             subtitle: 'A list of inspirational quotes',
@@ -78,18 +78,18 @@ export const Tools = (): JSX.Element => {
             iconPath: '/icons/bowling.svg',
             url: 'https://bowling.namito.wiki',
         } as Tool,
-        {
-            title: 'Pray',
-            subtitle: 'A prayer board',
-            iconPath: '/icons/pray.svg',
-            url: 'https://pray.namito.wiki',
-        } as Tool,
-        {
-            title: 'Runs',
-            subtitle: 'My running log',
-            iconPath: '/icons/runs.svg',
-            url: 'https://runs.namito.wiki',
-        } as Tool,
+        // {
+        //     title: 'Pray',
+        //     subtitle: 'A prayer board',
+        //     iconPath: '/icons/pray.svg',
+        //     url: 'https://pray.namito.wiki',
+        // } as Tool,
+        // {
+        //     title: 'Runs',
+        //     subtitle: 'My running log',
+        //     iconPath: '/icons/runs.svg',
+        //     url: 'https://runs.namito.wiki',
+        // } as Tool,
         {
             title: 'Caption Recorder',
             subtitle: 'Tool for recording caption for film',
