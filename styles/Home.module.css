@@ -2,6 +2,10 @@
     padding: 0 2rem;
 }
 
+.logo:hover {
+    cursor: pointer;
+}
+
 .main {
     min-height: 100vh;
     padding: 4rem 0;
@@ -131,7 +135,7 @@
 
 .navpane {
     display: grid;
-    grid-template-columns: repeat(3, min-content) auto 25px;
+    grid-template-columns: 50px repeat(2, min-content) auto 25px;
     align-items: center;
     height: 50px;
     margin-bottom: 75px;
@@ -270,8 +274,6 @@
     justify-content: center;
     flex-direction: column;
     row-gap: 10px;
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr); */
     margin: 30px 0 50px;
     padding-top: 30px;
 }

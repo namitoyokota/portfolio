@@ -1,15 +1,30 @@
+import { useTheme } from 'next-themes';
+import Image from 'next/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
 
 const Navigation = (): JSX.Element => {
+    /** Router used to navigate through pages */
     const router = useRouter();
+
+    /** Tracks current theme */
+    const { theme } = useTheme();
+
+    /** Indicates current state of theme */
+    const isDark = theme === 'dark';
 
     return (
         <>
             <Link href="/">
                 <a className={router.asPath == '/' ? styles.activepage : styles.page}>
-                    <h4>Home</h4>
+                    <Image
+                        className={styles.logo}
+                        alt="namito"
+                        height="500px"
+                        width="500px"
+                        src={isDark ? '/logos/white.svg' : '/logos/black.svg'}
+                    />
                 </a>
             </Link>
 
