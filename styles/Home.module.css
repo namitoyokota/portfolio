@@ -125,6 +125,7 @@
 
 .page {
     color: grey;
+    font-weight: 800;
     margin-right: 20px;
     transition: 0.1s ease-in-out;
 }

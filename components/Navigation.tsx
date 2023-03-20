@@ -30,19 +30,19 @@ const Navigation = (): JSX.Element => {
 
             <Link href="/blogs">
                 <a className={router.asPath == '/blogs' ? styles.activepage : styles.page}>
-                    <h4>Blogs</h4>
+                    <span>Blogs</span>
                 </a>
             </Link>
 
             <Link href="/tools">
                 <a className={router.asPath == '/tools' ? styles.activepage : styles.page}>
-                    <h4>Tools</h4>
+                    <span>Tools</span>
                 </a>
             </Link>
 
             <Link href="/ideas">
                 <a className={router.asPath == '/ideas' ? styles.activepage : styles.page}>
-                    <h4>Ideas</h4>
+                    <span>Ideas</span>
                 </a>
             </Link>
         </>
