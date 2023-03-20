@@ -138,7 +138,6 @@
     display: grid;
     grid-template-columns: 50px repeat(2, min-content) auto 25px;
     align-items: center;
-    height: 50px;
     margin-bottom: 75px;
 }
 
