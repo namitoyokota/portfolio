@@ -7,7 +7,7 @@ body {
 }
 
 ::selection {
-    background: rgba(246, 255, 84, 0.5);
+    background: #ff9f1c;
 }
 
 a {
@@ -35,7 +35,7 @@ p {
 }
 
 h5 {
-    color: #00ab72;
+    color: #ff9f1c;
 }
 
 img {

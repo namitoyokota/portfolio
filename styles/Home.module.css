@@ -141,7 +141,7 @@
     margin-bottom: 75px;
 }
 
-.themeicon {
+.themeicon:hover {
     cursor: pointer;
 }
 
@@ -164,7 +164,7 @@
 
 .profileimg {
     background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 30%, rgba(148, 187, 233, 1) 100%);
     border-radius: 30px;
 }
 
@@ -193,6 +193,7 @@
 
 .project:hover {
     cursor: pointer;
+    border-color: #2ec4b6;
     transform: scale(0.98);
 }
 
@@ -221,7 +222,7 @@
 .blog:hover {
     cursor: pointer;
     padding-left: 10px;
-    color: rgb(55, 169, 255);
+    color: #2ec4b6;
 }
 
 .blogtitle {
@@ -255,6 +256,7 @@
 
 .toolcard:hover {
     cursor: pointer;
+    border-color: #2ec4b6;
     transform: scale(0.98);
 }
 
@@ -288,7 +290,7 @@
 }
 
 .sociallink:hover {
-    color: rgb(55, 169, 255);
+    color: #2ec4b6;
     cursor: pointer;
 }
 
