@@ -48,6 +48,10 @@ li {
     margin-bottom: 10px;
 }
 
+ul {
+    margin-top: 15px;
+}
+
 blockquote {
     color: grey;
     margin: 0;
