@@ -124,13 +124,13 @@
 }
 
 .page {
-    opacity: 0.5;
+    color: grey;
     margin-right: 20px;
     transition: 0.1s ease-in-out;
 }
 
 .page:hover {
-    opacity: 1;
+    color: #2ec4b6;
 }
 
 .navpane {
