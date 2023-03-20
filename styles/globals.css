@@ -25,13 +25,36 @@ button {
     border: none;
 }
 
+h1 {
+    font-size: 2em;
+    margin-top: 50px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 p {
-    margin: 10px 0;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+blockquote {
+    margin: 0;
+    padding-left: 10px;
+    font-style: italic;
 }
 
 h5 {
