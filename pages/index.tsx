@@ -28,7 +28,7 @@ export const Index = (): JSX.Element => {
             <div className={styles.projectspane}>
                 <Link href="https://www.keepintouch.cc" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3>Keep In Touch</h3>
+                        <h3 className={styles.projectname}>Keep In Touch</h3>
                         <p>Website for keeping track of when you last caught up with your friends 😎</p>
                         <p className={styles.date}>Date</p>
                     </a>
@@ -36,7 +36,7 @@ export const Index = (): JSX.Element => {
 
                 <Link href="https://github.com/namitoyokota/PoseHunt" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3>Pose Hunt</h3>
+                        <h3 className={styles.projectname}>Pose Hunt</h3>
                         <p>Platform for sharing and discovering portrait poses ✌🏼</p>
                         <p className={styles.date}>Date</p>
                     </a>
@@ -44,7 +44,7 @@ export const Index = (): JSX.Element => {
 
                 <Link href="https://github.com/namitoyokota/CodePortraits" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3>Code Portraits</h3>
+                        <h3 className={styles.projectname}>Code Portraits</h3>
                         <p>A website for turning code into block images 🖌️</p>
                         <p className={styles.date}>Date</p>
                     </a>

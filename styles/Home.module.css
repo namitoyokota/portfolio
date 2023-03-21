@@ -197,6 +197,10 @@
     transform: scale(0.98);
 }
 
+.projectname {
+    margin-top: 10px;
+}
+
 .projectheader {
     display: grid;
     grid-template-columns: auto min-content;
