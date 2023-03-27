@@ -23,14 +23,28 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
             </div>
 
             <h5>2023</h5>
-            {posts.map((blog) => (
-                <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                    <div className={styles.blog}>
-                        <p className={styles.blogtitle}>{blog.title}</p>
-                        <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                    </div>
-                </Link>
-            ))}
+            {posts
+                .filter((post) => parseISO(post.date!).getFullYear() === 2023)
+                .map((blog) => (
+                    <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
+                        <div className={styles.blog}>
+                            <p className={styles.blogtitle}>{blog.title}</p>
+                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
+                        </div>
+                    </Link>
+                ))}
+
+            <h5>2022</h5>
+            {posts
+                .filter((post) => parseISO(post.date!).getFullYear() === 2022)
+                .map((blog) => (
+                    <Link as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
+                        <div className={styles.blog}>
+                            <p className={styles.blogtitle}>{blog.title}</p>
+                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
+                        </div>
+                    </Link>
+                ))}
         </Layout>
     );
 };
