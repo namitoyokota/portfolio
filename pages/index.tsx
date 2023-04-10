@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
@@ -26,7 +26,7 @@ export const Index = (): JSX.Element => {
             <h1>Projects</h1>
             <p className={styles.description}>This is a list of side projects I've created or currently working on!</p>
             <div className={styles.projectspane}>
-                <Link href="https://www.keepintouch.cc" passHref>
+                <Link legacyBehavior href="https://www.keepintouch.cc" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
                         <h3 className={styles.projectname}>Keep In Touch</h3>
                         <p>Website for keeping track of when you last caught up with your friends 😎</p>
@@ -34,7 +34,7 @@ export const Index = (): JSX.Element => {
                     </a>
                 </Link>
 
-                <Link href="https://github.com/namitoyokota/PoseHunt" passHref>
+                <Link legacyBehavior href="https://github.com/namitoyokota/PoseHunt" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
                         <h3 className={styles.projectname}>Pose Hunt</h3>
                         <p>Platform for sharing and discovering portrait poses ✌🏼</p>
@@ -42,7 +42,7 @@ export const Index = (): JSX.Element => {
                     </a>
                 </Link>
 
-                <Link href="https://github.com/namitoyokota/CodePortraits" passHref>
+                <Link legacyBehavior href="https://github.com/namitoyokota/CodePortraits" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
                         <h3 className={styles.projectname}>Code Portraits</h3>
                         <p>A website for turning code into block images 🖌️</p>

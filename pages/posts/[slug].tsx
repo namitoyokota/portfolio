@@ -7,7 +7,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import { MDXRemote } from 'next-mdx-remote';
 import { serialize } from 'next-mdx-remote/serialize';
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import path from 'path';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
@@ -15,7 +15,7 @@ import rehypeSlug from 'rehype-slug';
 import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
 import { MetaProps } from '../../types/layout';
 import { PostPageProps } from '../../types/post-page-props';
-import { postFilePaths, POSTS_PATH } from '../../utils/mdxUtils';
+import { POSTS_PATH, postFilePaths } from '../../utils/mdxUtils';
 
 const components = {
     Head,
