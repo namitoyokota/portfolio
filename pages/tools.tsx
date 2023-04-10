@@ -120,7 +120,7 @@ export const Tools = (): JSX.Element => {
                     <a key={index} className={styles.toolcard} href={tool.url} target="_blank" rel="noreferrer">
                         <div className={styles.toolheader}>
                             <h3>{tool.title}</h3>
-                            <Image alt="github" height="15px" width="15px" src={tool.iconPath} />
+                            <Image alt="github" height="15" width="15" src={tool.iconPath} />
                         </div>
                         <span className={styles.description}>{tool.subtitle}</span>
                     </a>

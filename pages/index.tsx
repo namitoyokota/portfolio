@@ -15,8 +15,8 @@ export const Index = (): JSX.Element => {
                 <Image
                     className={styles.profileimg}
                     alt="Namito Yokota Profile"
-                    height="150px"
-                    width="150px"
+                    height="150"
+                    width="150"
                     quality={100}
                     src="/images/profile-1.png"
                     objectFit="contain"
