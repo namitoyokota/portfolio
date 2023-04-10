@@ -21,8 +21,8 @@ const Navigation = (): JSX.Element => {
                     <Image
                         className={styles.logo}
                         alt="namito"
-                        height="500px"
-                        width="500px"
+                        height="500"
+                        width="500"
                         src={isDark ? '/logos/white.svg' : '/logos/black.svg'}
                     />
                 </a>
