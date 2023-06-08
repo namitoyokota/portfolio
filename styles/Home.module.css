@@ -214,6 +214,34 @@
     white-space: nowrap;
 }
 
+.worklist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.workitem {
+    display: grid;
+    grid-template-columns: min-content auto min-content;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.workitemcompany,
+.workitemposition {
+    white-space: nowrap;
+}
+
+.workitemcompany:hover {
+    color: #2ec4b6;
+}
+
+.workitemdivider {
+    width: 100%;
+    border: none;
+    border-top: 3px dotted grey;
+}
+
 .blog {
     display: grid;
     grid-template-columns: auto min-content;

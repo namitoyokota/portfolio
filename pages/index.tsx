@@ -50,6 +50,49 @@ export const Index = (): JSX.Element => {
                     </a>
                 </Link>
             </div>
+
+            <h1>Work</h1>
+            <div className={styles.worklist}>
+                <div className={styles.workitem}>
+                    <a className={styles.workitemcompany} href="https://www.linkedin.com/company/venminder" target="_blank">
+                        Venminder
+                    </a>
+                    <hr className={styles.workitemdivider} />
+                    <span className={styles.workitemposition}>Software Engineer II</span>
+                </div>
+
+                <div className={styles.workitem}>
+                    <a className={styles.workitemcompany} href="https://www.linkedin.com/company/hexagon-sig/" target="_blank">
+                        Hexagon
+                    </a>
+                    <hr className={styles.workitemdivider} />
+                    <span className={styles.workitemposition}>Software Analyst</span>
+                </div>
+
+                <div className={styles.workitem}>
+                    <a className={styles.workitemcompany} href="https://www.linkedin.com/company/trips4trade" target="_blank">
+                        Trips4Trade
+                    </a>
+                    <hr className={styles.workitemdivider} />
+                    <span className={styles.workitemposition}>Software Intern</span>
+                </div>
+
+                <div className={styles.workitem}>
+                    <a className={styles.workitemcompany} href="https://www.linkedin.com/school/university-of-alabama/" target="_blank">
+                        University of Alabama
+                    </a>
+                    <hr className={styles.workitemdivider} />
+                    <span className={styles.workitemposition}>Teaching Assistant</span>
+                </div>
+
+                <div className={styles.workitem}>
+                    <a className={styles.workitemcompany} href="http://www.threedaysllc.com/" target="_blank">
+                        threeDays
+                    </a>
+                    <hr className={styles.workitemdivider} />
+                    <span className={styles.workitemposition}>Software Intern</span>
+                </div>
+            </div>
         </Layout>
     );
 };
