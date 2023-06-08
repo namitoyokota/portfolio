@@ -30,23 +30,23 @@ export const Index = (): JSX.Element => {
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
                         <h3 className={styles.projectname}>Keep In Touch</h3>
                         <p>Website for keeping track of when you last caught up with your friends 😎</p>
-                        <p className={styles.date}>Date</p>
+                        <p className={styles.date}>3/23/23</p>
                     </a>
                 </Link>
 
-                <Link legacyBehavior href="https://github.com/namitoyokota/PoseHunt" passHref>
+                <Link legacyBehavior href="https://steeeve.vercel.app/" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3 className={styles.projectname}>Pose Hunt</h3>
-                        <p>Platform for sharing and discovering portrait poses ✌🏼</p>
-                        <p className={styles.date}>Date</p>
+                        <h3 className={styles.projectname}>Steeeve</h3>
+                        <p>For your uncle that says, "I had the idea for Uber first." 💡 </p>
+                        <p className={styles.date}>5/25/23</p>
                     </a>
                 </Link>
 
-                <Link legacyBehavior href="https://github.com/namitoyokota/CodePortraits" passHref>
+                <Link legacyBehavior href="https://www.npmjs.com/package/@namitoyokota/ng-components" passHref>
                     <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3 className={styles.projectname}>Code Portraits</h3>
-                        <p>A website for turning code into block images 🖌️</p>
-                        <p className={styles.date}>Date</p>
+                        <h3 className={styles.projectname}>ng-components</h3>
+                        <p>Angular component library in black and white styles</p>
+                        <p className={styles.date}>5/14/23</p>
                     </a>
                 </Link>
             </div>
