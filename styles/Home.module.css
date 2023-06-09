@@ -239,7 +239,7 @@
 .workitemdivider {
     width: 100%;
     border: none;
-    border-top: 3px dotted grey;
+    border-top: 1px dashed grey;
 }
 
 .blog {
