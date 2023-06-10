@@ -13,8 +13,8 @@ export const Index = (): JSX.Element => {
             <div className={styles.aboutpane}>
                 <div>
                     <h1 className={styles.title}>Namito Yokota</h1>
-                    <p>Almost Senior Developer</p>
-                    <p className={styles.description}>Angular, Typescript, HTML, CSS</p>
+                    <p>Almost Senior Frontend Developer</p>
+                    <p className={styles.description}>I write clean code with a smile :)</p>
                 </div>
                 <Image
                     className={styles.profileimg}
@@ -86,7 +86,7 @@ export const Index = (): JSX.Element => {
                     <a className={styles.workitemcompany} href="https://www.linkedin.com/company/venminder" target="_blank">
                         Venminder
                     </a>
-                    <hr className={styles.workitemdivider} />
+                    <hr className={styles.divider} />
                     <span className={styles.workitemposition}>Software Engineer II</span>
                 </div>
 
@@ -94,7 +94,7 @@ export const Index = (): JSX.Element => {
                     <a className={styles.workitemcompany} href="https://www.linkedin.com/company/hexagon-sig/" target="_blank">
                         Hexagon
                     </a>
-                    <hr className={styles.workitemdivider} />
+                    <hr className={styles.divider} />
                     <span className={styles.workitemposition}>Software Analyst</span>
                 </div>
 
@@ -102,7 +102,7 @@ export const Index = (): JSX.Element => {
                     <a className={styles.workitemcompany} href="https://www.linkedin.com/company/trips4trade" target="_blank">
                         Trips4Trade
                     </a>
-                    <hr className={styles.workitemdivider} />
+                    <hr className={styles.divider} />
                     <span className={styles.workitemposition}>Software Intern</span>
                 </div>
 
@@ -110,7 +110,7 @@ export const Index = (): JSX.Element => {
                     <a className={styles.workitemcompany} href="https://www.linkedin.com/school/university-of-alabama/" target="_blank">
                         University of Alabama
                     </a>
-                    <hr className={styles.workitemdivider} />
+                    <hr className={styles.divider} />
                     <span className={styles.workitemposition}>Teaching Assistant</span>
                 </div>
 
@@ -118,8 +118,47 @@ export const Index = (): JSX.Element => {
                     <a className={styles.workitemcompany} href="http://www.threedaysllc.com/" target="_blank">
                         threeDays
                     </a>
-                    <hr className={styles.workitemdivider} />
+                    <hr className={styles.divider} />
                     <span className={styles.workitemposition}>Software Intern</span>
+                </div>
+            </div>
+
+            <h1>Skills</h1>
+            <div className={styles.skilllist}>
+                <div className={styles.skillitem}>
+                    <span>Angular</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Expert</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>TypeScript</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Expert</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>HTML</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Expert</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>CSS</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Expert</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>Aurelia</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Intermediate</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>React</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Learning</span>
                 </div>
             </div>
         </Layout>
