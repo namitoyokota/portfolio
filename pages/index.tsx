@@ -4,6 +4,10 @@ import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 
 export const Index = (): JSX.Element => {
+    function openLink(url: string): void {
+        window.open(url, '_blank');
+    }
+
     return (
         <Layout>
             <div className={styles.aboutpane}>
@@ -23,7 +27,7 @@ export const Index = (): JSX.Element => {
                 />
             </div>
 
-            <h1>Projects</h1>
+            {/* <h1>Projects</h1>
             <p className={styles.description}>This is a list of side projects I've created or currently working on!</p>
             <div className={styles.projectspane}>
                 <Link legacyBehavior href="https://www.keepintouch.cc" passHref>
@@ -48,6 +52,31 @@ export const Index = (): JSX.Element => {
                         <p>Angular component library in black and white styles</p>
                         <p className={styles.date}>5/14/23</p>
                     </a>
+                </Link>
+            </div> */}
+
+            <h1>Projects</h1>
+            <div className={styles.projectlist}>
+                <Link
+                    className={styles.projectitem}
+                    href="https://www.npmjs.com/package/@namitoyokota/ng-components"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
+                    <div className={styles.projectname}>ng-components</div>
+                    <span className={styles.projectdescription}>Angular component library in black and white</span>
+                </Link>
+
+                <Link className={styles.projectitem} href="https://steeeve.vercel.app/" rel="noopener noreferrer" target="_blank">
+                    <div className={styles.projectname}>Steeeve</div>
+                    <span className={styles.projectdescription}>For your uncle that says, "I had the idea for Uber first."</span>
+                </Link>
+
+                <Link className={styles.projectitem} href="https://www.keepintouch.cc" rel="noopener noreferrer" target="_blank">
+                    <div className={styles.projectname}>Keep In Touch</div>
+                    <span className={styles.projectdescription}>
+                        Website for keeping track of when you last caught up with your friends
+                    </span>
                 </Link>
             </div>
 
