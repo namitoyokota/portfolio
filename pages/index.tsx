@@ -128,35 +128,41 @@ export const Index = (): JSX.Element => {
                 <div className={styles.skillitem}>
                     <span>Angular</span>
                     <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert</span>
+                    <span className={styles.skilllevel}>Expert (2 Years)</span>
                 </div>
 
                 <div className={styles.skillitem}>
                     <span>TypeScript</span>
                     <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert</span>
+                    <span className={styles.skilllevel}>Expert (3 Years)</span>
                 </div>
 
                 <div className={styles.skillitem}>
                     <span>HTML</span>
                     <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert</span>
+                    <span className={styles.skilllevel}>Expert (4 Years)</span>
                 </div>
 
                 <div className={styles.skillitem}>
                     <span>CSS</span>
                     <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert</span>
+                    <span className={styles.skilllevel}>Expert (4 Years)</span>
                 </div>
 
                 <div className={styles.skillitem}>
                     <span>Aurelia</span>
                     <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Intermediate</span>
+                    <span className={styles.skilllevel}>Intermediate (1 Year)</span>
                 </div>
 
                 <div className={styles.skillitem}>
                     <span>React</span>
+                    <hr className={styles.divider} />
+                    <span className={styles.skilllevel}>Learning</span>
+                </div>
+
+                <div className={styles.skillitem}>
+                    <span>.NET</span>
                     <hr className={styles.divider} />
                     <span className={styles.skilllevel}>Learning</span>
                 </div>
