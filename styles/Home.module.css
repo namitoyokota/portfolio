@@ -241,6 +241,10 @@
     padding-left: 5px;
 }
 
+.workitemposition {
+    color: grey;
+}
+
 .divider {
     width: 100%;
     border: none;
@@ -278,14 +282,18 @@
 }
 
 .skillitem {
-    display: grid;
-    grid-template-columns: min-content auto min-content;
-    align-items: center;
+    display: flex;
     column-gap: 10px;
+    align-items: end;
 }
 
-.skilllevel {
+.skillname {
     white-space: nowrap;
+}
+
+.skilldescription {
+    color: grey;
+    font-size: 0.8em;
 }
 
 .blog {

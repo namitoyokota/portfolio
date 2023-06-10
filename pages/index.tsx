@@ -126,45 +126,38 @@ export const Index = (): JSX.Element => {
             <h1>Skills</h1>
             <div className={styles.skilllist}>
                 <div className={styles.skillitem}>
-                    <span>Angular</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert (2 Years)</span>
+                    <span className={styles.skillname}>TypeScript</span>
+                    <span className={styles.skilldescription}>Most competent language with 3 years of experience</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>TypeScript</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert (3 Years)</span>
+                    <span className={styles.skillname}>Angular</span>
+                    <span className={styles.skilldescription}>Most competent framework with 2 years developing micro-frontend</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>HTML</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert (4 Years)</span>
+                    <span className={styles.skillname}>Aurelia</span>
+                    <span className={styles.skilldescription}>2nd most experience frontend framework</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>CSS</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Expert (4 Years)</span>
+                    <span className={styles.skillname}>HTML</span>
+                    <span className={styles.skilldescription}>My first language and still using today</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>Aurelia</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Intermediate (1 Year)</span>
+                    <span className={styles.skillname}>CSS</span>
+                    <span className={styles.skilldescription}>Using Flexbox and Grid everyday to not get fired</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>React</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Learning</span>
+                    <span className={styles.skillname}>React</span>
+                    <span className={styles.skilldescription}>Currently learning with online resources</span>
                 </div>
 
                 <div className={styles.skillitem}>
-                    <span>.NET</span>
-                    <hr className={styles.divider} />
-                    <span className={styles.skilllevel}>Learning</span>
+                    <span className={styles.skillname}>.NET</span>
+                    <span className={styles.skilldescription}>Slowly learning and gaining experience to become a full-skill one day</span>
                 </div>
             </div>
         </Layout>
