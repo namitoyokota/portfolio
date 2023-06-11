@@ -4,10 +4,6 @@ import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 
 export const Index = (): JSX.Element => {
-    function openLink(url: string): void {
-        window.open(url, '_blank');
-    }
-
     return (
         <Layout>
             <div className={styles.aboutpane}>
@@ -26,34 +22,6 @@ export const Index = (): JSX.Element => {
                     objectFit="contain"
                 />
             </div>
-
-            {/* <h1>Projects</h1>
-            <p className={styles.description}>This is a list of side projects I've created or currently working on!</p>
-            <div className={styles.projectspane}>
-                <Link legacyBehavior href="https://www.keepintouch.cc" passHref>
-                    <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3 className={styles.projectname}>Keep In Touch</h3>
-                        <p>Website for keeping track of when you last caught up with your friends 😎</p>
-                        <p className={styles.date}>3/23/23</p>
-                    </a>
-                </Link>
-
-                <Link legacyBehavior href="https://steeeve.vercel.app/" passHref>
-                    <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3 className={styles.projectname}>Steeeve</h3>
-                        <p>For your uncle that says, "I had the idea for Uber first." 💡 </p>
-                        <p className={styles.date}>5/25/23</p>
-                    </a>
-                </Link>
-
-                <Link legacyBehavior href="https://www.npmjs.com/package/@namitoyokota/ng-components" passHref>
-                    <a className={styles.project} target="_blank" rel="noopener noreferrer">
-                        <h3 className={styles.projectname}>ng-components</h3>
-                        <p>Angular component library in black and white styles</p>
-                        <p className={styles.date}>5/14/23</p>
-                    </a>
-                </Link>
-            </div> */}
 
             <h1>Projects</h1>
             <div className={styles.projectlist}>
