@@ -43,7 +43,10 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                 .map((blog) => (
                     <Link legacyBehavior as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
                         <div className={styles.blog}>
-                            <p className={styles.blogtitle}>{blog.title}</p>
+                            <div className={styles.blogheader}>
+                                <p className={styles.blogtitle}>{blog.title}</p>
+                                <span className={styles.blogdescription}>{blog.subtitle}</span>
+                            </div>
                             <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
                         </div>
                     </Link>
