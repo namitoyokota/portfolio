@@ -24,6 +24,10 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             <footer>
                 <div className={styles.footerpane}>
                     <div className={styles.sociallinks}>
+                        <a className={styles.sociallink} href="https://twitter.com/namitoyokota" target="_blank" rel="noreferrer">
+                            Twitter
+                        </a>
+
                         <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
                             GitHub
                         </a>
