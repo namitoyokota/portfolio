@@ -29,7 +29,9 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                     <Link legacyBehavior as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
                         <div className={styles.blog}>
                             <div className={styles.blogheader}>
-                                <p className={styles.blogtitle}>{blog.title}</p>
+                                <p className={styles.blogtitle}>
+                                    {blog.title} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                </p>
                                 <span className={styles.blogdescription}>{blog.subtitle}</span>
                             </div>
                             <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
@@ -44,7 +46,9 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                     <Link legacyBehavior as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
                         <div className={styles.blog}>
                             <div className={styles.blogheader}>
-                                <p className={styles.blogtitle}>{blog.title}</p>
+                                <p className={styles.blogtitle}>
+                                    {blog.title} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                </p>
                                 <span className={styles.blogdescription}>{blog.subtitle}</span>
                             </div>
                             <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
@@ -56,7 +60,7 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-    const posts = getAllPosts(['date', 'subtitle', 'slug', 'title', 'type']);
+    const posts = getAllPosts(['date', 'subtitle', 'slug', 'title', 'type', 'hot']);
 
     return {
         props: { posts },
