@@ -1,7 +1,13 @@
-a online personal portfolio to showcase my previous/current projects, knowledge, and other creative content!
+# [namito.wiki](https://www.namito.wiki)
 
-not sure what the future of this project holds, but i hope to keep this place free of creativity! any ideas that i have will most likely be posted here so stay tuned :)
+> Online portfolio to showcase things that take to much space for a resume
 
-inspirations
+## Run Locally
+
+1. `yarn install` or `npm install` if you like things slow
+2. `yarn dev` (you can also try `next dev --turbo` if you're feeling adventurous)
+
+## Inspirations
+
 - https://brianlovin.com/
 - https://leerob.io/
