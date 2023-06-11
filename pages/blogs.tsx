@@ -9,6 +9,7 @@ interface Post {
     slug: string;
     title: string;
     dateAdded: string;
+    brief: string;
 }
 
 type BlogsProps = {
@@ -31,7 +32,10 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
             {posts.map((post: Post) => (
                 <Link legacyBehavior key={post._id} href={`https://blog.namito.wiki/${post.slug}`}>
                     <a className={styles.blog} target="_blank" rel="noopener noreferrer">
-                        <p className={styles.blogtitle}>{post.title}</p>
+                        <div className={styles.blogheader}>
+                            <p className={styles.blogtitle}>{post.title}</p>
+                            <span className={styles.blogdescription}>{post.brief}</span>
+                        </div>
                         <p className={styles.date}>{format(parseISO(post.dateAdded!), 'MMMM dd, yyyy')}</p>
                     </a>
                 </Link>
@@ -56,6 +60,7 @@ export async function getStaticProps() {
                             slug
                             title
                             dateAdded
+                            brief
                         }
                     }
                 }
