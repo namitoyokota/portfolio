@@ -284,7 +284,7 @@
 .skillitem {
     display: flex;
     column-gap: 10px;
-    align-items: end;
+    align-items: center;
 }
 
 .skillname {
