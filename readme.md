@@ -9,5 +9,5 @@
 
 ## Inspirations
 
-- https://brianlovin.com/
-- https://leerob.io/
+-   https://brianlovin.com/
+-   https://leerob.io/
