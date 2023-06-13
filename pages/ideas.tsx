@@ -22,39 +22,26 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                 <p className={styles.description}>Notes of my random thoughts</p>
             </div>
 
-            <h5>2023</h5>
-            {posts
-                .filter((post) => parseISO(post.date!).getFullYear() === 2023)
-                .map((blog) => (
-                    <Link legacyBehavior as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                        <div className={styles.blog}>
-                            <div className={styles.blogheader}>
-                                <p className={styles.blogtitle}>
-                                    {blog.title} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
-                                </p>
-                                <span className={styles.blogdescription}>{blog.subtitle}</span>
-                            </div>
-                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                        </div>
-                    </Link>
-                ))}
-
-            <h5>2022</h5>
-            {posts
-                .filter((post) => parseISO(post.date!).getFullYear() === 2022)
-                .map((blog) => (
-                    <Link legacyBehavior as={`/posts/${blog.slug}`} href={`/posts/[slug]`} key={blog.slug}>
-                        <div className={styles.blog}>
-                            <div className={styles.blogheader}>
-                                <p className={styles.blogtitle}>
-                                    {blog.title} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
-                                </p>
-                                <span className={styles.blogdescription}>{blog.subtitle}</span>
-                            </div>
-                            <p className={styles.date}>{format(parseISO(blog.date!), 'MMMM dd, yyyy')}</p>
-                        </div>
-                    </Link>
-                ))}
+            {[...new Set(posts.map((post) => parseISO(post.date!).getFullYear()))].map((year) => (
+                <>
+                    <h5>{year}</h5>
+                    {posts
+                        .filter((post) => parseISO(post.date!).getFullYear() === year)
+                        .map((idea) => (
+                            <Link legacyBehavior as={`/posts/${idea.slug}`} href={`/posts/[slug]`} key={idea.slug}>
+                                <div className={styles.blog}>
+                                    <div className={styles.blogheader}>
+                                        <p className={styles.blogtitle}>
+                                            {idea.title} {idea.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                        </p>
+                                        <span className={styles.blogdescription}>{idea.subtitle}</span>
+                                    </div>
+                                    <p className={styles.date}>{format(parseISO(idea.date!), 'MMMM dd, yyyy')}</p>
+                                </div>
+                            </Link>
+                        ))}
+                </>
+            ))}
         </Layout>
     );
 };

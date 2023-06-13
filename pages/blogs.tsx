@@ -28,17 +28,23 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                 <p className={styles.description}>Sharing my coding knowledge</p>
             </div>
 
-            <h5>2023</h5>
-            {posts.map((post: Post) => (
-                <Link legacyBehavior key={post._id} href={`https://blog.namito.wiki/${post.slug}`}>
-                    <a className={styles.blog} target="_blank" rel="noopener noreferrer">
-                        <div className={styles.blogheader}>
-                            <p className={styles.blogtitle}>{post.title}</p>
-                            <span className={styles.blogdescription}>{post.brief}</span>
-                        </div>
-                        <p className={styles.date}>{format(parseISO(post.dateAdded!), 'MMMM dd, yyyy')}</p>
-                    </a>
-                </Link>
+            {[...new Set(posts.map((post) => parseISO(post.dateAdded!).getFullYear()))].map((year) => (
+                <>
+                    <h5>{year}</h5>
+                    {posts
+                        .filter((post) => parseISO(post.dateAdded!).getFullYear() === year)
+                        .map((blog) => (
+                            <Link legacyBehavior key={blog._id} href={`https://blog.namito.wiki/${blog.slug}`}>
+                                <a className={styles.blog} target="_blank" rel="noopener noreferrer">
+                                    <div className={styles.blogheader}>
+                                        <p className={styles.blogtitle}>{blog.title}</p>
+                                        <span className={styles.blogdescription}>{blog.brief}</span>
+                                    </div>
+                                    <p className={styles.date}>{format(parseISO(blog.dateAdded!), 'MMMM dd, yyyy')}</p>
+                                </a>
+                            </Link>
+                        ))}
+                </>
             ))}
         </Layout>
     );
