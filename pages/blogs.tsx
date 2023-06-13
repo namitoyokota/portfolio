@@ -30,7 +30,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
 
             {[...new Set(posts.map((post) => parseISO(post.dateAdded!).getFullYear()))].map((year) => (
                 <>
-                    <h5>{year}</h5>
+                    <h5 key={year}>{year}</h5>
                     {posts
                         .filter((post) => parseISO(post.dateAdded!).getFullYear() === year)
                         .map((blog) => (
