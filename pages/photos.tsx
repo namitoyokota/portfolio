@@ -29,7 +29,7 @@ export const Photos = (): JSX.Element => {
         >
             <div className={styles.header}>
                 <h1 className={styles.title}>Photos</h1>
-                <p className={styles.description}>I enjoy taking pictures in my free time</p>
+                <p className={styles.description}>I take pictures, sometimes.</p>
             </div>
 
             <div className={styles.photolist}>
