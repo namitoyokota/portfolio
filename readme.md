@@ -11,3 +11,8 @@
 
 -   https://brianlovin.com/
 -   https://leerob.io/
+
+## To dos
+
+-   [ ] Add `art` page for my designs and sketches
+-   [ ] Add list of my favorites books somewhere
