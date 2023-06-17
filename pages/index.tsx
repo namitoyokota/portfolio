@@ -1,9 +1,38 @@
 import Image from 'next/legacy/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
+import { Repository } from '../types/repository';
 
 export const Index = (): JSX.Element => {
+    /** Number of repositories under my GitHub Account */
+    const [repoCount, setRepoCount] = useState(0);
+
+    /** Number of stars across all of my repositories */
+    const [starCount, setStarCount] = useState(0);
+
+    /** Current GitHub username for my account */
+    const GITHUB_USERNAME = 'namitoyokota';
+
+    /** Public API endpoint to get repositories list */
+    const GITHUB_API_ENDPOINT = `https://api.github.com/users/${GITHUB_USERNAME}/repos`;
+
+    /** Fetches repositories from GitHub API */
+    useEffect(() => {
+        fetch(GITHUB_API_ENDPOINT)
+            .then((res) => res.json())
+            .then((data: Repository[]) => {
+                let starCount = 0;
+                data.forEach((repo: Repository) => {
+                    starCount += repo.stargazers_count;
+                });
+
+                setStarCount(starCount);
+                setRepoCount(data.length);
+            });
+    }, [GITHUB_API_ENDPOINT]);
+
     return (
         <Layout>
             <div className={styles.aboutpane}>
@@ -128,6 +157,10 @@ export const Index = (): JSX.Element => {
                     <span className={styles.skilldescription}>Slowly learning and gaining experience to become a full-skill one day</span>
                 </div>
             </div>
+
+            <h1>Contributions</h1>
+            <p>GitHub Repos: {repoCount.toLocaleString()}</p>
+            <p>GitHub Stars: {starCount.toLocaleString()}</p>
         </Layout>
     );
 };
