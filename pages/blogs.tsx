@@ -10,6 +10,7 @@ interface Post {
     title: string;
     dateAdded: string;
     brief: string;
+    totalReactions: number;
 }
 
 type BlogsProps = {
@@ -39,7 +40,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                     <div className={styles.blogheader}>
                                         <p className={styles.blogtitle}>{blog.title}</p>
                                         <span className={styles.blogdescription}>
-                                            {blog.brief} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                            {blog.brief} {blog.totalReactions ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
                                         </span>
                                     </div>
                                     <p className={styles.date}>{format(parseISO(blog.dateAdded!), 'MMMM dd, yyyy')}</p>
@@ -69,15 +70,13 @@ export async function getStaticProps() {
                             title
                             dateAdded
                             brief
-                            popularity
+                            totalReactions
                         }
                     }
                 }
             }
         `,
     });
-
-    console.log(data);
 
     return {
         props: {
