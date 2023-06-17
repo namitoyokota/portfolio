@@ -23,8 +23,8 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
             </div>
 
             {[...new Set(posts.map((post) => parseISO(post.date!).getFullYear()))].map((year) => (
-                <>
-                    <h5 key={year}>{year}</h5>
+                <div key={year}>
+                    <h5>{year}</h5>
                     {posts
                         .filter((post) => parseISO(post.date!).getFullYear() === year)
                         .map((idea) => (
@@ -40,7 +40,7 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                                 </div>
                             </Link>
                         ))}
-                </>
+                </div>
             ))}
         </Layout>
     );

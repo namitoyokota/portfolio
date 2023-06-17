@@ -29,8 +29,8 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
             </div>
 
             {[...new Set(posts.map((post) => parseISO(post.dateAdded!).getFullYear()))].map((year) => (
-                <>
-                    <h5 key={year}>{year}</h5>
+                <div key={year}>
+                    <h5>{year}</h5>
                     {posts
                         .filter((post) => parseISO(post.dateAdded!).getFullYear() === year)
                         .map((blog) => (
@@ -38,13 +38,15 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                 <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                     <div className={styles.blogheader}>
                                         <p className={styles.blogtitle}>{blog.title}</p>
-                                        <span className={styles.blogdescription}>{blog.brief}</span>
+                                        <span className={styles.blogdescription}>
+                                            {blog.brief} {blog.hot ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                        </span>
                                     </div>
                                     <p className={styles.date}>{format(parseISO(blog.dateAdded!), 'MMMM dd, yyyy')}</p>
                                 </a>
                             </Link>
                         ))}
-                </>
+                </div>
             ))}
         </Layout>
     );
@@ -67,12 +69,15 @@ export async function getStaticProps() {
                             title
                             dateAdded
                             brief
+                            popularity
                         }
                     }
                 }
             }
         `,
     });
+
+    console.log(data);
 
     return {
         props: {
