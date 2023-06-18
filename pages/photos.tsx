@@ -1,25 +1,40 @@
+import { useTheme } from 'next-themes';
 import Image from 'next/image';
+import { useState } from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 
 export const Photos = (): JSX.Element => {
     /** List of images to display in gallery */
-    const images = [
-        '/photos/JAN_2110.jpg',
-        '/photos/JAN_2113.jpg',
-        '/photos/JAN_2146.jpg',
-        '/photos/JAN_2214.jpg',
-        '/photos/JAN_2574.jpg',
-        '/photos/JAN_2582.jpg',
-        '/photos/JAN_2643.jpg',
-        '/photos/JAN_2704.jpg',
-        '/photos/JAN_2711.jpg',
-        '/photos/JAN_3144.jpg',
-        '/photos/JAN_3179.jpg',
-        '/photos/JAN_3375.jpg',
-        '/photos/JAN_3564.jpg',
-        '/photos/JAN_3593.jpg',
-    ];
+    const [photos, setPhotos] = useState([
+        { id: 0, src: '/photos/JAN_2110.jpg', loaded: false },
+        { id: 1, src: '/photos/JAN_2113.jpg', loaded: false },
+        { id: 2, src: '/photos/JAN_2146.jpg', loaded: false },
+        { id: 3, src: '/photos/JAN_2214.jpg', loaded: false },
+        { id: 4, src: '/photos/JAN_2574.jpg', loaded: false },
+        { id: 5, src: '/photos/JAN_2582.jpg', loaded: false },
+        { id: 6, src: '/photos/JAN_2643.jpg', loaded: false },
+        { id: 7, src: '/photos/JAN_2704.jpg', loaded: false },
+        { id: 8, src: '/photos/JAN_2711.jpg', loaded: false },
+        { id: 9, src: '/photos/JAN_3144.jpg', loaded: false },
+        { id: 10, src: '/photos/JAN_3179.jpg', loaded: false },
+        { id: 11, src: '/photos/JAN_3375.jpg', loaded: false },
+        { id: 12, src: '/photos/JAN_3564.jpg', loaded: false },
+        { id: 13, src: '/photos/JAN_3593.jpg', loaded: false },
+    ]);
+
+    /** Updates load status to true */
+    const updateLoadStatus = (id: number) => {
+        const photoToUpdate = photos.find((photo) => photo.id === id);
+        if (photoToUpdate) {
+            photoToUpdate.loaded = true;
+        }
+
+        setPhotos([...photos]);
+    };
+
+    /** Tracks current theme */
+    const { theme } = useTheme();
 
     return (
         <Layout
@@ -33,8 +48,28 @@ export const Photos = (): JSX.Element => {
             </div>
 
             <div className={styles.photolist}>
-                {images.map((image) => (
-                    <Image src={image} width={3174} height={4763} alt="A great picture huh?" loading="lazy" />
+                {photos.map((photo) => (
+                    <div key={photo.id}>
+                        <div className={styles.loadingpane}>
+                            <Image
+                                className={styles.loadingimage}
+                                hidden={photo.loaded}
+                                src={theme === 'dark' ? '/loaders/oval-white.svg' : '/loaders/oval-black.svg'}
+                                width={100}
+                                height={100}
+                                alt="Loading..."
+                            ></Image>
+                        </div>
+
+                        <Image
+                            src={photo.src}
+                            width={3174}
+                            height={4763}
+                            alt="A great picture huh?"
+                            loading="lazy"
+                            onLoad={() => updateLoadStatus(photo.id)}
+                        />
+                    </div>
                 ))}
             </div>
         </Layout>

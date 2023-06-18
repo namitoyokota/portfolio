@@ -11,9 +11,6 @@ const Navigation = (): JSX.Element => {
     /** Tracks current theme */
     const { theme } = useTheme();
 
-    /** Indicates current state of theme */
-    const isDark = theme === 'dark';
-
     return (
         <>
             <Link legacyBehavior href="/">
@@ -23,7 +20,7 @@ const Navigation = (): JSX.Element => {
                         alt="namito"
                         height="500"
                         width="500"
-                        src={isDark ? '/logos/white.svg' : '/logos/black.svg'}
+                        src={theme === 'dark' ? '/logos/white.svg' : '/logos/black.svg'}
                     />
                 </a>
             </Link>

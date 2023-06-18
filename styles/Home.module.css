@@ -430,3 +430,14 @@
 .copyright {
     color: grey;
 }
+
+.loadingpane {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loadingimage {
+    height: 442px;
+    width: 50px;
+}
