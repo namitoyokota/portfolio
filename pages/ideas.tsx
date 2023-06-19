@@ -22,11 +22,11 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
                 <p className={styles.description}>Notes of my random thoughts</p>
             </div>
 
-            {[...new Set(posts.map((post) => parseISO(post.date!).getFullYear()))].map((year) => (
+            {[...new Set(posts.filter((post) => !post.draft).map((post) => parseISO(post.date!).getFullYear()))].map((year) => (
                 <div key={year}>
                     <h5>{year}</h5>
                     {posts
-                        .filter((post) => parseISO(post.date!).getFullYear() === year)
+                        .filter((post) => !post.draft && parseISO(post.date!).getFullYear() === year)
                         .map((idea) => (
                             <Link legacyBehavior as={`/posts/${idea.slug}`} href={`/posts/[slug]`} key={idea.slug}>
                                 <div className={styles.blog}>
@@ -47,7 +47,7 @@ export const Ideas = ({ posts }: IdeasProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticProps = async () => {
-    const posts = getAllPosts(['date', 'subtitle', 'slug', 'title', 'type', 'hot']);
+    const posts = getAllPosts(['date', 'subtitle', 'slug', 'title', 'type', 'hot', 'draft']);
 
     return {
         props: { posts },

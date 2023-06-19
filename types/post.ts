@@ -5,4 +5,5 @@ export type PostType = {
     slug: string;
     title: string;
     hot: boolean;
+    draft: boolean;
 };
