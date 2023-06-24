@@ -35,7 +35,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                     {posts
                         .filter((post) => parseISO(post.dateAdded!).getFullYear() === year)
                         .map((blog) => (
-                            <Link legacyBehavior key={blog._id} href={`https://blog.namito.wiki/${blog.slug}`}>
+                            <Link legacyBehavior key={blog._id} href={`https://blogs.namito.wiki/${blog.slug}`}>
                                 <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                     <div className={styles.blogheader}>
                                         <p className={styles.blogtitle}>{blog.title}</p>
