@@ -158,9 +158,13 @@ export const Index = (): JSX.Element => {
                 </div>
             </div>
 
-            <h1>Contributions</h1>
-            <p>GitHub Repos: {repoCount.toLocaleString()}</p>
-            <p>GitHub Stars: {starCount.toLocaleString()}</p>
+            {/** Certifications */}
+
+            {/** Courses */}
+
+            {/* <h1>Contributions</h1> */}
+            {/* <p>GitHub Repos: {repoCount.toLocaleString()}</p> */}
+            {/* <p>GitHub Stars: {starCount.toLocaleString()}</p> */}
         </Layout>
     );
 };
