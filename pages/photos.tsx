@@ -7,20 +7,24 @@ import styles from '../styles/Home.module.css';
 export const Photos = (): JSX.Element => {
     /** List of images to display in gallery */
     const [photos, setPhotos] = useState([
-        { id: 0, src: '/photos/JAN_2110.jpg', loaded: false },
-        { id: 1, src: '/photos/JAN_2113.jpg', loaded: false },
-        { id: 2, src: '/photos/JAN_2146.jpg', loaded: false },
-        { id: 3, src: '/photos/JAN_2214.jpg', loaded: false },
-        { id: 4, src: '/photos/JAN_2574.jpg', loaded: false },
-        { id: 5, src: '/photos/JAN_2582.jpg', loaded: false },
-        { id: 6, src: '/photos/JAN_2643.jpg', loaded: false },
-        { id: 7, src: '/photos/JAN_2704.jpg', loaded: false },
-        { id: 8, src: '/photos/JAN_2711.jpg', loaded: false },
+        { id: 1, src: '/photos/JAN_6166.jpg', loaded: false },
+        { id: 2, src: '/photos/JAN_5989.jpg', loaded: false },
+        { id: 3, src: '/photos/JAN_5978.jpg', loaded: false },
+        { id: 4, src: '/photos/JAN_5869.jpg', loaded: false },
+        { id: 5, src: '/photos/JAN_5633.jpg', loaded: false },
+        { id: 6, src: '/photos/JAN_5066.jpg', loaded: false },
+        { id: 7, src: '/photos/JAN_4137.jpg', loaded: false },
+        { id: 8, src: '/photos/JAN_3375.jpg', loaded: false },
         { id: 9, src: '/photos/JAN_3144.jpg', loaded: false },
-        { id: 10, src: '/photos/JAN_3179.jpg', loaded: false },
-        { id: 11, src: '/photos/JAN_3375.jpg', loaded: false },
-        { id: 12, src: '/photos/JAN_3564.jpg', loaded: false },
-        { id: 13, src: '/photos/JAN_3593.jpg', loaded: false },
+        { id: 10, src: '/photos/JAN_2711.jpg', loaded: false },
+        { id: 11, src: '/photos/JAN_2704.jpg', loaded: false },
+        { id: 12, src: '/photos/JAN_2643.jpg', loaded: false },
+        { id: 13, src: '/photos/JAN_2574.jpg', loaded: false },
+        { id: 14, src: '/photos/JAN_2214.jpg', loaded: false },
+        // { id: 1, src: '/photos/JAN_2211.jpg', loaded: false },
+        { id: 15, src: '/photos/JAN_2113.jpg', loaded: false },
+        // { id: 1, src: '/photos/JAN_1807.jpg', loaded: false },
+        // { id: 1, src: '/photos/JAN_0902.jpg', loaded: false },
     ]);
 
     /** Updates load status to true */
