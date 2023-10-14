@@ -37,17 +37,17 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link> */}
 
-            {/* <Link legacyBehavior href="/ideas">
+            <Link legacyBehavior href="/ideas">
                 <a className={router.asPath == '/ideas' ? styles.activepage : styles.page}>
                     <span>Ideas</span>
                 </a>
-            </Link> */}
+            </Link>
 
-            <Link legacyBehavior href="/photos">
+            {/* <Link legacyBehavior href="/photos">
                 <a className={router.asPath == '/photos' ? styles.activepage : styles.page}>
                     <span>Photos</span>
                 </a>
-            </Link>
+            </Link> */}
         </>
     );
 };
