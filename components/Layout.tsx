@@ -4,7 +4,7 @@ import Head from './Head';
 import Navigation from './Navigation';
 import ThemeSwitch from './ThemeSwitch';
 
-export const WEBSITE_HOST_URL = 'https://namito.wiki';
+export const WEBSITE_HOST_URL = 'https://namitoyokota.com';
 
 const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
     return (

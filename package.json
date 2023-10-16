@@ -1,5 +1,5 @@
 {
-    "name": "namito.xyz",
+    "name": "portfolio",
     "private": false,
     "scripts": {
         "dev": "next dev",

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import { MetaProps } from '../types/layout';
 import Analytics from './Analytics';
 
-export const WEBSITE_HOST_URL = 'https://namito.xyz';
+export const WEBSITE_HOST_URL = 'https://namitoyokota.com';
 
 const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
     const router = useRouter();
