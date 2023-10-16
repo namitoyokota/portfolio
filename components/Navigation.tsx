@@ -43,11 +43,11 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link>
 
-            {/* <Link legacyBehavior href="/photos">
-                <a className={router.asPath == '/photos' ? styles.activepage : styles.page}>
+            <Link legacyBehavior href="https://photos.namitoyokota.com" passHref>
+                <a className={styles.page} target="_blank" rel="noopener noreferrer">
                     <span>Photos</span>
                 </a>
-            </Link> */}
+            </Link>
         </>
     );
 };
