@@ -20,7 +20,11 @@ const Navigation = (): JSX.Element => {
                         alt="namito"
                         height="500"
                         width="500"
-                        src={theme === 'dark' ? '/logos/white.svg' : '/logos/black.svg'}
+                        src={
+                            theme === 'dark'
+                                ? 'https://api.namitoyokota.com/assets/logos/white.svg'
+                                : 'https://api.namitoyokota.com/assets/logos/black.svg'
+                        }
                     />
                 </a>
             </Link>
