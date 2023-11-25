@@ -1,16 +1,16 @@
-import { ApolloClient, gql, InMemoryCache } from '@apollo/client';
+import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
 
 interface Post {
-    _id: string;
-    slug: string;
+    id: string;
+    url: string;
     title: string;
-    dateAdded: string;
-    brief: string;
-    totalReactions: number;
+    publishedAt: string;
+    subtitle: string;
+    reactionCount: number;
 }
 
 type BlogsProps = {
@@ -29,21 +29,21 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                 <p className={styles.description}>Sharing my coding knowledge</p>
             </div>
 
-            {[...new Set(posts.map((post) => parseISO(post.dateAdded!).getFullYear()))].map((year) => (
+            {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
                 <div key={year}>
                     <h5>{year}</h5>
                     {posts
-                        .filter((post) => parseISO(post.dateAdded!).getFullYear() === year)
+                        .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
                         .map((blog) => (
-                            <Link legacyBehavior key={blog._id} href={`https://blogs.namito.wiki/${blog.slug}`}>
+                            <Link legacyBehavior key={blog.id} href={blog.url}>
                                 <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                     <div className={styles.blogheader}>
                                         <p className={styles.blogtitle}>{blog.title}</p>
                                         <span className={styles.blogdescription}>
-                                            {blog.brief} {blog.totalReactions ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                            {blog.subtitle} {blog.reactionCount ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
                                         </span>
                                     </div>
-                                    <p className={styles.date}>{format(parseISO(blog.dateAdded!), 'MMMM dd, yyyy')}</p>
+                                    <p className={styles.date}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
                                 </a>
                             </Link>
                         ))}
@@ -55,22 +55,24 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
 
 export async function getStaticProps() {
     const client = new ApolloClient({
-        uri: 'https://api.hashnode.com/',
+        uri: 'https://gql.hashnode.com/',
         cache: new InMemoryCache(),
     });
 
     const { data } = await client.query({
         query: gql`
-            query GetPosts {
-                user(username: "namito") {
-                    publication {
-                        posts(page: 0) {
-                            _id
-                            slug
-                            title
-                            dateAdded
-                            brief
-                            totalReactions
+            query Publication {
+                publication(host: "blogs.namitoyokota.com") {
+                    posts(first: 10) {
+                        edges {
+                            node {
+                                id
+                                url
+                                title
+                                subtitle
+                                publishedAt
+                                reactionCount
+                            }
                         }
                     }
                 }
@@ -80,7 +82,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            posts: data.user.publication.posts,
+            posts: (data.publication.posts.edges as any[]).map((edge) => edge.node),
         },
     };
 }
