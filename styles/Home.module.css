@@ -136,7 +136,7 @@
 
 .navpane {
     display: grid;
-    grid-template-columns: 45px repeat(2, min-content) auto 25px;
+    grid-template-columns: 45px min-content auto 25px;
     align-items: center;
     margin-bottom: 75px;
 }
