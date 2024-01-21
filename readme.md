@@ -1,4 +1,4 @@
-# [namito.wiki](https://www.namito.wiki)
+# [namitoyokota.com](https://www.namitoyokota.com)
 
 > Online portfolio to showcase things that take to much space for a resume
 
@@ -11,8 +11,3 @@
 
 -   https://brianlovin.com/
 -   https://leerob.io/
-
-## To dos
-
--   [ ] Add `art` page for my designs and sketches
--   [ ] Add list of my favorites books somewhere

@@ -1,5 +1,4 @@
 import Image from 'next/legacy/image';
-import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Layout from '../components/Layout';
 import styles from '../styles/Home.module.css';
@@ -50,31 +49,6 @@ export const Index = (): JSX.Element => {
                     src="/images/profile-1.png"
                     objectFit="contain"
                 />
-            </div>
-
-            <h1>Projects</h1>
-            <div className={styles.projectlist}>
-                <Link
-                    className={styles.projectitem}
-                    href="https://www.npmjs.com/package/@namitoyokota/ng-components"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                >
-                    <div className={styles.projectname}>ng-components</div>
-                    <span className={styles.projectdescription}>Angular component library in black and white</span>
-                </Link>
-
-                <Link className={styles.projectitem} href="https://steeeve.vercel.app/" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.projectname}>Steeeve</div>
-                    <span className={styles.projectdescription}>For your uncle that says, "I had the idea for Uber first."</span>
-                </Link>
-
-                <Link className={styles.projectitem} href="https://www.keepintouch.cc" rel="noopener noreferrer" target="_blank">
-                    <div className={styles.projectname}>Keep In Touch</div>
-                    <span className={styles.projectdescription}>
-                        Website for keeping track of when you last caught up with your friends
-                    </span>
-                </Link>
             </div>
 
             <h1>Work</h1>

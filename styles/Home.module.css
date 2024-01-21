@@ -136,7 +136,7 @@
 
 .navpane {
     display: grid;
-    grid-template-columns: 45px min-content auto 25px;
+    grid-template-columns: 45px repeat(2, min-content) auto 25px;
     align-items: center;
     margin-bottom: 75px;
 }
@@ -360,7 +360,7 @@
     }
 }
 
-.toolcard {
+.projectcard {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
@@ -371,17 +371,17 @@
     transition: 0.1s ease-in-out;
 }
 
-.toolcard:hover {
+.projectcard:hover {
     cursor: pointer;
     border-color: #2ec4b6;
     transform: scale(0.98);
 }
 
-.toolcard h3 {
+.projectcard h3 {
     margin: 0;
 }
 
-.toolheader {
+.projectheader {
     display: flex;
     column-gap: 10px;
     justify-content: space-between;

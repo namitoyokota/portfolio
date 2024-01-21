@@ -35,11 +35,11 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link>
 
-            {/* <Link legacyBehavior href="/tools">
-                <a className={router.asPath == '/tools' ? styles.activepage : styles.page}>
-                    <span>Tools</span>
+            <Link legacyBehavior href="/projects">
+                <a className={router.asPath == '/projects' ? styles.activepage : styles.page}>
+                    <span>Projects</span>
                 </a>
-            </Link> */}
+            </Link>
 
             {/* <Link legacyBehavior href="/ideas">
                 <a className={router.asPath == '/ideas' ? styles.activepage : styles.page}>
