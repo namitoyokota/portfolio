@@ -38,7 +38,7 @@ export const Index = (): JSX.Element => {
             <div className={styles.aboutpane}>
                 <div>
                     <h1 className={styles.title}>Namito Yokota</h1>
-                    <p>Almost Senior Frontend Developer</p>
+                    <p>Senior Frontend Developer</p>
                     <p className={styles.description}>I write clean code with a smile :)</p>
                 </div>
                 <Image
