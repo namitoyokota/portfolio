@@ -15,7 +15,7 @@ const ThemeSwitch = (): JSX.Element => {
             alt="theme"
             height="25"
             width="25"
-            src={isDark ? '/icons/dark.svg' : '/icons/light.svg'}
+            src={isDark ? 'https://api.namitoyokota.com/assets/icons/dark.svg' : 'https://api.namitoyokota.com/assets/icons/light.svg'}
             onClick={() => {
                 setTheme(theme === 'dark' ? 'light' : 'dark');
             }}
