@@ -16,7 +16,7 @@ export const Projects = (): JSX.Element => {
             title: 'ngx-monochrome',
             subtitle: 'Angular component library for my own side projects.',
             iconPath: '/icons/library.svg',
-            url: 'https://resume.namitoyokota.com',
+            url: 'https://www.npmjs.com/package/ngx-monochrome',
         } as Project,
         {
             title: 'Steeeve',
