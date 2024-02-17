@@ -275,27 +275,6 @@
     font-size: 0.8em;
 }
 
-.skilllist {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-}
-
-.skillitem {
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-}
-
-.skillname {
-    white-space: nowrap;
-}
-
-.skilldescription {
-    color: grey;
-    font-size: 0.8em;
-}
-
 .blog {
     display: grid;
     grid-template-columns: auto min-content;

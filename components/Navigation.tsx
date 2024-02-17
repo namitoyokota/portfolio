@@ -41,12 +41,6 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link>
 
-            {/* <Link legacyBehavior href="/ideas">
-                <a className={router.asPath == '/ideas' ? styles.activepage : styles.page}>
-                    <span>Ideas</span>
-                </a>
-            </Link> */}
-
             <Link legacyBehavior href="https://photos.namitoyokota.com" passHref>
                 <a className={styles.page} target="_blank" rel="noopener noreferrer">
                     <span>Photos</span>
