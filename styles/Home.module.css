@@ -119,13 +119,13 @@
 }
 
 .activepage {
-    font-weight: 800;
+    font-weight: 600;
     margin-right: 20px;
 }
 
 .page {
     color: grey;
-    font-weight: 800;
+    font-weight: 600;
     margin-right: 20px;
     transition: 0.1s ease-in-out;
 }
