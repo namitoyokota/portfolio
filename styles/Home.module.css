@@ -115,6 +115,12 @@
 }
 
 .content {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
+    justify-content: center;
     margin: 20px;
 }
 
@@ -135,9 +141,12 @@
 }
 
 .navpane {
+    width: 100%;
     display: grid;
     grid-template-columns: 45px repeat(2, min-content) auto 25px;
     align-items: center;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+    padding: 10px;
     margin-bottom: 75px;
 }
 
@@ -371,9 +380,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    row-gap: 10px;
     margin: 30px 0 50px;
     padding-top: 30px;
+    border-top: 1px solid rgba(230, 230, 230, 0.2);
 }
 
 .sociallinks {
