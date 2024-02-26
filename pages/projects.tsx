@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image';
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/projects.module.css';
 
 interface Project {
     title: string;
