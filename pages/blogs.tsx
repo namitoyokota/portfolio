@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/blogs.module.css';
 
 interface Post {
     id: string;

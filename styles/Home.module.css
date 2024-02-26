@@ -129,13 +129,6 @@
     align-items: center;
 }
 
-.date {
-    font-size: 0.8rem;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
 .projectlist {
     display: flex;
     flex-direction: column;
@@ -158,42 +151,6 @@
 .projectdescription {
     color: grey;
     font-size: 0.8em;
-}
-
-.blog {
-    display: grid;
-    grid-template-columns: auto min-content;
-    align-items: center;
-    column-gap: 10px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
-    transition: 0.15s ease-in-out;
-}
-
-.blog:hover {
-    cursor: pointer;
-    padding-left: 10px;
-    color: #2ec4b6;
-}
-
-.blogheader {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-}
-
-.blogtitle {
-    line-height: 1.2em;
-    margin: 5px 0;
-}
-
-.blogdescription {
-    color: grey;
-    font-size: 0.8em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .photolist {
