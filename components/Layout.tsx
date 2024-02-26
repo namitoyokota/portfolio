@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css';
+import styles from '../styles/layout.module.css';
 import { LayoutProps } from '../types/layout-props';
 import Head from './Head';
 import Navigation from './Navigation';
@@ -24,10 +24,6 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             <footer>
                 <div className={styles.footerpane}>
                     <div className={styles.sociallinks}>
-                        <a className={styles.sociallink} href="https://twitter.com/namitoyokota" target="_blank" rel="noreferrer">
-                            Twitter
-                        </a>
-
                         <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
                             GitHub
                         </a>
@@ -37,7 +33,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                         </a>
                     </div>
 
-                    <p className={styles.copyright}>© 2023 Namito Yokota</p>
+                    <p className={styles.copyright}>© 2024 Namito Yokota</p>
                 </div>
             </footer>
         </div>

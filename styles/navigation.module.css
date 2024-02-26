@@ -1,0 +1,12 @@
+.activepage {
+    color: #2ec4b6;
+}
+
+.page {
+    color: grey;
+    transition: 0.1s ease-in-out;
+}
+
+.page:hover {
+    color: #2ec4b6;
+}

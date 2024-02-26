@@ -1,49 +1,34 @@
-import { useTheme } from 'next-themes';
-import Image from 'next/legacy/image';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/navigation.module.css';
 
 const Navigation = (): JSX.Element => {
     /** Router used to navigate through pages */
     const router = useRouter();
 
-    /** Tracks current theme */
-    const { theme } = useTheme();
-
     return (
         <>
             <Link legacyBehavior href="/">
                 <a className={router.asPath == '/' ? styles.activepage : styles.page}>
-                    <Image
-                        className={styles.logo}
-                        alt="namito"
-                        height="500"
-                        width="500"
-                        src={
-                            theme === 'dark'
-                                ? 'https://api.namitoyokota.com/assets/logos/white.svg'
-                                : 'https://api.namitoyokota.com/assets/logos/black.svg'
-                        }
-                    />
+                    <span>home</span>
                 </a>
             </Link>
 
             <Link legacyBehavior href="/blogs">
                 <a className={router.asPath == '/blogs' ? styles.activepage : styles.page}>
-                    <span>Blogs</span>
+                    <span>blogs</span>
                 </a>
             </Link>
 
             <Link legacyBehavior href="/projects">
                 <a className={router.asPath == '/projects' ? styles.activepage : styles.page}>
-                    <span>Projects</span>
+                    <span>projects</span>
                 </a>
             </Link>
 
             <Link legacyBehavior href="https://photos.namitoyokota.com" passHref>
                 <a className={styles.page} target="_blank" rel="noopener noreferrer">
-                    <span>Photos</span>
+                    <span>photos</span>
                 </a>
             </Link>
         </>
