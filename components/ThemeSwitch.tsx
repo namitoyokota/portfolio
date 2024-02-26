@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/legacy/image';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/theme.module.css';
 
 const ThemeSwitch = (): JSX.Element => {
     /** Sets dark mode or light mode theme */

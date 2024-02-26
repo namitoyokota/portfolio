@@ -114,10 +114,6 @@
     }
 }
 
-.themeicon:hover {
-    cursor: pointer;
-}
-
 .aboutpane {
     display: grid;
     grid-template-columns: 100%;
