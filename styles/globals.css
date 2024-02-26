@@ -12,7 +12,7 @@ body {
 }
 
 main {
-    max-width: 650px;
+    max-width: 850px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -27,52 +27,6 @@ a {
 }
 
 * {
-    box-sizing: border-box;
-}
-
-button {
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-}
-
-h1 {
-    font-size: 2em;
-    margin-top: 50px;
-}
-
-h2 {
-    margin-top: 40px;
-}
-
-h3 {
-    margin-top: 30px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-li {
-    margin-bottom: 10px;
-}
-
-ul {
-    margin-top: 15px;
-}
-
-blockquote {
-    color: grey;
     margin: 0;
-}
-
-h5 {
-    color: #ff9f1c;
-}
-
-img {
-    height: auto;
-    width: 100%;
+    box-sizing: border-box;
 }
