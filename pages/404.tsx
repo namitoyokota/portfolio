@@ -1,5 +1,5 @@
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/404.module.css';
 
 export const NotFound = (): JSX.Element => {
     return (
