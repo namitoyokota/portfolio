@@ -1,6 +1,6 @@
 import Image from 'next/legacy/image';
 import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/index.module.css';
 
 export const Index = (): JSX.Element => {
     return (
