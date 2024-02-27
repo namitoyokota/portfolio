@@ -1,0 +1,27 @@
+.footerpane {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid rgba(230, 230, 230, 0.2);
+    padding: 20px;
+}
+
+.sociallinks {
+    display: flex;
+    column-gap: 10px;
+}
+
+.sociallink {
+    transition: 0.1s ease-in-out;
+}
+
+.sociallink:hover {
+    color: #2ec4b6;
+    cursor: pointer;
+}
+
+.copyright {
+    color: grey;
+}

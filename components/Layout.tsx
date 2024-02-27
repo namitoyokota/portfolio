@@ -1,5 +1,6 @@
 import styles from '../styles/layout.module.css';
 import { LayoutProps } from '../types/layout-props';
+import Footer from './Footer';
 import Head from './Head';
 import Navigation from './Navigation';
 import ThemeSwitch from './ThemeSwitch';
@@ -20,23 +21,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
             </header>
             <main>{children}</main>
             <footer>
-                <div className={styles.footerpane}>
-                    <div className={styles.sociallinks}>
-                        <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
-                            GitHub
-                        </a>
-
-                        <a className={styles.sociallink} href="https://www.linkedin.com/in/namito/" target="_blank" rel="noreferrer">
-                            LinkedIn
-                        </a>
-
-                        <a className={styles.sociallink} href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
-                            Photos
-                        </a>
-                    </div>
-
-                    <p className={styles.copyright}>© 2024 Namito Yokota</p>
-                </div>
+                <Footer />
             </footer>
         </div>
     );
