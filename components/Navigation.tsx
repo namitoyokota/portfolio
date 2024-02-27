@@ -9,19 +9,19 @@ const Navigation = (): JSX.Element => {
     return (
         <>
             <Link legacyBehavior href="/">
-                <a className={router.asPath == '/' ? styles.activepage : styles.page}>
+                <a className={router.asPath == '/' ? styles.active : styles.page}>
                     <span>home</span>
                 </a>
             </Link>
 
             <Link legacyBehavior href="/blogs">
-                <a className={router.asPath == '/blogs' ? styles.activepage : styles.page}>
+                <a className={router.asPath == '/blogs' ? styles.active : styles.page}>
                     <span>blogs</span>
                 </a>
             </Link>
 
             <Link legacyBehavior href="/projects">
-                <a className={router.asPath == '/projects' ? styles.activepage : styles.page}>
+                <a className={router.asPath == '/projects' ? styles.active : styles.page}>
                     <span>projects</span>
                 </a>
             </Link>

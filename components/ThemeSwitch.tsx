@@ -11,10 +11,10 @@ const ThemeSwitch = (): JSX.Element => {
 
     return (
         <Image
-            className={styles.themeicon}
+            className={styles.icon}
             alt="theme"
-            height="25"
-            width="25"
+            height="20"
+            width="20"
             src={isDark ? 'https://api.namitoyokota.com/assets/logos/white.svg' : 'https://api.namitoyokota.com/assets/logos/black.svg'}
             onClick={() => {
                 setTheme(theme === 'dark' ? 'light' : 'dark');
