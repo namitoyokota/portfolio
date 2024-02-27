@@ -8,9 +8,11 @@ export const NotFound = (): JSX.Element => {
                 title: 'Not Found - Namito Yokota',
             }}
         >
-            <div className={styles.header}>
-                <h1 className={styles.title}>Got Lost?</h1>
-                <p className={styles.description}>This page doesn't not exist.</p>
+            <div className={styles.pane}>
+                <div className={styles.header}>
+                    <h1>got lost?</h1>
+                    <p className={styles.description}>you're not supposed to be here...</p>
+                </div>
             </div>
         </Layout>
     );
