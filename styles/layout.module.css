@@ -11,7 +11,7 @@
 .navpane {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, min-content) auto 25px;
+    grid-template-columns: repeat(3, min-content) auto 25px;
     column-gap: 20px;
     align-items: center;
     border-bottom: 1px solid rgba(230, 230, 230, 0.2);

@@ -61,6 +61,8 @@ export const Projects = (): JSX.Element => {
                     <h1>projects</h1>
                 </div>
 
+                <span>refactor this page to be text based.</span>
+
                 <div className={styles.board}>
                     {projects.map((project, index) => (
                         <a key={index} className={styles.card} href={project.url} target="_blank" rel="noreferrer">

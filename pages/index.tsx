@@ -10,7 +10,7 @@ export const Index = (): JSX.Element => {
                     <p>I'm a Senior Frontend Engineer II at Venminder.</p>
                 </div>
 
-                <div className={styles.content}>tbd...</div>
+                <span>this is my identity page. write about who i am, what i like to do, why i'm here, etc.</span>
             </div>
         </Layout>
     );
