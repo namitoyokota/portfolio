@@ -1,55 +1,15 @@
 .aboutpane {
-    display: grid;
-    grid-template-columns: 100%;
-    margin-bottom: 50px;
-}
-
-@media only screen and (min-width: 640px) {
-    .aboutpane {
-        grid-template-columns: repeat(2, auto);
-        column-gap: 20px;
-    }
-}
-
-.profileimg {
-    background: rgb(238, 174, 202);
-    background: radial-gradient(circle, rgba(238, 174, 202, 1) 30%, rgba(148, 187, 233, 1) 100%);
-    border-radius: 30px;
-}
-
-.worklist {
     display: flex;
     flex-direction: column;
-    row-gap: 12px;
+    row-gap: 30px;
 }
 
-.workitem {
-    display: grid;
-    grid-template-columns: min-content auto min-content;
-    align-items: center;
-    column-gap: 10px;
+.aboutheader {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.workitemcompany,
-.workitemposition {
-    white-space: nowrap;
-}
-
-.workitemcompany {
-    transition: 0.15s ease-in-out;
-}
-
-.workitemcompany:hover {
-    color: #2ec4b6;
-    padding-left: 5px;
-}
-
-.workitemposition {
+.aboutcontent {
     color: grey;
-}
-
-.divider {
-    width: 100%;
-    border: none;
-    border-top: 1px dashed grey;
 }
