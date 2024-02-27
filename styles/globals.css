@@ -12,9 +12,11 @@ body {
 }
 
 main {
+    width: 100%;
     max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+    padding: 0 50px;
 }
 
 ::selection {

@@ -18,9 +18,7 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                     </div>
                 </div>
             </header>
-            <main>
-                <div>{children}</div>
-            </main>
+            <main>{children}</main>
             <footer>
                 <div className={styles.footerpane}>
                     <div className={styles.sociallinks}>
