@@ -65,7 +65,7 @@ export const Projects = (): JSX.Element => {
                     {projects.map((project, index) => (
                         <a key={index} className={styles.projectcard} href={project.url} target="_blank" rel="noreferrer">
                             <div className={styles.projectheader}>
-                                <h3>{project.title}</h3>
+                                <p>{project.title}</p>
                                 <Image alt="github" height="15" width="15" src={project.iconPath} />
                             </div>
                             <span className={styles.projectdescription}>{project.subtitle}</span>

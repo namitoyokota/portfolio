@@ -40,9 +40,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                         <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                             <div className={styles.blogheader}>
                                                 <p className={styles.blogtitle}>{blog.title}</p>
-                                                <span className={styles.blogdescription}>
-                                                    {blog.subtitle} {blog.reactionCount ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
-                                                </span>
+                                                <span className={styles.blogdescription}>{blog.subtitle}</span>
                                             </div>
                                             <p className={styles.blogdate}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
                                         </a>

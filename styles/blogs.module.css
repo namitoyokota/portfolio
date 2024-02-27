@@ -10,6 +10,18 @@
     row-gap: 30px;
 }
 
+.blogsection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.bloglist {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
 .blogyear {
     color: #ff9f1c;
     border-bottom: 1px solid rgba(230, 230, 230, 0.2);
@@ -21,8 +33,6 @@
     grid-template-columns: auto min-content;
     align-items: center;
     column-gap: 10px;
-    padding-top: 5px;
-    padding-bottom: 10px;
     transition: 0.15s ease-in-out;
 }
 
