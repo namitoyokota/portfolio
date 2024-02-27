@@ -1,29 +1,25 @@
-.header {
-    margin: 50px 0;
+.blogspane {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.title a {
-    color: #0070f3;
-    text-decoration: none;
+.blogsheader {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.title a:hover,
-.title a:focus,
-.title a:active {
-    text-decoration: underline;
+.blogsection {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
 }
 
-.title {
-    margin: 0;
-    line-height: 1.15;
-    font-size: 3rem;
-}
-
-.description {
-    color: grey;
-    display: grid;
-    grid-template-columns: auto 15px;
-    column-gap: 5px;
+.blogyear {
+    color: #ff9f1c;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+    padding: 10px 0;
 }
 
 .blog {
@@ -33,7 +29,6 @@
     column-gap: 10px;
     padding-top: 5px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
     transition: 0.15s ease-in-out;
 }
 
@@ -62,7 +57,7 @@
     text-overflow: ellipsis;
 }
 
-.date {
+.blogdate {
     font-size: 0.8rem;
     text-overflow: ellipsis;
     overflow: hidden;

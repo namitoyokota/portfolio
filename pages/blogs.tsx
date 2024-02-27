@@ -24,31 +24,34 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                 title: 'Blogs - Namito Yokota',
             }}
         >
-            <div className={styles.header}>
-                <h1 className={styles.title}>Blogs</h1>
-                <p className={styles.description}>Sharing my coding knowledge</p>
-            </div>
-
-            {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
-                <div key={year}>
-                    <h5>{year}</h5>
-                    {posts
-                        .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
-                        .map((blog) => (
-                            <Link legacyBehavior key={blog.id} href={blog.url}>
-                                <a className={styles.blog} target="_blank" rel="noopener noreferrer">
-                                    <div className={styles.blogheader}>
-                                        <p className={styles.blogtitle}>{blog.title}</p>
-                                        <span className={styles.blogdescription}>
-                                            {blog.subtitle} {blog.reactionCount ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
-                                        </span>
-                                    </div>
-                                    <p className={styles.date}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
-                                </a>
-                            </Link>
-                        ))}
+            <div className={styles.blogspane}>
+                <div className={styles.blogsheader}>
+                    <h1>blogs</h1>
                 </div>
-            ))}
+
+                {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
+                    <div key={year} className={styles.blogsection}>
+                        <p className={styles.blogyear}>{year}</p>
+                        <div className={styles.bloglist}>
+                            {posts
+                                .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
+                                .map((blog) => (
+                                    <Link legacyBehavior key={blog.id} href={blog.url}>
+                                        <a className={styles.blog} target="_blank" rel="noopener noreferrer">
+                                            <div className={styles.blogheader}>
+                                                <p className={styles.blogtitle}>{blog.title}</p>
+                                                <span className={styles.blogdescription}>
+                                                    {blog.subtitle} {blog.reactionCount ? String.fromCodePoint(parseInt('1F525', 16)) : ''}
+                                                </span>
+                                            </div>
+                                            <p className={styles.blogdate}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
+                                        </a>
+                                    </Link>
+                                ))}
+                        </div>
+                    </div>
+                ))}
+            </div>
         </Layout>
     );
 };
