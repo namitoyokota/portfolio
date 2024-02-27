@@ -29,6 +29,10 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
                         <a className={styles.sociallink} href="https://www.linkedin.com/in/namito/" target="_blank" rel="noreferrer">
                             LinkedIn
                         </a>
+
+                        <a className={styles.sociallink} href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
+                            Photos
+                        </a>
                     </div>
 
                     <p className={styles.copyright}>© 2024 Namito Yokota</p>

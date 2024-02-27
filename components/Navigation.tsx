@@ -25,12 +25,6 @@ const Navigation = (): JSX.Element => {
                     <span>blogs</span>
                 </a>
             </Link>
-
-            <Link legacyBehavior href="https://photos.namitoyokota.com" passHref>
-                <a className={styles.page} target="_blank" rel="noopener noreferrer">
-                    <span>photos</span>
-                </a>
-            </Link>
         </>
     );
 };
