@@ -1,15 +1,15 @@
-.aboutpane {
+.pane {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.aboutheader {
+.header {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.aboutcontent {
+.content {
     color: grey;
 }

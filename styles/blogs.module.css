@@ -1,28 +1,28 @@
-.blogspane {
+.pane {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.blogsheader {
+.header {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.blogsection {
+.section {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
 
-.bloglist {
+.list {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
 
-.blogyear {
+.year {
     color: #ff9f1c;
     border-bottom: 1px solid rgba(230, 230, 230, 0.2);
     padding: 10px 0;
@@ -42,18 +42,18 @@
     color: #2ec4b6;
 }
 
-.blogheader {
+.info {
     display: flex;
     flex-direction: column;
     overflow: hidden;
 }
 
-.blogtitle {
+.title {
     line-height: 1.2em;
     margin: 5px 0;
 }
 
-.blogdescription {
+.description {
     color: grey;
     font-size: 0.8em;
     white-space: nowrap;
@@ -61,7 +61,7 @@
     text-overflow: ellipsis;
 }
 
-.blogdate {
+.date {
     font-size: 0.8rem;
     text-overflow: ellipsis;
     overflow: hidden;
