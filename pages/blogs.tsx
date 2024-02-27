@@ -40,7 +40,9 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                         <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                             <div className={styles.info}>
                                                 <p className={styles.title}>{blog.title}</p>
-                                                <span className={styles.description}>{blog.subtitle}</span>
+                                                <span className={styles.description} title={blog.subtitle}>
+                                                    {blog.subtitle}
+                                                </span>
                                             </div>
                                             <p className={styles.date}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
                                         </a>
