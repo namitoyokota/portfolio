@@ -1,24 +1,24 @@
+import Image from 'next/legacy/image';
 import styles from '../styles/footer.module.css';
 
 const Footer = (): JSX.Element => {
     return (
         <>
             <div className={styles.footerpane}>
-                <div className={styles.sociallinks}>
-                    <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
-                        GitHub
-                    </a>
+                <a className={styles.sociallink} href="https://github.com/namitoyokota" target="_blank" rel="noreferrer">
+                    <Image alt="github" height="12" width="12" src="/icons/link.svg" />
+                    <span>github</span>
+                </a>
 
-                    <a className={styles.sociallink} href="https://www.linkedin.com/in/namito/" target="_blank" rel="noreferrer">
-                        LinkedIn
-                    </a>
+                <a className={styles.sociallink} href="https://www.linkedin.com/in/namito/" target="_blank" rel="noreferrer">
+                    <Image alt="github" height="12" width="12" src="/icons/link.svg" />
+                    <span>linkedin</span>
+                </a>
 
-                    <a className={styles.sociallink} href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
-                        Photos
-                    </a>
-                </div>
-
-                <p className={styles.copyright}>© 2024 Namito Yokota</p>
+                <a className={styles.sociallink} href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
+                    <Image alt="github" height="12" width="12" src="/icons/link.svg" />
+                    <span>photos</span>
+                </a>
             </div>
         </>
     );
