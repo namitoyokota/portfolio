@@ -56,21 +56,22 @@ export const Projects = (): JSX.Element => {
                 title: 'Projects - Namito Yokota',
             }}
         >
-            <div className={styles.header}>
-                <h1 className={styles.title}>Projects</h1>
-                <p className={styles.description}>My babies</p>
-            </div>
+            <div className={styles.projectspane}>
+                <div className={styles.projectsheader}>
+                    <h1>projects</h1>
+                </div>
 
-            <div className={styles.board}>
-                {projects.map((project, index) => (
-                    <a key={index} className={styles.projectcard} href={project.url} target="_blank" rel="noreferrer">
-                        <div className={styles.projectheader}>
-                            <h3>{project.title}</h3>
-                            <Image alt="github" height="15" width="15" src={project.iconPath} />
-                        </div>
-                        <span className={styles.description}>{project.subtitle}</span>
-                    </a>
-                ))}
+                <div className={styles.board}>
+                    {projects.map((project, index) => (
+                        <a key={index} className={styles.projectcard} href={project.url} target="_blank" rel="noreferrer">
+                            <div className={styles.projectheader}>
+                                <h3>{project.title}</h3>
+                                <Image alt="github" height="15" width="15" src={project.iconPath} />
+                            </div>
+                            <span className={styles.projectdescription}>{project.subtitle}</span>
+                        </a>
+                    ))}
+                </div>
             </div>
         </Layout>
     );
