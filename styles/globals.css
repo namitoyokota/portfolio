@@ -28,6 +28,12 @@ a {
     text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
 span {
     display: flex;
     column-gap: 5px;
@@ -35,10 +41,7 @@ span {
 }
 
 p {
-    display: flex;
-    column-gap: 5px;
     color: grey;
-    line-height: 2rem;
 }
 
 * {
