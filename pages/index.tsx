@@ -38,6 +38,8 @@ export const Index = (): JSX.Element => {
 
                 {/* action step */}
                 <span>i'm open to senior frontend developer position at a passionate and team-oriented organization!</span>
+
+                {/* TODO: Coding languages I'm comfortable with */}
             </div>
         </Layout>
     );
