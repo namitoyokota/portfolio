@@ -16,6 +16,8 @@ export const Works = (): JSX.Element => {
 
                 <p>do the same for hexagon.</p>
 
+                <p>mark notable milestones and stories that i completed here.</p>
+
                 <p>maybe write about courses and education here too.</p>
 
                 <p>other images, dividers, links, and other graphics to make this page more entertaining and pleasing to the eye.</p>

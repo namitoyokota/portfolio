@@ -10,43 +10,20 @@
     row-gap: 30px;
 }
 
-.board {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
-    row-gap: 20px;
-}
-
-@media (max-width: 600px) {
-    .board {
-        width: 100%;
-        grid-template-columns: 100%;
-    }
-}
-
-.card {
+.project {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
-    justify-content: space-between;
-    border: 1px solid rgba(230, 230, 230, 0.2);
-    border-radius: 5px;
-    padding: 15px 20px;
-    transition: 0.1s ease-in-out;
+    row-gap: 5px;
 }
 
-.card:hover {
-    cursor: pointer;
-    border-color: #2ec4b6;
-    transform: scale(0.98);
+.name {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
 }
 
-.info {
+.cards {
     display: flex;
     column-gap: 10px;
-    justify-content: space-between;
-}
-
-.description {
-    color: grey;
 }

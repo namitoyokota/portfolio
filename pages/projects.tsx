@@ -2,51 +2,60 @@ import Image from 'next/legacy/image';
 import Layout from '../components/Layout';
 import styles from '../styles/projects.module.css';
 
+// TODO: Move this out to a file and add jsdoc
 interface Project {
     title: string;
-    subtitle: string;
+    description: string;
     iconPath: string;
     url: string;
+    cards: string[];
 }
 
 export const Projects = (): JSX.Element => {
     /** List of projects to display in HTML */
+    // TODO: This projects list need to be shortened
     const projects = [
         {
             title: 'ngx-monochrome',
-            subtitle: 'Angular component library for my own side projects.',
+            description: 'Angular component library for my own side projects.',
             iconPath: '/icons/library.svg',
             url: 'https://www.npmjs.com/package/ngx-monochrome',
+            cards: ['angular', 'npm'],
         } as Project,
         {
             title: 'Steeeve',
-            subtitle: 'Share your next side project ideas.',
+            description: 'Share your next side project ideas.',
             iconPath: '/icons/ideas.svg',
             url: 'https://ideas.namitoyokota.com',
+            cards: ['angular', 'npm'],
         } as Project,
         {
             title: 'Todo Today',
-            subtitle: 'To do app that resets every midnight.',
+            description: 'I was a victim of the endless to do tasks. I created this so that you can focus on what you can do today.',
             iconPath: '/icons/tasks.svg',
             url: 'https://todo.namitoyokota.com',
+            cards: ['angular', 'npm'],
         } as Project,
         {
             title: 'Keep In Touch',
-            subtitle: 'Keep track of when you last caught up with your friends.',
+            description: 'Keep track of when you last caught up with your friends.',
             iconPath: '/icons/friends.svg',
             url: 'https://friends.namitoyokota.com',
+            cards: ['angular', 'npm'],
         } as Project,
         {
             title: 'Nico',
-            subtitle: 'Universal search engine for my second brain.',
+            description: 'Universal search engine for my second brain.',
             iconPath: '/icons/search.svg',
             url: 'https://search.namitoyokota.com',
+            cards: ['angular', 'npm'],
         } as Project,
         {
             title: 'Jeep',
-            subtitle: 'Decides whether you should take your doors off.',
+            description: 'Decides whether you should take your doors off.',
             iconPath: '/icons/jeep.svg',
             url: 'https://weather.namitoyokota.com',
+            cards: ['angular', 'npm'],
         } as Project,
     ];
 
@@ -61,19 +70,26 @@ export const Projects = (): JSX.Element => {
                     <h1>projects</h1>
                 </div>
 
-                <span>refactor this page to be text based.</span>
+                <span>why do i work on projects? what are my philosophies?</span>
 
-                <div className={styles.board}>
-                    {projects.map((project, index) => (
-                        <a key={index} className={styles.card} href={project.url} target="_blank" rel="noreferrer">
-                            <div className={styles.info}>
-                                <span>{project.title}</span>
-                                <Image alt="github" height="15" width="15" src={project.iconPath} />
-                            </div>
-                            <span className={styles.description}>{project.subtitle}</span>
-                        </a>
-                    ))}
-                </div>
+                {projects.map((project, index) => (
+                    <div className={styles.project} key={index}>
+                        <div className={styles.name}>
+                            <a href={project.url} title={project.url} target="_blank" rel="noreferrer">
+                                {project.title}
+                            </a>
+                            <Image alt="github" height="12" width="12" src="/icons/link.svg" />
+                        </div>
+                        <p className={styles.description} title={project.description}>
+                            {project.description}
+                        </p>
+                        <div className={styles.cards}>
+                            {project.cards.map((card, index) => (
+                                <small>{card}</small>
+                            ))}
+                        </div>
+                    </div>
+                ))}
             </div>
         </Layout>
     );
