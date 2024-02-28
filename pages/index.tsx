@@ -8,10 +8,12 @@ export const Index = (): JSX.Element => {
      * Adds rough notations to the page
      */
     useEffect(() => {
-        const frontendDeveloperText = annotate(document.querySelector('#frontend-developer') as HTMLElement, { type: 'underline' });
-        const venminderText = annotate(document.querySelector('#venminder') as HTMLElement, { type: 'box' });
+        const frontendDeveloperText = annotate(document.querySelector('#frontend-developer') as HTMLElement, {
+            type: 'underline',
+            color: '#2ec4b6',
+        });
 
-        annotationGroup([frontendDeveloperText, venminderText]).show();
+        annotationGroup([frontendDeveloperText]).show();
     }, []);
 
     return (
@@ -19,10 +21,10 @@ export const Index = (): JSX.Element => {
             <div className={styles.pane}>
                 <div className={styles.header}>
                     <h1>
-                        hey, i'm namito <span className="animate__animated animate__bounce">👋🏼</span>
+                        howdy, i'm namito <span className="animate__animated animate__bounce">👋🏼</span>
                     </h1>
                     <span>
-                        I'm a <span id="frontend-developer">Frontend Developer</span> at <span id="venminder">Venminder</span>.
+                        I'm a <span id="frontend-developer">Frontend Developer</span> who loves to write clean and pixel perfect code.
                     </span>
                 </div>
 
