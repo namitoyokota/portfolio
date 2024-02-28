@@ -28,6 +28,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    color: grey;
+    line-height: 2rem;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;

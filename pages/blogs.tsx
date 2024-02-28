@@ -39,7 +39,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                     <Link legacyBehavior key={blog.id} href={blog.url}>
                                         <a className={styles.blog} target="_blank" rel="noopener noreferrer">
                                             <div className={styles.info}>
-                                                <p className={styles.title}>{blog.title}</p>
+                                                <span className={styles.title}>{blog.title}</span>
                                                 <span className={styles.description} title={blog.subtitle}>
                                                     {blog.subtitle}
                                                 </span>

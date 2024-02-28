@@ -9,16 +9,16 @@ export const Works = (): JSX.Element => {
                     <h1>works</h1>
                 </div>
 
-                <span>
+                <p>
                     write about my experience currently at venminder. what i'm working on, years of experience technology used, etc. use a
                     card ui. you could even include contribution statistics and brad document links.
-                </span>
+                </p>
 
-                <span>do the same for hexagon.</span>
+                <p>do the same for hexagon.</p>
 
-                <span>maybe write about courses and education here too.</span>
+                <p>maybe write about courses and education here too.</p>
 
-                <span>other images, dividers, and other graphics to make this page more entertaining and pleasing to the eye.</span>
+                <p>other images, dividers, and other graphics to make this page more entertaining and pleasing to the eye.</p>
             </div>
         </Layout>
     );
