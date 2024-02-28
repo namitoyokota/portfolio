@@ -14,6 +14,7 @@ interface Project {
 export const Projects = (): JSX.Element => {
     /** List of projects to display in HTML */
     // TODO: This projects list need to be shortened
+    // TODO: Add photos to each section that are appropriate
     const projects = [
         {
             title: 'ngx-monochrome',
