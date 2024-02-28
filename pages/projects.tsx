@@ -91,6 +91,8 @@ export const Projects = (): JSX.Element => {
                         </div>
                     </div>
                 ))}
+
+                {/* TODO: Create a separate page for each project */}
             </div>
         </Layout>
     );
