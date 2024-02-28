@@ -14,6 +14,8 @@ export const Index = (): JSX.Element => {
         });
 
         annotationGroup([frontendDeveloperText]).show();
+
+        // TODO: Add a console log with a polite message!
     }, []);
 
     return (
