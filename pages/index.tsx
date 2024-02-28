@@ -40,6 +40,8 @@ export const Index = (): JSX.Element => {
                 <span>i'm open to senior frontend developer position at a passionate and team-oriented organization!</span>
 
                 {/* TODO: Coding languages I'm comfortable with */}
+
+                {/* TODO: Current methods of learning: newsletters, youtube videos, etc */}
             </div>
         </Layout>
     );
