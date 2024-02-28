@@ -28,7 +28,15 @@ a {
     text-decoration: none;
 }
 
+span {
+    display: flex;
+    column-gap: 5px;
+    line-height: 2rem;
+}
+
 p {
+    display: flex;
+    column-gap: 5px;
     color: grey;
     line-height: 2rem;
 }

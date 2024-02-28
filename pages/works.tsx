@@ -18,7 +18,7 @@ export const Works = (): JSX.Element => {
 
                 <p>maybe write about courses and education here too.</p>
 
-                <p>other images, dividers, and other graphics to make this page more entertaining and pleasing to the eye.</p>
+                <p>other images, dividers, links, and other graphics to make this page more entertaining and pleasing to the eye.</p>
             </div>
         </Layout>
     );
