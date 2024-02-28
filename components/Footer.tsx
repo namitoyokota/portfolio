@@ -19,6 +19,11 @@ const Footer = (): JSX.Element => {
                     <Image alt="github" height="12" width="12" src="/icons/link.svg" />
                     <span>photos</span>
                 </a>
+
+                <a className={styles.sociallink} href="mailto:namitoyokota@icloud.com">
+                    <Image alt="github" height="12" width="12" src="/icons/link.svg" />
+                    <span>email</span>
+                </a>
             </div>
         </>
     );
