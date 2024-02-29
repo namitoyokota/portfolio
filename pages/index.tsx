@@ -27,7 +27,8 @@ export const Index = (): JSX.Element => {
                         hey, i'm namito <span className="animate__animated animate__bounce">👋🏼</span>
                     </h1>
                     <span>
-                        i'm a <span id="frontend-developer">frontend developer</span> who loves to write clean and pixel perfect code.
+                        i'm a <span id="frontend-developer">frontend developer</span> and i write clean code for pixel perfect user
+                        interface.
                     </span>
                 </div>
 
