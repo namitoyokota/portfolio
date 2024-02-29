@@ -28,7 +28,7 @@ export const Index = (): JSX.Element => {
                     </h1>
                     <span>
                         i'm a <span id="frontend-developer">frontend developer</span> and i write clean code for pixel perfect user
-                        interface.
+                        interface!
                     </span>
                 </div>
 
