@@ -74,13 +74,13 @@ export const Projects = (): JSX.Element => {
                 <span>why do i work on projects? what are my philosophies?</span>
 
                 {projects.map((project, index) => (
-                    <div className={styles.project} key={index}>
-                        <div className={styles.name}>
+                    <section key={index}>
+                        <h4 className={styles.name}>
                             <a href={project.url} title={project.url} target="_blank" rel="noreferrer">
                                 {project.title}
                             </a>
                             <Image alt="github" height="12" width="12" src="/icons/link.svg" />
-                        </div>
+                        </h4>
                         <p className={styles.description} title={project.description}>
                             {project.description}
                         </p>
@@ -89,7 +89,7 @@ export const Projects = (): JSX.Element => {
                                 <small>{card}</small>
                             ))}
                         </div>
-                    </div>
+                    </section>
                 ))}
 
                 {/* TODO: Create a separate page for each project */}

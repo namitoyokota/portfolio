@@ -10,17 +10,10 @@
     row-gap: 30px;
 }
 
-.project {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
-}
-
 .name {
     display: flex;
     column-gap: 5px;
     align-items: center;
-    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
 }
 
 .cards {

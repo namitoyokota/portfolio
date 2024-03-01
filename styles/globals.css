@@ -19,13 +19,21 @@ main {
     padding: 0 20px;
 }
 
-::selection {
-    background: #ff9f1c;
+section {
+    display: flex;
+    flex-direction: column;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
+section h1,
+section h2,
+section h3,
+section h4,
+section h5 {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+}
+
+::selection {
+    background: #ff9f1c;
 }
 
 h1,
@@ -41,6 +49,11 @@ span {
 
 p {
     color: grey;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 * {

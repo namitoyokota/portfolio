@@ -33,11 +33,14 @@ export const Index = (): JSX.Element => {
                 </div>
 
                 {/* my story */}
-                <p>
-                    when i was in <u>9th grade</u>, a business class i wanted to sign up for was full. my counselor told me that i can
-                    either take "coding" or "piano" class. ever since i made the obvious choice, i've been in love with the{' '}
-                    <u>freedom and creativity</u> of coding!
-                </p>
+                <section>
+                    <h3>story</h3>
+                    <p>
+                        when i was in <u>9th grade</u>, a business class i wanted to sign up for was full. my counselor told me that i can
+                        either take "coding" or "piano" class. ever since i made the obvious choice, i've been in love with the{' '}
+                        <u>freedom and creativity</u> of coding!
+                    </p>
+                </section>
 
                 {/* action step */}
                 <span>i'm open to senior frontend developer position at a passionate and team-oriented organization!</span>
