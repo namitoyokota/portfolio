@@ -10,10 +10,20 @@
     row-gap: 30px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
 .name {
     display: flex;
     column-gap: 5px;
     align-items: center;
+}
+
+.thumbnail {
+    border-radius: 5px;
 }
 
 .cards {

@@ -5,7 +5,7 @@ import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
     return (
-        <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
+        <ThemeProvider enableSystem={false} defaultTheme="dark">
             <Component {...pageProps} />
             <Analytics />
         </ThemeProvider>
