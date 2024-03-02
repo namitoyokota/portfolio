@@ -1,6 +1,6 @@
 import NextHead from 'next/head';
 import { useRouter } from 'next/router';
-import { MetaProps } from '../types/layout';
+import { MetaProps } from '../models/types/meta-props';
 
 export const WEBSITE_HOST_URL = 'https://namitoyokota.com';
 

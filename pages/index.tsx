@@ -1,23 +1,9 @@
-import { useEffect } from 'react';
-import { annotate, annotationGroup } from 'rough-notation';
 import Layout from '../components/Layout';
+import Notation from '../components/Notaion';
+import { NotationConfigs } from '../models/constants/notation-config';
 import styles from '../styles/index.module.css';
 
 export const Index = (): JSX.Element => {
-    /**
-     * Adds rough notations to the page
-     */
-    useEffect(() => {
-        const frontendDeveloperText = annotate(document.querySelector('#frontend-developer') as HTMLElement, {
-            type: 'underline',
-            color: '#2ec4b6',
-        });
-
-        annotationGroup([frontendDeveloperText]).show();
-
-        // TODO: Add a console log with a polite message!
-    }, []);
-
     return (
         <Layout>
             <div className={styles.pane}>
@@ -27,14 +13,21 @@ export const Index = (): JSX.Element => {
                         hey, i'm namito <span className="animate__animated animate__bounce">👋🏼</span>
                     </h1>
                     <span>
-                        i'm a <span id="frontend-developer">frontend developer</span> and i write clean code for pixel perfect user
-                        interface!
+                        i write <Notation config={NotationConfigs.underline}>clean code</Notation> with a smile.
                     </span>
                 </div>
 
+                {/* about me */}
+                <section>
+                    <h3>about me</h3>
+                    <p>
+                        i am a <u>frontend developer</u>.
+                    </p>
+                </section>
+
                 {/* my story */}
                 <section>
-                    <h3>story</h3>
+                    <h3>my story</h3>
                     <p>
                         when i was in <u>9th grade</u>, a business class i wanted to sign up for was full. my counselor told me that i can
                         either take "coding" or "piano" class. ever since i made the obvious choice, i've been in love with the{' '}
@@ -43,7 +36,14 @@ export const Index = (): JSX.Element => {
                 </section>
 
                 {/* action step */}
-                <span>i'm open to senior frontend developer position at a passionate and team-oriented organization!</span>
+                <section>
+                    <h3>what's next?</h3>
+                    <p>
+                        i'm open to contributing as a senior frontend developer at a{' '}
+                        <Notation config={NotationConfigs.underline}>passionate</Notation> and{' '}
+                        <Notation config={NotationConfigs.underline}>team-oriented</Notation> organization!
+                    </p>
+                </section>
 
                 {/* TODO: Coding languages I'm comfortable with */}
 

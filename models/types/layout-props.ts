@@ -1,4 +1,4 @@
-import { MetaProps } from './layout';
+import { MetaProps } from './meta-props';
 
 export type LayoutProps = {
     children: React.ReactNode;

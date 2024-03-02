@@ -8,7 +8,7 @@
     justify-content: center;
 }
 
-.navpane {
+.navigation {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, min-content) auto 25px;
