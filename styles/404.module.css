@@ -11,5 +11,5 @@
 }
 
 .description {
-    color: grey;
+    color: var(--secondary);
 }

@@ -6,7 +6,7 @@
 }
 
 .sociallink {
-    color: grey;
+    color: var(--secondary);
     display: flex;
     column-gap: 8px;
     align-items: center;
@@ -14,6 +14,6 @@
 }
 
 .sociallink:hover {
-    color: #2ec4b6;
+    color: var(--primary);
     cursor: pointer;
 }

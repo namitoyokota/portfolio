@@ -1,12 +1,12 @@
 .active {
-    color: #2ec4b6;
+    color: var(--primary);
 }
 
 .page {
-    color: grey;
+    color: var(--secondary);
     transition: 0.1s ease-in-out;
 }
 
 .page:hover {
-    color: #2ec4b6;
+    color: var(--primary);
 }

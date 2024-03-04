@@ -11,5 +11,5 @@
 }
 
 .content {
-    color: grey;
+    color: var(--secondary);
 }

@@ -1,11 +1,15 @@
 :root {
-    --background: rgb(223, 223, 223);
+    --background: #fffcf2;
     --foreground: #101010;
+    --primary: #eb5e28;
+    --secondary: #403d39;
 }
 
 [data-theme='dark'] {
     --background: #101010;
-    --foreground: rgb(223, 223, 223);
+    --foreground: #fffcf2;
+    --primary: #eb5e28;
+    --secondary: #ccc5b9;
 }
 
 html,
@@ -45,7 +49,7 @@ section {
 
 hr {
     height: 1px;
-    background-color: grey;
+    background-color: var(--secondary);
     border: none;
 }
 
@@ -62,7 +66,7 @@ li {
 }
 
 li::marker {
-    color: grey;
+    color: var(--secondary);
 }
 
 h1,
@@ -77,7 +81,7 @@ span {
 }
 
 small {
-    color: grey;
+    color: var(--secondary);
 }
 
 a {
@@ -88,6 +92,7 @@ a {
 * {
     margin: 0;
     box-sizing: border-box;
+    transition: 0.025s ease-in-out;
 }
 
 ::selection {
