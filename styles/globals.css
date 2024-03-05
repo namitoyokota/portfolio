@@ -1,15 +1,17 @@
 :root {
     --background: #fffcf2;
-    --primary-background: #eb5e28;
-    --secondary-background: #f38181;
+    --primary-background: #f38181;
+    --secondary-background: #95e1d3;
+    --highlight-background: #fce38a;
     --primary-text: #101010;
     --secondary-text: #403d39;
 }
 
 [data-theme='dark'] {
     --background: #101010;
-    --primary-background: #eb5e28;
-    --secondary-background: #ccc5b9;
+    --primary-background: #f38181;
+    --secondary-background: #95e1d3;
+    --highlight-background: #fce38a;
     --primary-text: #fffcf2;
     --secondary-text: grey;
 }
@@ -98,5 +100,5 @@ a {
 }
 
 ::selection {
-    background: #ff9f1c;
+    background: var(--highlight-background);
 }
