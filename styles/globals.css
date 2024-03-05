@@ -1,15 +1,17 @@
 :root {
     --background: #fffcf2;
-    --foreground: #101010;
-    --primary: #eb5e28;
-    --secondary: #403d39;
+    --primary-background: #eb5e28;
+    --secondary-background: #f38181;
+    --primary-text: #101010;
+    --secondary-text: #403d39;
 }
 
 [data-theme='dark'] {
     --background: #101010;
-    --foreground: #fffcf2;
-    --primary: #eb5e28;
-    --secondary: #ccc5b9;
+    --primary-background: #eb5e28;
+    --secondary-background: #ccc5b9;
+    --primary-text: #fffcf2;
+    --secondary-text: grey;
 }
 
 html,
@@ -20,7 +22,7 @@ body {
 html {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
-    color: var(--foreground);
+    color: var(--primary-text);
     background-color: var(--background);
 }
 
@@ -49,7 +51,7 @@ section {
 
 hr {
     height: 1px;
-    background-color: var(--secondary);
+    background-color: var(--secondary-text);
     border: none;
 }
 
@@ -66,7 +68,7 @@ li {
 }
 
 li::marker {
-    color: var(--secondary);
+    color: var(--secondary-text);
 }
 
 h1,
@@ -81,7 +83,7 @@ span {
 }
 
 small {
-    color: var(--secondary);
+    color: var(--secondary-text);
 }
 
 a {
