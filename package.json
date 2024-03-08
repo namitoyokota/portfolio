@@ -20,6 +20,7 @@
         "mdx-prism": "^0.3.4",
         "next": "^13.3.0",
         "next-mdx-remote": "^4.0.0",
+        "next-reveal": "^1.0.6",
         "next-themes": "^0.1.1",
         "prettier": "^2.8.7",
         "react": "^18.2.0",
