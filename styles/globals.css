@@ -26,6 +26,7 @@ html {
         sans-serif;
     color: var(--primary-text);
     background-color: var(--background);
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 body {
@@ -96,7 +97,6 @@ a {
 * {
     margin: 0;
     box-sizing: border-box;
-    transition: 0.025s ease-in-out;
 }
 
 ::selection {
