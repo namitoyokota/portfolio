@@ -1,19 +1,32 @@
-# [namitoyokota.com](https://www.namitoyokota.com)
+![My portfolio website preview](./public/images/thumbnail.png)
 
-> Online portfolio to showcase things that take to much space for a resume
+# namitoyokota.com
 
-## Run Locally
+-   **Framework**: [Next.js](https://nextjs.org/)
+-   **Blogs**: [Hashnode](https://hashnode.com/)
+-   **Deployment**: [Vercel](https://vercel.com)
 
-1. `yarn install` or `npm install` if you like things slow
-2. `yarn dev` (you can also try `next dev --turbo` if you're feeling adventurous)
+## Codebase
+
+-   `components/*` - Reusable components used by pages
+-   `models/*` - Interfaces and constants each representing a piece of data
+-   `pages/*` - Individual pages on the site
+-   `public/*` - Static assets
+-   `styles/*` - Global styles and reusable classes
+
+## Running Locally
+
+```shell
+$ git clone https://github.com/namitoyokota/portfolio.git
+$ cd portfolio
+$ yarn install
+$ yarn dev
+```
 
 ## Inspirations
 
--   https://brianlovin.com/
--   https://leerob.io/
--   https://thesephist.com/
--   https://paco.me/
-
-## Resources
-
--   https://colorhunt.co/palette/f38181fce38aeaffd095e1d3
+-   [Brian Lovin](https://brianlovin.com/)
+-   [Lee Robinson](https://leerob.io/)
+-   [Linus Lee](https://thesephist.com/)
+-   [Paco Coursey](https://paco.me/)
+-   [Braydon Coyer](https://www.braydoncoyer.dev/)
