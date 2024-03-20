@@ -12,6 +12,7 @@
 -   https://brianlovin.com/
 -   https://leerob.io/
 -   https://thesephist.com/
+-   https://paco.me/
 
 ## Resources
 
