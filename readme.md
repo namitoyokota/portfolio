@@ -30,3 +30,4 @@ $ yarn dev
 -   [Linus Lee](https://thesephist.com/)
 -   [Paco Coursey](https://paco.me/)
 -   [Braydon Coyer](https://www.braydoncoyer.dev/)
+-   [Guillermo Rauch](https://rauchg.com/)
