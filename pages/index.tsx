@@ -10,107 +10,102 @@ export const Index = (): JSX.Element => {
                     <h1>
                         Hey, I'm Namito <span className="animate__animated animate__bounce">👋🏼</span>
                     </h1>
-
-                    <span>
-                        I currently work as a{' '}
-                        <a className="secondary" href="https://resume.namitoyokota.com/#experience" target="_blank" rel="noreferrer">
-                            Senior Software Engineer
-                        </a>{' '}
-                        at{' '}
-                        <a
-                            className="primary"
-                            href="https://www.linkedin.com/company/venminder/mycompany/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Venminder
-                        </a>
-                        , where I contribute to the leading unified platform for managing third-party risk programs.
-                    </span>
                 </div>
 
-                {/* Skills */}
-                <section>
-                    <h3>What are my expertise?</h3>
-                </section>
                 {/* Experience */}
                 <section>
-                    <h3>Do I have any experience?</h3>
-                    <span>
-                        At{' '}
-                        <a
-                            className="primary"
-                            href="https://www.linkedin.com/company/venminder/mycompany/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Venminder
-                        </a>
-                        , I have been leading the front-end development of a web application generating 60% of company revenue. Some of my
-                        favorite contributions at Venminder are:
-                    </span>
-                    <ul>
-                        <li>Creating a rich text editor in markdown format</li>
-                        <li>Setting up eslint and prettier for maintaining a clean codebase</li>
-                        <li>Contributing to and maintaining the internal component library</li>
-                    </ul>
-                    <span>
-                        Before{' '}
-                        <a
-                            className="primary"
-                            href="https://www.linkedin.com/company/venminder/mycompany/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            Venminder
-                        </a>
-                        , I spent 2 years developing a highly complex public safety web product at{' '}
-                        <a className="primary" href="https://www.linkedin.com/company/hexagon-sig/" target="_blank" rel="noreferrer">
-                            Hexagon
-                        </a>
-                        . Some of my favorite contributions at Hexagon are:
-                    </span>
+                    <h3>Experience?</h3>
 
                     <ul>
-                        <li>Deployed npm packages to share services between web and mobile codebase</li>
-                        <li>Allowed users to find an address of the location on the map using Azure Map Service API</li>
-                        <li>Built an end-to-end load test tool to analyze the product performance under stress</li>
+                        <li>
+                            <div className="sentence">
+                                <a
+                                    className="secondary"
+                                    href="https://resume.namitoyokota.com/venminder/job-description.html"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Senior Software Engineer
+                                </a>
+                                <span>@</span>
+                                <a className="primary" href="https://www.linkedin.com/company/venminder" target="_blank" rel="noreferrer">
+                                    Venminder
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="sentence">
+                                <a
+                                    className="secondary"
+                                    href="https://resume.namitoyokota.com/hexagon/job-description.html"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Software Analyst
+                                </a>
+                                <span>@</span>
+                                <a
+                                    className="primary"
+                                    href="https://www.linkedin.com/company/hexagon-sig/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Hexagon
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="sentence">
+                                <span>Software Intern</span>
+                                <span>@</span>
+                                <a className="primary" href="https://www.linkedin.com/company/trips4trade" target="_blank" rel="noreferrer">
+                                    Trips4Trade
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div className="sentence">
+                                <span>Software Intern</span>
+                                <span>@</span>
+                                <a className="primary" href="http://www.threedaysllc.com/" target="_blank" rel="noreferrer">
+                                    threeDays
+                                </a>
+                            </div>
+                        </li>
                     </ul>
-                    <span>
-                        Prior to Hexagon, I worked as an intern with 2 different companies:{' '}
-                        <a className="primary" href="http://www.threedaysllc.com/" target="_blank" rel="noreferrer">
-                            threeDays
-                        </a>{' '}
-                        and{' '}
-                        <a className="primary" href="https://www.linkedin.com/company/hexagon-sig/" target="_blank" rel="noreferrer">
-                            Trips4Trade
-                        </a>
-                        .
-                    </span>
                 </section>
+
                 {/* Education */}
                 <section>
-                    <h3>What about my education?</h3>
+                    <h3>Education?</h3>
+                    <ul>
+                        <li>
+                            <span className="sentence">
+                                <a
+                                    className="secondary"
+                                    href="https://resume.namitoyokota.com/degree/degree.html"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <span>Computer Science</span>
+                                </a>
+                                <span>from</span>
+                                <a
+                                    className="primary"
+                                    href="https://www.linkedin.com/school/university-of-alabama/"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    <span>The University of Alabama</span>
+                                </a>
+                            </span>
+                        </li>
+                    </ul>
+                </section>
 
-                    <span>
-                        I have an undergraduate degree in{' '}
-                        <a className="secondary" href="https://resume.namitoyokota.com/degree/degree.html" target="_blank" rel="noreferrer">
-                            <span>Computer Science</span>
-                        </a>{' '}
-                        with a Mathematics minor from{' '}
-                        <a
-                            className="primary"
-                            href="https://www.linkedin.com/school/university-of-alabama/"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <span>The University of Alabama</span>
-                        </a>{' '}
-                        🐘
-                    </span>
-
-                    <span>I have also earned certifications throughout my career:</span>
-
+                {/* Certifications */}
+                <section>
+                    <h3>Certifications?</h3>
                     <ul>
                         <li>
                             <span className="sentence">
@@ -162,15 +157,10 @@ export const Index = (): JSX.Element => {
                         </li>
                     </ul>
                 </section>
+
                 {/* Projects */}
                 <section>
-                    <h3>Any side projects?</h3>
-
-                    <span>
-                        Whenever I have free time outside of reading books and hanging out with friend, I like to create websites that I
-                        wish existed:
-                    </span>
-
+                    <h3>Side Projects?</h3>
                     <ul>
                         <li>
                             <a className="secondary" href="https://github.com/namitoyokota/ngx-monochrome" target="_blank" rel="noreferrer">
@@ -183,6 +173,12 @@ export const Index = (): JSX.Element => {
                                 <span>Steeeve</span>
                             </a>
                             : Social platform for sharing your next side project ideas
+                        </li>
+                        <li>
+                            <a className="secondary" href="https://todo.namitoyokota.com/" target="_blank" rel="noreferrer">
+                                <span>Todo Today</span>
+                            </a>
+                            : Todo application that resets every night
                         </li>
                     </ul>
                 </section>

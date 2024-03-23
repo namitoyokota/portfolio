@@ -27,12 +27,11 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
             <div className={styles.pane}>
                 <div className={styles.header}>
                     <h1>Blogs</h1>
-                    <span className={styles.subheader}>I like to write blogs as notes to my future self.</span>
                 </div>
 
                 {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
-                    <div key={year} className={styles.section}>
-                        <p className={styles.year}>{year}</p>
+                    <section key={year}>
+                        <h3>{year}</h3>
                         <div className={styles.list}>
                             {posts
                                 .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
@@ -50,7 +49,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                                     </Link>
                                 ))}
                         </div>
-                    </div>
+                    </section>
                 ))}
             </div>
         </Layout>

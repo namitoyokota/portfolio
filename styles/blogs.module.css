@@ -14,22 +14,10 @@
     color: var(--secondary-text);
 }
 
-.section {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-}
-
 .list {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-}
-
-.year {
-    color: var(--primary-background);
-    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
-    padding: 10px 0;
 }
 
 .blog {
@@ -42,8 +30,7 @@
 
 .blog:hover {
     cursor: pointer;
-    padding-left: 5px;
-    color: var(--secondary-background);
+    color: var(--primary-background);
     text-decoration: none;
 }
 

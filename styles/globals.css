@@ -58,9 +58,12 @@ section > ol {
     color: var(--secondary-text);
 }
 
+section > h3 {
+    border-bottom: 1px solid rgba(230, 230, 230, 0.2);
+}
+
 hr {
     height: 1px;
-    background-color: var(--secondary-text);
     border: none;
 }
 
@@ -68,7 +71,6 @@ ul,
 ol {
     display: flex;
     flex-direction: column;
-    row-gap: 10px;
 }
 
 li {
