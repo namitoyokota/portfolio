@@ -15,4 +15,9 @@ export class NotationConfigs {
         type: 'box',
         color: '#F38181',
     } as RoughAnnotationConfig;
+
+    static highlight = {
+        type: 'highlight',
+        color: '#F38181',
+    } as RoughAnnotationConfig;
 }
