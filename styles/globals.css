@@ -52,6 +52,12 @@ section {
     row-gap: 20px;
 }
 
+section > span,
+section > ul,
+section > ol {
+    color: var(--secondary-text);
+}
+
 hr {
     height: 1px;
     background-color: var(--secondary-text);
@@ -92,6 +98,20 @@ small {
 a {
     color: inherit;
     text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    transition: 0.1s ease-in-out;
+}
+
+a:hover {
+    color: var(--primary-background);
+    cursor: pointer;
+}
+
+u {
+    color: var(--primary-text);
 }
 
 * {
