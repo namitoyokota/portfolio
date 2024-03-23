@@ -27,6 +27,7 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
             <div className={styles.pane}>
                 <div className={styles.header}>
                     <h1>Blogs</h1>
+                    <span className={styles.subheader}>I like to write blogs as notes to my future self.</span>
                 </div>
 
                 {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (

@@ -10,6 +10,10 @@
     row-gap: 30px;
 }
 
+.subheader {
+    color: var(--secondary-text);
+}
+
 .section {
     display: flex;
     flex-direction: column;
@@ -38,8 +42,9 @@
 
 .blog:hover {
     cursor: pointer;
-    padding-left: 10px;
-    color: var(--primary-background);
+    padding-left: 5px;
+    color: var(--secondary-background);
+    text-decoration: none;
 }
 
 .info {

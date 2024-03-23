@@ -1,12 +1,14 @@
 .active {
-    color: var(--primary-background);
+    width: min-content;
+    color: var(--primary-text);
 }
 
 .page {
+    width: min-content;
     color: var(--secondary-text);
     transition: 0.1s ease-in-out;
 }
 
 .page:hover {
-    color: var(--primary-background);
+    color: var(--primary-text);
 }

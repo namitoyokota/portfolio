@@ -1,7 +1,7 @@
 :root {
     --background: #fffcf2;
-    --primary-background: #f38181;
-    --secondary-background: #95e1d3;
+    --primary-background: #3b82f6;
+    --secondary-background: #f97316;
     --highlight-background: #fce38a;
     --primary-text: #101010;
     --secondary-text: #403d39;
@@ -9,11 +9,11 @@
 
 [data-theme='dark'] {
     --background: #101010;
-    --primary-background: #f38181;
-    --secondary-background: #95e1d3;
+    --primary-background: #3b82f6;
+    --secondary-background: #f97316;
     --highlight-background: #fce38a;
     --primary-text: #fffcf2;
-    --secondary-text: grey;
+    --secondary-text: rgb(163, 163, 163);
 }
 
 html,
@@ -98,20 +98,32 @@ small {
 a {
     color: inherit;
     text-decoration: none;
-    font-weight: 500;
-    display: flex;
-    column-gap: 5px;
-    align-items: center;
     transition: 0.1s ease-in-out;
 }
 
-a:hover {
+a.primary {
     color: var(--primary-background);
-    cursor: pointer;
 }
 
-u {
-    color: var(--primary-text);
+a.secondary {
+    color: var(--secondary-background);
+}
+
+a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button {
+    border-radius: 0;
+    text-align: inherit;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    color: inherit;
+    font: inherit;
 }
 
 * {
@@ -121,4 +133,11 @@ u {
 
 ::selection {
     background: var(--highlight-background);
+}
+
+.sentence {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    align-items: center;
 }
