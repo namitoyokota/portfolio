@@ -1,19 +1,9 @@
 .footerpane {
-    display: flex;
-    column-gap: 20px;
-    border-top: 1px solid rgba(230, 230, 230, 0.2);
-    padding: 20px;
-}
-
-.sociallink {
     color: var(--secondary-text);
     display: flex;
-    column-gap: 8px;
-    align-items: center;
-    transition: 0.1s ease-in-out;
-}
-
-.sociallink:hover {
-    color: var(--primary-background);
-    cursor: pointer;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 5px;
+    border-top: 1px solid rgba(230, 230, 230, 0.2);
+    padding: 20px;
 }
