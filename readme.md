@@ -31,3 +31,5 @@ $ yarn dev
 -   [Paco Coursey](https://paco.me/)
 -   [Braydon Coyer](https://www.braydoncoyer.dev/)
 -   [Guillermo Rauch](https://rauchg.com/)
+-   [Alex Pate](https://alexjpate.com/)
+-   [Conor Dewey](https://www.conordewey.com/)
