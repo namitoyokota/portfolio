@@ -1,3 +1,4 @@
+import Image from 'next/legacy/image';
 import Layout from '../components/Layout';
 import styles from '../styles/index.module.css';
 
@@ -7,100 +8,136 @@ export const Index = (): JSX.Element => {
             <div className={styles.pane}>
                 {/* Hook */}
                 <div className={styles.header}>
-                    <h1>
-                        Hey, I'm Namito <span className="animate__animated animate__bounce">👋🏼</span>
-                    </h1>
+                    <h1>Hey, I'm Namito 👋🏼</h1>
                 </div>
+
+                {/* Projects */}
+                <section>
+                    <label>Projects</label>
+                    <div className={styles.grid}>
+                        <a className={styles.card} href="https://ideas.namitoyokota.com" target="_blank" rel="noreferrer">
+                            <div className={styles.icon}>
+                                <Image
+                                    alt="Steve Project Icon"
+                                    height="50"
+                                    width="50"
+                                    src="https://api.namitoyokota.com/assets/icons/steeeve.png"
+                                />
+                            </div>
+                            <div className={styles.project}>
+                                <span>Steeeve</span>
+                                <span className={styles.description}>Social platform for sharing your next side project ideas</span>
+                            </div>
+                        </a>
+                        <a className={styles.card} href="https://todo.namitoyokota.com" target="_blank" rel="noreferrer">
+                            <div className={styles.icon}>
+                                <Image
+                                    alt="Todo Project Icon"
+                                    height="50"
+                                    width="50"
+                                    src="https://api.namitoyokota.com/assets/icons/task.png"
+                                />
+                            </div>
+                            <div className={styles.project}>
+                                <span>Todo Today</span>
+                                <span className={styles.description}>Todo application that resets every night</span>
+                            </div>
+                        </a>
+                        <a className={styles.card} href="https://github.com/namitoyokota/ngx-monochrome" target="_blank" rel="noreferrer">
+                            <div className={styles.icon}>
+                                <Image
+                                    alt="Todo Project Icon"
+                                    height="50"
+                                    width="50"
+                                    src="https://api.namitoyokota.com/assets/icons/task.png"
+                                />
+                            </div>
+                            <div className={styles.project}>
+                                <span>ngx-monochrome</span>
+                                <span className={styles.description}>Black and white component library in Angular</span>
+                            </div>
+                        </a>
+                    </div>
+                </section>
 
                 {/* Experience */}
                 <section>
-                    <h3>Experience?</h3>
-
-                    <ul>
-                        <li>
-                            <div className="sentence">
+                    <label>Experience</label>
+                    <div className={styles.list}>
+                        <div className={styles.experience}>
+                            <span className={styles.time}>2022 - Present</span>
+                            <div className={styles.job}>
                                 <a
-                                    className="secondary"
+                                    className={styles.company + ' primary'}
+                                    href="https://www.linkedin.com/company/venminder"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Venminder
+                                </a>
+                                <a
+                                    className={styles.position + ' secondary'}
                                     href="https://resume.namitoyokota.com/venminder/job-description.html"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    Senior Software Engineer
+                                    Senior Software Engineer / Junior Software Engineer
                                 </a>
-                                <span>@</span>
-                                <a className="primary" href="https://www.linkedin.com/company/venminder" target="_blank" rel="noreferrer">
-                                    Venminder
-                                </a>
+                                <span className={styles.description}>Description about the job</span>
                             </div>
-                        </li>
-                        <li>
-                            <div className="sentence">
+                        </div>
+                        <div className={styles.experience}>
+                            <span className={styles.time}>2021 - 2022</span>
+                            <div className={styles.job}>
                                 <a
-                                    className="secondary"
-                                    href="https://resume.namitoyokota.com/hexagon/job-description.html"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Software Analyst
-                                </a>
-                                <span>@</span>
-                                <a
-                                    className="primary"
+                                    className={styles.company + ' primary'}
                                     href="https://www.linkedin.com/company/hexagon-sig/"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
                                     Hexagon
                                 </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div className="sentence">
-                                <span>Software Intern</span>
-                                <span>@</span>
-                                <a className="primary" href="https://www.linkedin.com/company/trips4trade" target="_blank" rel="noreferrer">
-                                    Trips4Trade
+                                <a
+                                    className={styles.position + ' secondary'}
+                                    href="https://resume.namitoyokota.com/hexagon/job-description.html"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    Software Analyst
                                 </a>
+                                <span className={styles.description}>Description about the job</span>
                             </div>
-                        </li>
-                        <li>
-                            <div className="sentence">
-                                <span>Software Intern</span>
-                                <span>@</span>
-                                <a className="primary" href="http://www.threedaysllc.com/" target="_blank" rel="noreferrer">
-                                    threeDays
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Education */}
                 <section>
-                    <h3>Education?</h3>
-                    <ul>
-                        <li>
-                            <span className="sentence">
+                    <label>Education</label>
+                    <div className={styles.list}>
+                        <div className={styles.experience}>
+                            <span className={styles.time}>2017 - 2020</span>
+                            <div className={styles.job}>
                                 <a
-                                    className="secondary"
+                                    className={styles.company + ' primary'}
+                                    href="https://www.linkedin.com/school/university-of-alabama"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    The University of Alabama
+                                </a>
+                                <a
+                                    className={styles.position + ' secondary'}
                                     href="https://resume.namitoyokota.com/degree/degree.html"
                                     target="_blank"
                                     rel="noreferrer"
                                 >
-                                    <span>Computer Science</span>
+                                    Bachelors of Science in Computer Science
                                 </a>
-                                <span>from</span>
-                                <a
-                                    className="primary"
-                                    href="https://www.linkedin.com/school/university-of-alabama/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span>The University of Alabama</span>
-                                </a>
-                            </span>
-                        </li>
-                    </ul>
+                                <span className={styles.description}>Minor in Mathematics</span>
+                            </div>
+                        </div>
+                    </div>
                 </section>
 
                 {/* Certifications */}
@@ -154,31 +191,6 @@ export const Index = (): JSX.Element => {
                                 </a>
                                 from Google
                             </span>
-                        </li>
-                    </ul>
-                </section>
-
-                {/* Projects */}
-                <section>
-                    <h3>Side Projects?</h3>
-                    <ul>
-                        <li>
-                            <a className="secondary" href="https://github.com/namitoyokota/ngx-monochrome" target="_blank" rel="noreferrer">
-                                <span>ngx-monochrome</span>
-                            </a>
-                            : Black and white component library in Angular
-                        </li>
-                        <li>
-                            <a className="secondary" href="https://ideas.namitoyokota.com/" target="_blank" rel="noreferrer">
-                                <span>Steeeve</span>
-                            </a>
-                            : Social platform for sharing your next side project ideas
-                        </li>
-                        <li>
-                            <a className="secondary" href="https://todo.namitoyokota.com/" target="_blank" rel="noreferrer">
-                                <span>Todo Today</span>
-                            </a>
-                            : Todo application that resets every night
                         </li>
                     </ul>
                 </section>

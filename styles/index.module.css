@@ -1,7 +1,7 @@
 .pane {
     display: flex;
     flex-direction: column;
-    row-gap: 30px;
+    row-gap: 50px;
 }
 
 .header {
@@ -11,5 +11,74 @@
 }
 
 .content {
+    color: var(--secondary-text);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/** Tablets */
+@media only screen and (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    height: min-content;
+    display: grid;
+    grid-template-columns: 50px auto;
+    column-gap: 10px;
+    background-color: rgb(26, 26, 26);
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.1s ease-in-out;
+}
+
+.card:hover {
+    text-decoration: none;
+    background-color: rgb(42, 42, 42);
+}
+
+.icon {
+    padding: 8px;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.experience {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+
+.time {
+    color: var(--secondary-text);
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+}
+
+.position {
+    color: var(--hidden-text);
+    font-size: 0.85rem;
+}
+
+.description {
     color: var(--secondary-text);
 }
