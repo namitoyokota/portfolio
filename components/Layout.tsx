@@ -9,13 +9,9 @@ const Layout = ({ children, customMeta }: LayoutProps): JSX.Element => {
     return (
         <div className={styles.content}>
             <Head customMeta={customMeta} />
-            <header>
-                <div>
-                    <div className={styles.navigation}>
-                        <Navigation />
-                        <ThemeSwitch />
-                    </div>
-                </div>
+            <header className={styles.navigation}>
+                <Navigation />
+                <ThemeSwitch />
             </header>
             <main>{children}</main>
             <footer>

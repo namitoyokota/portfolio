@@ -4,6 +4,5 @@
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 5px;
-    border-top: 1px solid rgba(230, 230, 230, 0.2);
     padding: 20px;
 }
