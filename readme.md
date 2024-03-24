@@ -33,3 +33,5 @@ $ yarn dev
 -   [Guillermo Rauch](https://rauchg.com/)
 -   [Alex Pate](https://alexjpate.com/)
 -   [Conor Dewey](https://www.conordewey.com/)
+-   [Josh Comeau](https://www.joshwcomeau.com/)
+-   [Delba Oliveira](https://delba.dev/)
