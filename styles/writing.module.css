@@ -20,7 +20,7 @@
     row-gap: 10px;
 }
 
-.blog {
+.writing {
     display: grid;
     grid-template-columns: auto min-content;
     align-items: center;
@@ -28,7 +28,7 @@
     transition: 0.15s ease-in-out;
 }
 
-.blog:hover {
+.writing:hover {
     cursor: pointer;
     color: var(--primary-background);
     text-decoration: none;

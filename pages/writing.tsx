@@ -2,7 +2,7 @@ import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import styles from '../styles/blogs.module.css';
+import styles from '../styles/writing.module.css';
 
 interface Post {
     id: string;
@@ -13,20 +13,20 @@ interface Post {
     reactionCount: number;
 }
 
-type BlogsProps = {
+type WritingProps = {
     posts: Post[];
 };
 
-export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
+export const Writing = ({ posts }: WritingProps): JSX.Element => {
     return (
         <Layout
             customMeta={{
-                title: 'Blogs - Namito Yokota',
+                title: 'Writing - Namito Yokota',
             }}
         >
             <div className={styles.pane}>
                 <div className={styles.header}>
-                    <h1>Blogs</h1>
+                    <h1>Writing</h1>
                 </div>
 
                 {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
@@ -35,16 +35,16 @@ export const Blogs = ({ posts }: BlogsProps): JSX.Element => {
                         <div className={styles.list}>
                             {posts
                                 .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
-                                .map((blog) => (
-                                    <Link legacyBehavior key={blog.id} href={blog.url}>
-                                        <a className={styles.blog} target="_blank" rel="noopener noreferrer">
+                                .map((writing) => (
+                                    <Link legacyBehavior key={writing.id} href={writing.url}>
+                                        <a className={styles.writing} target="_blank" rel="noopener noreferrer">
                                             <div className={styles.info}>
-                                                <span className={styles.title}>{blog.title}</span>
-                                                <span className={styles.description} title={blog.subtitle}>
-                                                    {blog.subtitle}
+                                                <span className={styles.title}>{writing.title}</span>
+                                                <span className={styles.description} title={writing.subtitle}>
+                                                    {writing.subtitle}
                                                 </span>
                                             </div>
-                                            <p className={styles.date}>{format(parseISO(blog.publishedAt!), 'MMMM dd, yyyy')}</p>
+                                            <p className={styles.date}>{format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}</p>
                                         </a>
                                     </Link>
                                 ))}
@@ -90,4 +90,4 @@ export async function getStaticProps() {
     };
 }
 
-export default Blogs;
+export default Writing;
