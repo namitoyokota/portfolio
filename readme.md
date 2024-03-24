@@ -1,4 +1,4 @@
-![My portfolio website preview](./public/images/thumbnail.png)
+![My portfolio website preview](https://api.namitoyokota.com/assets/og-images/portfolio.png)
 
 # namitoyokota.com
 
