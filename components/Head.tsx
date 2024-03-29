@@ -18,7 +18,6 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
         <NextHead>
             <title>{meta.title}</title>
             <link rel="icon" href="/images/profile-1.png" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
             <meta content={meta.description} name="description" />
             <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
             <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
