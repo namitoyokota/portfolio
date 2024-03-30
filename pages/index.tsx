@@ -14,7 +14,7 @@ export const Index = (): JSX.Element => {
                     <h1>Hey, I'm Namito 👋🏼</h1>
                     <span className={styles.subtitle}>
                         Senior Software Engineer based in Huntsville, Alabama. I love serving users by creating accessible, minimalistic,
-                        and pixel perfect user interface.
+                        and pixel perfect user interface!
                     </span>
                     <div className={styles.skills}>
                         <Label alternate={true}>Angular</Label>
@@ -22,7 +22,7 @@ export const Index = (): JSX.Element => {
                         <Label alternate={true}>HTML</Label>
                         <Label alternate={true}>CSS</Label>
                     </div>
-                    <Label>Looking for new opportunities</Label>
+                    <Label>Looking for new opportunities!</Label>
                 </div>
 
                 {/* Projects */}
