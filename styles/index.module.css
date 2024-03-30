@@ -50,8 +50,9 @@
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    color: var(--background);
-    background-color: var(--primary-text);
+    color: #fffcf2;
+    background-color: #101010;
+    border: 1px solid #fffcf2;
 }
 
 .card:hover {

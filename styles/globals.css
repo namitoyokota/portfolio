@@ -81,17 +81,6 @@ li::marker {
     color: var(--secondary-text);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-p,
-a,
-span {
-    /* line-height: 1.75; */
-}
-
 small {
     color: var(--secondary-text);
 }
