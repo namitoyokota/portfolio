@@ -198,11 +198,6 @@ export const Index = (): JSX.Element => {
                         </div>
                     </div>
                 </section>
-
-                {/* Certifications */}
-                <section>
-                    <h3>Certifications?</h3>
-                </section>
             </div>
         </Layout>
     );
