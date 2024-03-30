@@ -13,9 +13,15 @@ export const Index = (): JSX.Element => {
                 <div className={styles.header}>
                     <h1>Hey, I'm Namito 👋🏼</h1>
                     <span className={styles.subtitle}>
-                        Senior Software Engineer based in Huntsville, Alabama. I love serving users by creating minimalistic and pixel
-                        perfect user interface.
+                        Senior Software Engineer based in Huntsville, Alabama. I love serving users by creating accessible, minimalistic,
+                        and pixel perfect user interface.
                     </span>
+                    <div className={styles.skills}>
+                        <Label alternate={true}>Angular</Label>
+                        <Label alternate={true}>Next.js</Label>
+                        <Label alternate={true}>HTML</Label>
+                        <Label alternate={true}>CSS</Label>
+                    </div>
                     <Label>Looking for new opportunities</Label>
                 </div>
 
@@ -118,12 +124,45 @@ export const Index = (): JSX.Element => {
                                 />
                             </a>
                             <div className={styles.list}>
-                                <label>Degree</label>
+                                <label>Undergraduate degree</label>
                                 <span>
                                     I have a degree from the University of Alabama in{' '}
                                     <Notation config={NotationConfigs.underline}>Computer Science</Notation> with a{' '}
-                                    <Notation config={NotationConfigs.underline}>Mathematics</Notation> minor.
+                                    <Notation config={NotationConfigs.underline}>Mathematics</Notation> minor. Some of my favorite courses
+                                    were:
                                 </span>
+                                <ul>
+                                    <li>
+                                        <a
+                                            className="primary"
+                                            href="https://resume.namitoyokota.com/degree/degree.html#data-structures-and-algorithms"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Data Structures and Algorithms
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="primary"
+                                            href="https://resume.namitoyokota.com/degree/degree.html#high-performance-computing"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            High Performance Computing
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a
+                                            className="primary"
+                                            href="https://resume.namitoyokota.com/degree/degree.html#web-foundations"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Web Foundations
+                                        </a>
+                                    </li>
+                                </ul>
                                 <span>
                                     I cherish my 4 years of college experience as I've grown tremendously as a person. I even got to gain
                                     professional experience through extracurricular activities:
@@ -140,6 +179,7 @@ export const Index = (): JSX.Element => {
                                         </a>
                                     </li>
                                 </ul>
+
                                 <label>Certifications</label>
                                 <span>
                                     Since I enjoy learning, I spend my spare time taking online courses to sharpen my skills as a developer:
