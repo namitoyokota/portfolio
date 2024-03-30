@@ -21,6 +21,7 @@
 }
 
 .writing {
+    font-weight: 400;
     display: grid;
     grid-template-columns: auto min-content;
     align-items: center;

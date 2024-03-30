@@ -62,8 +62,9 @@ section > h3 {
 }
 
 hr {
+    border: 0;
     height: 1px;
-    border: none;
+    background-image: linear-gradient(to right, var(--background), var(--primary-text), var(--background));
 }
 
 ul,

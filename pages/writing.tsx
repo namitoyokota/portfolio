@@ -1,5 +1,6 @@
 import { ApolloClient, InMemoryCache, gql } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
+import Image from 'next/legacy/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import styles from '../styles/writing.module.css';
@@ -31,7 +32,11 @@ export const Writing = ({ posts }: WritingProps): JSX.Element => {
 
                 {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
                     <section key={year}>
-                        <h3>{year}</h3>
+                        <label className="sentence">
+                            <span>From {year}</span>
+                            <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                        </label>
+                        <hr />
                         <div className={styles.list}>
                             {posts
                                 .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
