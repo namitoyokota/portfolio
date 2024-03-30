@@ -190,7 +190,7 @@ export const Index = (): JSX.Element => {
                             </span>
                             <ul>
                                 <li>
-                                    <span className="sentence">
+                                    <span>
                                         <a
                                             className="primary"
                                             href="https://www.coursera.org/account/accomplishments/records/MH7UG7T56C52"
@@ -198,8 +198,8 @@ export const Index = (): JSX.Element => {
                                             rel="noreferrer"
                                         >
                                             React Basics
-                                        </a>
-                                        and
+                                        </a>{' '}
+                                        and{' '}
                                         <a
                                             className="primary"
                                             href="https://www.coursera.org/account/accomplishments/records/N3E722CLNM9R"
@@ -207,12 +207,12 @@ export const Index = (): JSX.Element => {
                                             rel="noreferrer"
                                         >
                                             Advanced React
-                                        </a>
+                                        </a>{' '}
                                         from Meta
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="sentence">
+                                    <span>
                                         <a
                                             className="primary"
                                             href="https://www.coursera.org/account/accomplishments/certificate/QXNDTHPH7BF7"
@@ -220,12 +220,12 @@ export const Index = (): JSX.Element => {
                                             rel="noreferrer"
                                         >
                                             <span>Foundations of User Experience Design</span>
-                                        </a>
+                                        </a>{' '}
                                         from Google
                                     </span>
                                 </li>
                                 <li>
-                                    <span className="sentence">
+                                    <span>
                                         <a
                                             className="primary"
                                             href="https://www.coursera.org/account/accomplishments/records/P362PHZ79LH2"
@@ -233,7 +233,7 @@ export const Index = (): JSX.Element => {
                                             rel="noreferrer"
                                         >
                                             <span>Agile Project Management from Google</span>
-                                        </a>
+                                        </a>{' '}
                                         from Google
                                     </span>
                                 </li>
