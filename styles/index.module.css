@@ -115,4 +115,5 @@
 
 .description {
     color: var(--secondary-text);
+    font-weight: 400;
 }

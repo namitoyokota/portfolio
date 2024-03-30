@@ -55,7 +55,7 @@ export const Index = (): JSX.Element => {
                             />
                             <div className={styles.project}>
                                 <span>Steeeve</span>
-                                <span className="grey">Social platform for sharing your next side project ideas</span>
+                                <span className={styles.description}>Social platform for sharing your next side project ideas</span>
                             </div>
                         </a>
                         <a className={styles.card} href="https://todo.namitoyokota.com" target="_blank" rel="noreferrer">
