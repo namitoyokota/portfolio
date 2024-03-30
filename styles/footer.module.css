@@ -1,5 +1,5 @@
 .footerpane {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
     display: flex;
     flex-wrap: wrap;
     column-gap: 20px;

@@ -9,7 +9,7 @@
     font-size: 1.5rem;
     line-height: 2rem;
     font-weight: 400;
-    color: var(--secondary-text);
+    color: var(--text-secondary);
 }
 
 .skills {
@@ -40,7 +40,7 @@
 }
 
 .description {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
     font-weight: 400;
 }
 
@@ -75,8 +75,8 @@
     justify-content: center;
     border-radius: 10px;
     padding: 10px;
-    color: var(--primary-text);
-    border: 1px solid var(--primary-text);
+    color: var(--text-primary);
+    border: 1px solid var(--text-primary);
 }
 
 .card:hover {

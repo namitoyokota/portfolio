@@ -11,11 +11,11 @@
 
 .default {
     color: var(--background);
-    background-color: var(--primary-text);
+    background-color: var(--text-primary);
 }
 
 .alternate {
-    color: var(--primary-text);
+    color: var(--text-primary);
     background-color: var(--background);
-    border: 1px solid var(--primary-text);
+    border: 1px solid var(--text-primary);
 }

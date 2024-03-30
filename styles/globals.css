@@ -1,21 +1,16 @@
 :root {
     --background: #fffcf2;
     --background-secondary: #e9ecef;
-    --primary-background: #3b82f6;
-    --secondary-background: #f97316;
-    --highlight-background: #fce38a;
-    --primary-text: #101010;
-    --secondary-text: #838280;
+    --background-highlight: #fce38a;
+    --text-primary: #101010;
+    --text-secondary: #838280;
+    --text-highlight: #3b82f6;
 }
 
 [data-theme='dark'] {
     --background: #101010;
-    --primary-background: #3b82f6;
-    --secondary-background: #f97316;
-    --highlight-background: #fce38a;
-    --primary-text: #fffcf2;
-    --secondary-text: #a3a3a3;
-    --hidden-text: rgba(232, 230, 227, 0.4);
+    --text-primary: #fffcf2;
+    --text-secondary: #a3a3a3;
 }
 
 html,
@@ -26,7 +21,7 @@ body {
 html {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
         sans-serif;
-    color: var(--primary-text);
+    color: var(--text-primary);
     background-color: var(--background);
     transition: background-color 0.2s ease, color 0.2s ease;
 }
@@ -57,7 +52,7 @@ section {
 section > span,
 section > ul,
 section > ol {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
 }
 
 section > h3 {
@@ -67,7 +62,7 @@ section > h3 {
 hr {
     border: 0;
     height: 1px;
-    background-image: linear-gradient(to right, var(--background), var(--primary-text), var(--background));
+    background-image: linear-gradient(to right, var(--background), var(--text-primary), var(--background));
 }
 
 ul,
@@ -82,11 +77,11 @@ li {
 }
 
 li::marker {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
 }
 
 small {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
 }
 
 label {
@@ -101,11 +96,7 @@ a {
 }
 
 a.primary {
-    color: var(--primary-background);
-}
-
-a.secondary {
-    color: var(--secondary-background);
+    color: var(--text-highlight);
 }
 
 a:hover {
@@ -131,7 +122,7 @@ button {
 }
 
 ::selection {
-    background: var(--highlight-background);
+    background: var(--background-highlight);
 }
 
 .sentence {
@@ -142,5 +133,5 @@ button {
 }
 
 .grey {
-    color: var(--secondary-text);
+    color: var(--text-secondary);
 }
