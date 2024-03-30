@@ -3,20 +3,8 @@ import { format, parseISO } from 'date-fns';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
+import { WritingProps } from '../models/types/writing-props';
 import styles from '../styles/writing.module.css';
-
-interface Post {
-    id: string;
-    url: string;
-    title: string;
-    publishedAt: string;
-    subtitle: string;
-    reactionCount: number;
-}
-
-type WritingProps = {
-    posts: Post[];
-};
 
 export const Writing = ({ posts }: WritingProps): JSX.Element => {
     return (
