@@ -1,5 +1,6 @@
 :root {
     --background: #fffcf2;
+    --background-secondary: #e9ecef;
     --primary-background: #3b82f6;
     --secondary-background: #f97316;
     --highlight-background: #fce38a;
@@ -88,7 +89,7 @@ h5,
 p,
 a,
 span {
-    line-height: 1.75;
+    /* line-height: 1.75; */
 }
 
 small {
@@ -145,4 +146,8 @@ button {
     flex-wrap: wrap;
     column-gap: 5px;
     align-items: center;
+}
+
+.grey {
+    color: var(--secondary-text);
 }

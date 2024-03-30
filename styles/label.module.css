@@ -1,0 +1,21 @@
+.default,
+.alternate {
+    width: min-content;
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    font-weight: 500;
+    border-radius: 20px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.default {
+    color: var(--background);
+    background-color: var(--primary-text);
+}
+
+.alternate {
+    color: var(--primary-text);
+    background-color: var(--background);
+    border: 1px solid var(--primary-text);
+}
