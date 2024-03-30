@@ -68,87 +68,35 @@ export const Index = (): JSX.Element => {
                     </div>
                 </section>
 
-                <span>
-                    At <Notation config={NotationConfigs.underline}>Venminder</Notation>, I have been leading the front-end development of a
-                    web application generating 60% of company revenue. Some of my favorite contributions at Venminder are:
-                </span>
-
-                <ul>
-                    <li>Creating a rich text editor in markdown format</li>
-                    <li>Setting up eslint and prettier for maintaining a clean codebase</li>
-                    <li>Contributing to and maintaining the internal component library</li>
-                </ul>
-
-                <span>
-                    Before Venminder, I spent 2 years developing a highly complex public safety web product at{' '}
-                    <Notation config={NotationConfigs.underline}>Hexagon</Notation>. Working on this team was one of my favorite experiences
-                    due to it's advancement in the codebase. We had a micro-frontend architecture where over 40 npm packages were
-                    communicating with each other without a circular dependency which then is consumed by the root repository to serve the
-                    main site. Some of my favorite contributions at Hexagon are:
-                </span>
-
-                <ul>
-                    <li>Started and deployed npm packages to share models and services between web and mobile codebase</li>
-                    <li>Allowed users to find an address of the location on the map using Azure Map Service API</li>
-                    <li>Constructed a hierarchical feature flag system to allow management at admin, organization, and user levels</li>
-                    <li>Built an end-to-end load test tool to analyze the product performance under stress</li>
-                </ul>
-
-                <span>
-                    Prior to Hexagon, I worked as an intern with 2 different companies: threeDays and Trips4Trade. At threeDays, I was able
-                    to learn the basics of creating static websites. This internship helped me understand the importance of managing a clean
-                    codebase. At Trips4Trade however, I learned a new set of tools with using WordPress. I gained experience pushing changes
-                    up to different environments, refactoring existing databases, as well as using third-party plugins.
-                </span>
-
                 {/* Experience */}
                 <section>
-                    <label>Experience</label>
+                    <label className="sentence">
+                        <span>Recent experiences</span>
+                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    </label>
                     <div className={styles.list}>
-                        <div className={styles.experience}>
-                            <span className={styles.time}>2022 - Present</span>
-                            <div className={styles.job}>
-                                <a
-                                    className={styles.company + ' primary'}
-                                    href="https://www.linkedin.com/company/venminder"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Venminder
-                                </a>
-                                <a
-                                    className={styles.position + ' secondary'}
-                                    href="https://resume.namitoyokota.com/venminder/job-description.html"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Senior Software Engineer / Junior Software Engineer
-                                </a>
-                                <span className={styles.description}>Description about the job</span>
-                            </div>
-                        </div>
-                        <div className={styles.experience}>
-                            <span className={styles.time}>2021 - 2022</span>
-                            <div className={styles.job}>
-                                <a
-                                    className={styles.company + ' primary'}
-                                    href="https://www.linkedin.com/company/hexagon-sig/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Hexagon
-                                </a>
-                                <a
-                                    className={styles.position + ' secondary'}
-                                    href="https://resume.namitoyokota.com/hexagon/job-description.html"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Software Analyst
-                                </a>
-                                <span className={styles.description}>Description about the job</span>
-                            </div>
-                        </div>
+                        <span>
+                            At <Notation config={NotationConfigs.underline}>Venminder</Notation>, I have been leading the front-end
+                            development of a web application generating 60% of company revenue. I love my experience so far here as I've
+                            been trusted with the freedom to explore new libraries and create prototypes.
+                        </span>
+
+                        <span>
+                            Before Venminder, I spent 2 years developing a highly complex public safety web product at{' '}
+                            <Notation config={NotationConfigs.underline}>Hexagon</Notation>. Working on this team was one of my favorite
+                            experiences due to it's advancement in the codebase. We had a micro-frontend architecture where over 40 npm
+                            packages were communicating with each other without a circular dependency which then is consumed by the root
+                            repository to serve the main site.
+                        </span>
+
+                        <span>
+                            Prior to Hexagon, I worked as an intern with 2 different companies: threeDays and Trips4Trade. At{' '}
+                            <Notation config={NotationConfigs.underline}>threeDays</Notation>, I was able to learn the basics of creating
+                            static websites. This internship helped me understand the importance of managing a clean codebase. At{' '}
+                            <Notation config={NotationConfigs.underline}>Trips4Trade</Notation> however, I learned a new set of tools with
+                            using WordPress. I gained experience pushing changes up to different environments, refactoring existing
+                            databases, as well as using third-party plugins.
+                        </span>
                     </div>
                 </section>
 
