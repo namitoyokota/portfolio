@@ -15,38 +15,33 @@ export const Writing = ({ posts }: WritingProps): JSX.Element => {
                     'I use writing as a medium to open-source my learnings and notes to my future self. The hope is that along the way, I can help others facing the same problems!',
             }}
         >
-            <div className={styles.pane}>
-                <div className={styles.header}>
-                    <h1>Writing</h1>
-                </div>
-
-                {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
-                    <section key={year}>
-                        <label className="sentence">
-                            <span>From {year}</span>
-                            <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
-                        </label>
-                        <hr />
-                        <div className={styles.list}>
-                            {posts
-                                .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
-                                .map((writing) => (
-                                    <Link legacyBehavior key={writing.id} href={writing.url}>
-                                        <a className={styles.writing} target="_blank" rel="noopener noreferrer">
-                                            <div className={styles.info}>
-                                                <span className={styles.title}>{writing.title}</span>
-                                                <span className={styles.description} title={writing.subtitle}>
-                                                    {writing.subtitle}
-                                                </span>
-                                            </div>
-                                            <p className={styles.date}>{format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}</p>
-                                        </a>
-                                    </Link>
-                                ))}
-                        </div>
-                    </section>
-                ))}
-            </div>
+            <h1>Writing</h1>
+            {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
+                <section key={year}>
+                    <label className="sentence">
+                        <span>From {year}</span>
+                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    </label>
+                    <hr />
+                    <div className={styles.list}>
+                        {posts
+                            .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
+                            .map((writing) => (
+                                <Link legacyBehavior key={writing.id} href={writing.url}>
+                                    <a className={styles.writing} target="_blank" rel="noopener noreferrer">
+                                        <div className={styles.info}>
+                                            <span className={styles.title}>{writing.title}</span>
+                                            <span className={styles.description} title={writing.subtitle}>
+                                                {writing.subtitle}
+                                            </span>
+                                        </div>
+                                        <p className={styles.date}>{format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}</p>
+                                    </a>
+                                </Link>
+                            ))}
+                    </div>
+                </section>
+            ))}
         </Layout>
     );
 };

@@ -1,9 +1,4 @@
-.pane {
-    display: flex;
-    flex-direction: column;
-    row-gap: 50px;
-}
-
+/* Header Section */
 .header {
     display: flex;
     flex-direction: column;
@@ -24,44 +19,18 @@
     row-gap: 5px;
 }
 
-.content {
-    color: var(--secondary-text);
-}
-
-.grid {
+/* Projects Section */
+.projects {
     display: grid;
     grid-template-columns: 1fr;
     column-gap: 15px;
     row-gap: 10px;
 }
 
-/** Tablets */
 @media only screen and (min-width: 768px) {
-    .grid {
+    .projects {
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-.card {
-    height: min-content;
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    justify-content: center;
-    border-radius: 10px;
-    padding: 10px;
-    color: #fffcf2;
-    background-color: #101010;
-    border: 1px solid #fffcf2;
-}
-
-.card:hover {
-    text-decoration: none;
-    transform: rotate(2deg);
-}
-
-.thumbnail {
-    border-radius: 5px;
 }
 
 .project {
@@ -70,13 +39,12 @@
     row-gap: 5px;
 }
 
-.list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    line-height: 1.5rem;
+.description {
+    color: var(--secondary-text);
+    font-weight: 400;
 }
 
+/* Education Section */
 .education {
     display: grid;
     grid-template-columns: 1fr;
@@ -88,32 +56,41 @@
     display: none;
 }
 
-/** Tablets */
 @media only screen and (min-width: 768px) {
     .education {
         grid-template-columns: 1fr 2fr;
     }
 
     .education > .card {
-        display: block;
+        display: flex;
     }
 }
 
-.time {
-    color: var(--secondary-text);
-}
-
-.job {
+/* All Sections */
+.card {
+    height: min-content;
     display: flex;
     flex-direction: column;
+    row-gap: 10px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    color: var(--primary-text);
+    border: 1px solid var(--primary-text);
 }
 
-.position {
-    color: var(--hidden-text);
-    font-size: 0.85rem;
+.card:hover {
+    text-decoration: none;
+    transform: rotate(2deg);
 }
 
-.description {
-    color: var(--secondary-text);
-    font-weight: 400;
+.thumbnail {
+    border-radius: 5px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    line-height: 1.5rem;
 }
