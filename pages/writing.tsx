@@ -23,6 +23,8 @@ export const Writing = ({ posts }: WritingProps): JSX.Element => {
         <Layout
             customMeta={{
                 title: 'Writing - Namito Yokota',
+                description:
+                    'I use writing as a medium to open-source my learnings and notes to my future self. The hope is that along the way, I can help others facing the same problems!',
             }}
         >
             <div className={styles.pane}>

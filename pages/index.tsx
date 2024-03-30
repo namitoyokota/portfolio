@@ -7,7 +7,13 @@ import styles from '../styles/index.module.css';
 
 export const Index = (): JSX.Element => {
     return (
-        <Layout>
+        <Layout
+            customMeta={{
+                title: 'Home - Namito Yokota',
+                description:
+                    'Senior Software Engineer based in Huntsville, Alabama. I love serving users by creating accessible, minimalistic, and pixel perfect user interface!',
+            }}
+        >
             <div className={styles.pane}>
                 {/* Hook */}
                 <div className={styles.header}>
