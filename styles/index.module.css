@@ -36,9 +36,11 @@
 }
 
 .card {
+    height: min-content;
     display: flex;
     flex-direction: column;
     row-gap: 10px;
+    justify-content: center;
     border-radius: 10px;
     padding: 10px;
     color: var(--background);
@@ -67,10 +69,26 @@
     line-height: 1.5rem;
 }
 
-.experience {
+.education {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr;
     column-gap: 10px;
+    align-items: center;
+}
+
+.education > .card {
+    display: none;
+}
+
+/** Tablets */
+@media only screen and (min-width: 768px) {
+    .education {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .education > .card {
+        display: block;
+    }
 }
 
 .time {

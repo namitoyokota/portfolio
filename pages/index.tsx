@@ -102,28 +102,98 @@ export const Index = (): JSX.Element => {
 
                 {/* Education */}
                 <section>
-                    <label>Education</label>
+                    <label className="sentence">
+                        <span>Education</span>
+                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    </label>
                     <div className={styles.list}>
-                        <div className={styles.experience}>
-                            <span className={styles.time}>2017 - 2020</span>
-                            <div className={styles.job}>
-                                <a
-                                    className={styles.company + ' primary'}
-                                    href="https://www.linkedin.com/school/university-of-alabama"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    The University of Alabama
-                                </a>
-                                <a
-                                    className={styles.position + ' secondary'}
-                                    href="https://resume.namitoyokota.com/degree/degree.html"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    Bachelors of Science in Computer Science
-                                </a>
-                                <span className={styles.description}>Minor in Mathematics</span>
+                        <div className={styles.education}>
+                            <a className={styles.card} href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
+                                <Image
+                                    className={styles.thumbnail}
+                                    alt="Graduation picture"
+                                    height="5555"
+                                    width="3703"
+                                    src="/images/graduation.jpeg"
+                                />
+                            </a>
+                            <div className={styles.list}>
+                                <label>Degree</label>
+                                <span>
+                                    I have a degree from the University of Alabama in{' '}
+                                    <Notation config={NotationConfigs.underline}>Computer Science</Notation> with a{' '}
+                                    <Notation config={NotationConfigs.underline}>Mathematics</Notation> minor.
+                                </span>
+                                <span>
+                                    I cherish my 4 years of college experience as I've grown tremendously as a person. I even got to gain
+                                    professional experience through extracurricular activities:
+                                </span>
+                                <ul>
+                                    <li>
+                                        <a className="primary" href="https://uaecocar.com/" target="_blank" rel="noreferrer">
+                                            EcoCAR Challenge
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a className="primary" href="https://www.acm.org/" target="_blank" rel="noreferrer">
+                                            Association for Computing Machinery
+                                        </a>
+                                    </li>
+                                </ul>
+                                <label>Certifications</label>
+                                <span>
+                                    Since I enjoy learning, I spend my spare time taking online courses to sharpen my skills as a developer:
+                                </span>
+                                <ul>
+                                    <li>
+                                        <span className="sentence">
+                                            <a
+                                                className="primary"
+                                                href="https://www.coursera.org/account/accomplishments/records/MH7UG7T56C52"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                React Basics
+                                            </a>
+                                            and
+                                            <a
+                                                className="primary"
+                                                href="https://www.coursera.org/account/accomplishments/records/N3E722CLNM9R"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                Advanced React
+                                            </a>
+                                            from Meta
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span className="sentence">
+                                            <a
+                                                className="primary"
+                                                href="https://www.coursera.org/account/accomplishments/certificate/QXNDTHPH7BF7"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <span>Foundations of User Experience Design</span>
+                                            </a>
+                                            from Google
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span className="sentence">
+                                            <a
+                                                className="primary"
+                                                href="https://www.coursera.org/account/accomplishments/records/P362PHZ79LH2"
+                                                target="_blank"
+                                                rel="noreferrer"
+                                            >
+                                                <span>Agile Project Management from Google</span>
+                                            </a>
+                                            from Google
+                                        </span>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -132,56 +202,6 @@ export const Index = (): JSX.Element => {
                 {/* Certifications */}
                 <section>
                     <h3>Certifications?</h3>
-                    <ul>
-                        <li>
-                            <span className="sentence">
-                                <a
-                                    className="secondary"
-                                    href="https://www.coursera.org/account/accomplishments/records/MH7UG7T56C52"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span>React Basics</span>
-                                </a>
-                                and
-                                <a
-                                    className="secondary"
-                                    href="https://www.coursera.org/account/accomplishments/records/N3E722CLNM9R"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span>Advanced React</span>
-                                </a>
-                                from Meta
-                            </span>
-                        </li>
-                        <li>
-                            <span className="sentence">
-                                <a
-                                    className="secondary"
-                                    href="https://www.coursera.org/account/accomplishments/certificate/QXNDTHPH7BF7"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span>Foundations of User Experience Design</span>
-                                </a>
-                                from Google
-                            </span>
-                        </li>
-                        <li>
-                            <span className="sentence">
-                                <a
-                                    className="secondary"
-                                    href="https://www.coursera.org/account/accomplishments/records/P362PHZ79LH2"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                >
-                                    <span>Agile Project Management from Google</span>
-                                </a>
-                                from Google
-                            </span>
-                        </li>
-                    </ul>
                 </section>
             </div>
         </Layout>
