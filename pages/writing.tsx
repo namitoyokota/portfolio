@@ -20,7 +20,7 @@ export const Writing = ({ posts }: WritingProps): JSX.Element => {
                 <section key={year}>
                     <label className="sentence">
                         <span>From {year}</span>
-                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
                     </label>
                     <hr />
                     <div className={styles.list}>

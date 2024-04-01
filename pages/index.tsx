@@ -34,7 +34,7 @@ export const Index = (): JSX.Element => {
             <section>
                 <label className="sentence">
                     <span>Latest projects</span>
-                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
                 </label>
                 <div className={styles.projects}>
                     <a className={styles.card} href="https://github.com/namitoyokota/ngx-monochrome" target="_blank" rel="noreferrer">
@@ -83,7 +83,7 @@ export const Index = (): JSX.Element => {
             <section>
                 <label className="sentence">
                     <span>Recent experiences</span>
-                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
                 </label>
                 <div className={styles.list}>
                     <span>
@@ -115,7 +115,7 @@ export const Index = (): JSX.Element => {
             <section>
                 <label className="sentence">
                     <span>Education</span>
-                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow.svg" />
+                    <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
                 </label>
                 <div className={styles.list}>
                     <div className={styles.education}>
@@ -135,18 +135,20 @@ export const Index = (): JSX.Element => {
                                 <Notation config={NotationConfigs.underline}>Computer Science</Notation> with a{' '}
                                 <Notation config={NotationConfigs.underline}>Mathematics</Notation> minor. Some of my favorite courses were:
                             </span>
-                            <ul>
-                                <li>
+                            <div className="items">
+                                <div className="bullet">
+                                    <Image alt="Checkmark" height="15" width="15" src="/icons/checkmark.svg" />
                                     <a
                                         className="primary"
                                         href="https://resume.namitoyokota.com/degree/degree.html#data-structures-and-algorithms"
                                         target="_blank"
                                         rel="noreferrer"
                                     >
-                                        Data Structures and Algorithms
+                                        <span>Data Structures and Algorithms</span>
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Checkmark" height="15" width="15" src="/icons/checkmark.svg" />
                                     <a
                                         className="primary"
                                         href="https://resume.namitoyokota.com/degree/degree.html#high-performance-computing"
@@ -155,8 +157,9 @@ export const Index = (): JSX.Element => {
                                     >
                                         High Performance Computing
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Checkmark" height="15" width="15" src="/icons/checkmark.svg" />
                                     <a
                                         className="primary"
                                         href="https://resume.namitoyokota.com/degree/degree.html#web-foundations"
@@ -165,31 +168,35 @@ export const Index = (): JSX.Element => {
                                     >
                                         Web Foundations
                                     </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
+
                             <span>
                                 I cherish my 4 years of college experience as I've grown tremendously as a person. I even got to gain
                                 professional experience through extracurricular activities:
                             </span>
-                            <ul>
-                                <li>
+                            <div className="items">
+                                <div className="bullet">
+                                    <Image alt="Bulb" height="15" width="15" src="/icons/bulb.svg" />
                                     <a className="primary" href="https://uaecocar.com/" target="_blank" rel="noreferrer">
                                         EcoCAR Challenge
                                     </a>
-                                </li>
-                                <li>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Bulb" height="15" width="15" src="/icons/bulb.svg" />
                                     <a className="primary" href="https://www.acm.org/" target="_blank" rel="noreferrer">
                                         Association for Computing Machinery
                                     </a>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
 
                             <label>Certifications</label>
                             <span>
                                 Since I enjoy learning, I spend my spare time taking online courses to sharpen my skills as a developer:
                             </span>
-                            <ul>
-                                <li>
+                            <div className="items">
+                                <div className="bullet">
+                                    <Image alt="Facebook logo" height="15" width="15" src="/icons/facebook.svg" />
                                     <span>
                                         <a
                                             className="primary"
@@ -210,8 +217,9 @@ export const Index = (): JSX.Element => {
                                         </a>{' '}
                                         from Meta
                                     </span>
-                                </li>
-                                <li>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
                                     <span>
                                         <a
                                             className="primary"
@@ -223,8 +231,9 @@ export const Index = (): JSX.Element => {
                                         </a>{' '}
                                         from Google
                                     </span>
-                                </li>
-                                <li>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
                                     <span>
                                         <a
                                             className="primary"
@@ -236,8 +245,8 @@ export const Index = (): JSX.Element => {
                                         </a>{' '}
                                         from Google
                                     </span>
-                                </li>
-                            </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

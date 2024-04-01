@@ -71,15 +71,6 @@ ol {
     flex-direction: column;
 }
 
-li {
-    line-height: 1.5;
-    padding: 0 10px;
-}
-
-li::marker {
-    color: var(--text-secondary);
-}
-
 small {
     color: var(--text-secondary);
 }
@@ -130,6 +121,20 @@ button {
     flex-wrap: wrap;
     column-gap: 5px;
     align-items: center;
+}
+
+.bullet {
+    display: grid;
+    grid-template-columns: 15px auto;
+    column-gap: 10px;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
 }
 
 .grey {
