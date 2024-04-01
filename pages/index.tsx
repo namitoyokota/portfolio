@@ -177,13 +177,13 @@ export const Index = (): JSX.Element => {
                             </span>
                             <div className="items">
                                 <div className="bullet">
-                                    <Image alt="Bulb" height="15" width="15" src="/icons/bulb.svg" />
+                                    <Image alt="Star" height="15" width="15" src="/icons/star.svg" />
                                     <a className="primary" href="https://uaecocar.com/" target="_blank" rel="noreferrer">
                                         EcoCAR Challenge
                                     </a>
                                 </div>
                                 <div className="bullet">
-                                    <Image alt="Bulb" height="15" width="15" src="/icons/bulb.svg" />
+                                    <Image alt="Star" height="15" width="15" src="/icons/star.svg" />
                                     <a className="primary" href="https://www.acm.org/" target="_blank" rel="noreferrer">
                                         Association for Computing Machinery
                                     </a>
