@@ -29,13 +29,12 @@ export const Writing = ({ posts }: WritingProps): JSX.Element => {
                             .map((writing) => (
                                 <Link legacyBehavior key={writing.id} href={writing.url}>
                                     <a className={styles.writing} target="_blank" rel="noopener noreferrer">
-                                        <div className={styles.info}>
-                                            <span className={styles.title}>{writing.title}</span>
-                                            <span className={styles.description} title={writing.subtitle}>
-                                                {writing.subtitle}
-                                            </span>
-                                        </div>
-                                        <p className={styles.date}>{format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}</p>
+                                        <span className={styles.title} title={writing.title}>
+                                            {writing.title}
+                                        </span>
+                                        <span className={styles.date} title={format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}>
+                                            {format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}
+                                        </span>
                                     </a>
                                 </Link>
                             ))}
