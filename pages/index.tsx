@@ -129,6 +129,63 @@ export const Index = (): JSX.Element => {
                             />
                         </a>
                         <div className={styles.list}>
+                            <label>Certifications</label>
+                            <span>
+                                Since I enjoy learning, I spend my spare time taking online courses to sharpen my skills as a developer:
+                            </span>
+                            <div className="items">
+                                <div className="bullet">
+                                    <Image alt="Facebook logo" height="15" width="15" src="/icons/facebook.svg" />
+                                    <span>
+                                        <a
+                                            className="primary"
+                                            href="https://www.coursera.org/account/accomplishments/records/MH7UG7T56C52"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            React Basics
+                                        </a>{' '}
+                                        and{' '}
+                                        <a
+                                            className="primary"
+                                            href="https://www.coursera.org/account/accomplishments/records/N3E722CLNM9R"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            Advanced React
+                                        </a>{' '}
+                                        from Meta
+                                    </span>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
+                                    <span>
+                                        <a
+                                            className="primary"
+                                            href="https://www.coursera.org/account/accomplishments/certificate/QXNDTHPH7BF7"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <span>Foundations of User Experience Design</span>
+                                        </a>{' '}
+                                        from Google
+                                    </span>
+                                </div>
+                                <div className="bullet">
+                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
+                                    <span>
+                                        <a
+                                            className="primary"
+                                            href="https://www.coursera.org/account/accomplishments/records/P362PHZ79LH2"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <span>Agile Project Management from Google</span>
+                                        </a>{' '}
+                                        from Google
+                                    </span>
+                                </div>
+                            </div>
                             <label>Undergraduate degree</label>
                             <span>
                                 I have a degree from the University of Alabama in{' '}
@@ -187,64 +244,6 @@ export const Index = (): JSX.Element => {
                                     <a className="primary" href="https://www.acm.org/" target="_blank" rel="noreferrer">
                                         Association for Computing Machinery
                                     </a>
-                                </div>
-                            </div>
-
-                            <label>Certifications</label>
-                            <span>
-                                Since I enjoy learning, I spend my spare time taking online courses to sharpen my skills as a developer:
-                            </span>
-                            <div className="items">
-                                <div className="bullet">
-                                    <Image alt="Facebook logo" height="15" width="15" src="/icons/facebook.svg" />
-                                    <span>
-                                        <a
-                                            className="primary"
-                                            href="https://www.coursera.org/account/accomplishments/records/MH7UG7T56C52"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            React Basics
-                                        </a>{' '}
-                                        and{' '}
-                                        <a
-                                            className="primary"
-                                            href="https://www.coursera.org/account/accomplishments/records/N3E722CLNM9R"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            Advanced React
-                                        </a>{' '}
-                                        from Meta
-                                    </span>
-                                </div>
-                                <div className="bullet">
-                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
-                                    <span>
-                                        <a
-                                            className="primary"
-                                            href="https://www.coursera.org/account/accomplishments/certificate/QXNDTHPH7BF7"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <span>Foundations of User Experience Design</span>
-                                        </a>{' '}
-                                        from Google
-                                    </span>
-                                </div>
-                                <div className="bullet">
-                                    <Image alt="Google logo" height="15" width="15" src="/icons/google.svg" />
-                                    <span>
-                                        <a
-                                            className="primary"
-                                            href="https://www.coursera.org/account/accomplishments/records/P362PHZ79LH2"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                        >
-                                            <span>Agile Project Management from Google</span>
-                                        </a>{' '}
-                                        from Google
-                                    </span>
                                 </div>
                             </div>
                         </div>
