@@ -35,4 +35,7 @@ $ yarn dev
 -   [Conor Dewey](https://www.conordewey.com/)
 -   [Josh Comeau](https://www.joshwcomeau.com/)
 -   [Delba Oliveira](https://delba.dev/)
+-   [Takuma Matsuyama](https://www.craftz.dog/)
+-   [Dan Mace](https://danmace.com/)
+-   [Casey Neistat](https://www.caseyneistat.com/)
 -   [Dribbble Designs](https://dribbble.com/namitoyokota/collections/7037253-Portfolio?utm_source=Clipboard_%22clipboard_collection%22&utm_campaign=%22namitoyokota%22&utm_content=%22Portfolio%22&utm_medium=Social_Share)
