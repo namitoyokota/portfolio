@@ -3,19 +3,19 @@ import { format, parseISO } from 'date-fns';
 import Image from 'next/legacy/image';
 import Link from 'next/link';
 import Layout from '../components/Layout';
-import { WritingProps } from '../models/types/writing-props';
-import styles from '../styles/writing.module.css';
+import { WritingsProps } from '../models/types/writings-props';
+import styles from '../styles/writings.module.css';
 
-export const Writing = ({ posts }: WritingProps): JSX.Element => {
+export const Writings = ({ posts }: WritingsProps): JSX.Element => {
     return (
         <Layout
             customMeta={{
-                title: 'Writing - Namito Yokota',
+                title: 'Writings - Namito Yokota',
                 description:
                     'I use writing as a medium to open-source my learnings and notes to my future self. The hope is that along the way, I can help others facing the same problems!',
             }}
         >
-            <h1>Writing</h1>
+            <h1>Writings</h1>
             {[...new Set(posts.map((post) => parseISO(post.publishedAt!).getFullYear()))].map((year) => (
                 <section key={year}>
                     <label className="sentence">
@@ -79,4 +79,4 @@ export async function getStaticProps() {
     };
 }
 
-export default Writing;
+export default Writings;

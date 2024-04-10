@@ -1,5 +1,5 @@
 import { Post } from '../interface/post';
 
-export type WritingProps = {
+export type WritingsProps = {
     posts: Post[];
 };
