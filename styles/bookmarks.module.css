@@ -1,0 +1,30 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.bookmark {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    transition: 0.15s ease-in-out;
+}
+
+.bookmark:hover {
+    cursor: pointer;
+    color: var(--text-highlight);
+    text-decoration: none;
+}
+
+.title {
+    line-height: 1.2em;
+    margin: 5px 0;
+}
+
+.website {
+    display: flex;
+    column-gap: 5px;
+    color: var(--text-secondary);
+    font-size: 0.8em;
+}
