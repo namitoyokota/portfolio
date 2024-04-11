@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import { BookmarkProps } from '../models/types/bookmark-props';
 import styles from '../styles/bookmarks.module.css';
 
-export const Writing = ({ bookmarks }: BookmarkProps): JSX.Element => {
+export const Writing = ({ bookmarkGroups }: BookmarkProps): JSX.Element => {
     return (
         <Layout
             customMeta={{
@@ -14,23 +14,30 @@ export const Writing = ({ bookmarks }: BookmarkProps): JSX.Element => {
             }}
         >
             <h1>Bookmarks</h1>
-            <section>
-                <div className={styles.list}>
-                    {bookmarks.map((bookmark) => (
-                        <Link legacyBehavior key={bookmark.url} href={bookmark.url}>
-                            <a className={styles.bookmark} target="_blank" rel="noopener noreferrer">
-                                <span className={styles.title} title={bookmark.title}>
-                                    {bookmark.title}
-                                </span>
-                                <div className={styles.website} title={bookmark.website}>
-                                    <Image alt="link" height="12" width="12" src="/icons/link-2.svg" />
-                                    <span>{bookmark.website}</span>
-                                </div>
-                            </a>
-                        </Link>
-                    ))}
-                </div>
-            </section>
+            {bookmarkGroups.map((group) => (
+                <section key={group.category}>
+                    <label className="sentence">
+                        <span>{group.category}</span>
+                        <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
+                    </label>
+                    <hr />
+                    <div className={styles.list}>
+                        {group.list.map((bookmark) => (
+                            <Link legacyBehavior key={bookmark.url} href={bookmark.url}>
+                                <a className={styles.bookmark} target="_blank" rel="noopener noreferrer">
+                                    <span className={styles.title} title={bookmark.title}>
+                                        {bookmark.title}
+                                    </span>
+                                    <div className={styles.website} title={bookmark.website}>
+                                        <Image alt="link" height="12" width="12" src="/icons/link-2.svg" />
+                                        <span>{bookmark.website}</span>
+                                    </div>
+                                </a>
+                            </Link>
+                        ))}
+                    </div>
+                </section>
+            ))}
         </Layout>
     );
 };
@@ -41,7 +48,7 @@ export async function getStaticProps() {
 
     return {
         props: {
-            bookmarks: data,
+            bookmarkGroups: data,
         },
     };
 }

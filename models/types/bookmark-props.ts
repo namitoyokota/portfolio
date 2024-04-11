@@ -1,5 +1,5 @@
-import { Bookmark } from '../interface/bookmark';
+import { BookmarkGroup } from '../interface/bookmark-category';
 
 export type BookmarkProps = {
-    bookmarks: Bookmark[];
+    bookmarkGroups: BookmarkGroup[];
 };
