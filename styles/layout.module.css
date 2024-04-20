@@ -9,9 +9,6 @@
 }
 
 .navigation {
-    top: 0rem;
-    margin-inline: auto;
-    z-index: 2;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, min-content) auto 25px;
@@ -23,6 +20,8 @@
 @supports (animation-timeline: view()) {
     .navigation {
         position: sticky;
+        margin-inline: auto;
+        z-index: 2;
         top: -5rem;
         border-radius: 100vw;
         backdrop-filter: blur(0.35rem);
