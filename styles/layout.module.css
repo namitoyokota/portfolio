@@ -9,7 +9,6 @@
 }
 
 .navigation {
-    position: sticky;
     top: 0rem;
     margin-inline: auto;
     z-index: 2;
@@ -23,6 +22,7 @@
 
 @supports (animation-timeline: view()) {
     .navigation {
+        position: sticky;
         top: -5rem;
         border-radius: 100vw;
         backdrop-filter: blur(0.35rem);
