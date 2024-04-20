@@ -33,6 +33,7 @@ $ yarn dev
 -   [Guillermo Rauch](https://rauchg.com/)
 -   [Alex Pate](https://alexjpate.com/)
 -   [Conor Dewey](https://www.conordewey.com/)
+-   [Emil Kowalski](https://emilkowal.ski/)
 -   [Josh Comeau](https://www.joshwcomeau.com/)
 -   [Delba Oliveira](https://delba.dev/)
 -   [Takuma Matsuyama](https://www.craftz.dog/)
