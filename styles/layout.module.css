@@ -9,10 +9,37 @@
 }
 
 .navigation {
+    position: sticky;
+    top: 0rem;
+    margin-inline: auto;
+    z-index: 2;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, min-content) auto 25px;
     column-gap: 20px;
     align-items: center;
     padding: 20px;
+}
+
+@supports (animation-timeline: view()) {
+    .navigation {
+        top: -5rem;
+        border-radius: 100vw;
+        backdrop-filter: blur(0.35rem);
+        animation: stickyNav linear forwards;
+        animation-timeline: view();
+        animation-range-start: calc(100vh + 50px);
+        animation-range-end: calc(100vh + 300px);
+    }
+}
+
+@keyframes stickyNav {
+    100% {
+        top: 1rem;
+        color: hsl(0 10% 90%);
+        background-color: hsl(0 50% 90% / 0.1);
+        width: fit-content;
+        display: flex;
+        padding: 10px 20px;
+    }
 }
