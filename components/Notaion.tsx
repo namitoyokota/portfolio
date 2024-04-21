@@ -10,7 +10,11 @@ const Notation = ({ children, config }: NotationProps): JSX.Element => {
     useEffect(() => {
         const notation = annotate(ref.current, config);
         const observer = new IntersectionObserver(([entry]) => {
-            entry.isIntersecting ? notation.show() : notation.hide();
+            if (entry.isIntersecting) {
+                setTimeout(() => notation.show(), 1500);
+            } else {
+                notation.hide();
+            }
         });
 
         observer.observe(ref.current);
