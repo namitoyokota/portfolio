@@ -17,22 +17,24 @@
     padding: 20px;
 }
 
-@supports (animation-timeline: view()) {
-    .navigation {
-        position: sticky;
-        margin-inline: auto;
-        z-index: 2;
-        top: -5rem;
-        border-radius: 100vw;
-        backdrop-filter: blur(0.35rem);
-        animation: stickyNav linear forwards;
-        animation-timeline: view();
-        animation-range-start: calc(100vh + 50px);
-        animation-range-end: calc(100vh + 300px);
+@media (prefers-reduced-motion: no-preference) {
+    @supports (animation-timeline: view()) {
+        .navigation {
+            position: sticky;
+            margin-inline: auto;
+            z-index: 2;
+            top: -5rem;
+            border-radius: 100vw;
+            backdrop-filter: blur(0.35rem);
+            animation: floating-navigation linear forwards;
+            animation-timeline: view();
+            animation-range-start: calc(100vh + 50px);
+            animation-range-end: calc(100vh + 300px);
+        }
     }
 }
 
-@keyframes stickyNav {
+@keyframes floating-navigation {
     100% {
         top: 1rem;
         color: hsl(0 10% 90%);
