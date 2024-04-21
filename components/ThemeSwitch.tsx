@@ -1,5 +1,7 @@
 import { useTheme } from 'next-themes';
 import Image from 'next/legacy/image';
+import { useEffect } from 'react';
+import { Theme } from '../models/enums/theme';
 import styles from '../styles/theme.module.css';
 
 const ThemeSwitch = (): JSX.Element => {
@@ -7,14 +9,33 @@ const ThemeSwitch = (): JSX.Element => {
     const { theme, setTheme } = useTheme();
 
     /** Indicates current state of theme */
-    const isDark = theme === 'dark';
+    const isDark = theme === Theme.dark;
+
+    /** Checks whether device is set to light theme */
+    const themeWatcher = window.matchMedia(`(prefers-color-scheme: ${Theme.light})`);
+
+    /** Event type to listen to */
+    const changeEventType = 'change';
+
+    /** Call back method called in device theme change */
+    const themeChanger = (event: MediaQueryListEvent) => setTheme(event.matches ? Theme.light : Theme.dark);
+
+    /** Update theme depending on device setting */
+    useEffect(() => {
+        if (themeWatcher.matches) {
+            setTheme(Theme.light);
+        }
+
+        themeWatcher.addEventListener(changeEventType, themeChanger);
+        return () => themeWatcher.removeEventListener(changeEventType, themeChanger);
+    }, []);
 
     return (
         <button
             className={styles.button}
             title="Toggle theme"
             onClick={() => {
-                setTheme(theme === 'dark' ? 'light' : 'dark');
+                setTheme(theme === Theme.dark ? Theme.light : Theme.dark);
             }}
         >
             <Image
@@ -22,7 +43,7 @@ const ThemeSwitch = (): JSX.Element => {
                 alt="Toggle theme"
                 height="20"
                 width="20"
-                src={isDark ? 'https://api.namitoyokota.com/assets/logos/white.svg' : 'https://api.namitoyokota.com/assets/logos/black.svg'}
+                src={`https://api.namitoyokota.com/assets/logos/${isDark ? 'white' : 'black'}.svg`}
             />
         </button>
     );
