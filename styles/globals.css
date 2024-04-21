@@ -75,6 +75,10 @@ small {
     color: var(--text-secondary);
 }
 
+span {
+    position: relative;
+}
+
 label {
     font-weight: 600;
 }
