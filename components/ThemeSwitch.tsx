@@ -11,9 +11,6 @@ const ThemeSwitch = (): JSX.Element => {
     /** Indicates current state of theme */
     const isDark = theme === Theme.dark;
 
-    /** Checks whether device is set to light theme */
-    const themeWatcher = window.matchMedia(`(prefers-color-scheme: ${Theme.light})`);
-
     /** Event type to listen to */
     const changeEventType = 'change';
 
@@ -22,6 +19,7 @@ const ThemeSwitch = (): JSX.Element => {
 
     /** Update theme depending on device setting */
     useEffect(() => {
+        const themeWatcher = window.matchMedia(`(prefers-color-scheme: ${Theme.light})`);
         if (themeWatcher.matches) {
             setTheme(Theme.light);
         }
