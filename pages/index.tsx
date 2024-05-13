@@ -43,43 +43,47 @@ export const Index = (): JSX.Element => {
                     <Image alt="Arrow down" height="15" width="15" src="/icons/arrow-down.svg" />
                 </label>
                 <div className={styles.projects}>
-                    <a className={styles.card} href="https://github.com/namitoyokota/ngx-monochrome" target="_blank" rel="noreferrer">
+                    <a className={styles.card} href="https://www.venminder.com/" target="_blank" rel="noreferrer">
                         <Image
                             className={styles.thumbnail}
-                            alt="Monochrome website preview"
-                            height="545"
-                            width="968"
-                            src="https://api.namitoyokota.com/assets/og-images/monochrome.png"
+                            alt="Venminder Website Preview"
+                            height="1280"
+                            width="1920"
+                            src="/images/venminder.png"
                         />
                         <div className={styles.project}>
-                            <span>ngx-monochrome</span>
-                            <span className={styles.description}>Black and white component library in Angular</span>
+                            <span>Venminder</span>
+                            <span className={styles.description}>
+                                Industry's leading unified platform that guides and streamlines third-party risk management.
+                            </span>
                         </div>
                     </a>
-                    <a className={styles.card} href="https://ideas.namitoyokota.com" target="_blank" rel="noreferrer">
+                    <a className={styles.card} href="https://www.reimaginecollaboration.com/" target="_blank" rel="noreferrer">
                         <Image
                             className={styles.thumbnail}
-                            alt="Ideas website preview"
-                            height="545"
-                            width="968"
-                            src="https://api.namitoyokota.com/assets/og-images/steeeve.png"
+                            alt="Hexagon Connect Website Preview"
+                            height="1280"
+                            width="1920"
+                            src="/images/hxgn-connect.png"
                         />
                         <div className={styles.project}>
-                            <span>Steeeve</span>
-                            <span className={styles.description}>Social platform for sharing your next side project ideas</span>
+                            <span>HxGN Connect</span>
+                            <span className={styles.description}>Collaborative workspace for elevating communication and connection.</span>
                         </div>
                     </a>
-                    <a className={styles.card} href="https://todo.namitoyokota.com" target="_blank" rel="noreferrer">
+                    <a className={styles.card} href="https://www.trips4trade.com" target="_blank" rel="noreferrer">
                         <Image
                             className={styles.thumbnail}
-                            alt="To do website preview"
-                            height="545"
-                            width="968"
-                            src="https://api.namitoyokota.com/assets/og-images/todo.png"
+                            alt="Trips4Trade Website Preview"
+                            height="1280"
+                            width="1920"
+                            src="/images/trips4trade.png"
                         />
                         <div className={styles.project}>
-                            <span>Todo Today</span>
-                            <span className={styles.description}>Todo application that resets every night</span>
+                            <span>Trips4Trade</span>
+                            <span className={styles.description}>
+                                Platform for trading trips pertaining to outdoors, adventure, vacation, and sports.
+                            </span>
                         </div>
                     </a>
                 </div>
