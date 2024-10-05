@@ -27,15 +27,15 @@ export const Writings = ({ posts }: WritingsProps): JSX.Element => {
                         {posts
                             .filter((post) => parseISO(post.publishedAt!).getFullYear() === year)
                             .map((writing) => (
-                                <Link legacyBehavior key={writing.id} href={writing.url}>
-                                    <a className={styles.writing} target="_blank" rel="noopener noreferrer">
+                                <Link legacyBehavior key={writing.id} as={`/post/${writing.slug}`} href={`/post/[slug]`}>
+                                    <div className={styles.writing}>
                                         <span className={styles.title} title={writing.title}>
                                             {writing.title}
                                         </span>
                                         <span className={styles.date} title={format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}>
                                             {format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}
                                         </span>
-                                    </a>
+                                    </div>
                                 </Link>
                             ))}
                     </div>
@@ -64,6 +64,7 @@ export async function getStaticProps() {
                                 subtitle
                                 publishedAt
                                 reactionCount
+                                slug
                             }
                         }
                     }

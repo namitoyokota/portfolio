@@ -20,4 +20,12 @@ export interface Post {
 
     /** The number of hearts on the post. Shows how many users liked the post. */
     reactionCount: number;
+
+    /** Page identifier for blog URL */
+    slug: string;
+
+    /** HTML string to display the blog on page */
+    content: {
+        html: string;
+    };
 }
