@@ -2,15 +2,15 @@ import { parseISO } from 'date-fns';
 import Image from 'next/legacy/image';
 import { useState } from 'react';
 import Layout from '../components/Layout';
-import { Snippet } from '../models/interface/snippet';
-import { SnippetsProps } from '../models/types/snippets-props';
+import type { Snippet } from '../models/interface/snippet';
+import type { SnippetsProps } from '../models/types/snippets-props';
 import styles from '../styles/snippets.module.css';
 
 export const Snippets = ({ snippets }: SnippetsProps): JSX.Element => {
     const [codeSnippets, setCodeSnippets] = useState(snippets);
 
     function toggleShow(snippetId: string) {
-        let updatedCodeSnippets = structuredClone(codeSnippets);
+        const updatedCodeSnippets = structuredClone(codeSnippets);
         const snippetToToggle = updatedCodeSnippets.find((snippet) => snippet.id === snippetId);
         if (snippetToToggle) {
             snippetToToggle.show = !snippetToToggle.show;
