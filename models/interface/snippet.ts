@@ -1,6 +1,6 @@
 export interface Snippet {
     id: string;
-    title: string;
+    filename: string;
     description: string;
     created_at: string;
     url: string;

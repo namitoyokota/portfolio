@@ -40,11 +40,15 @@ export const Snippets = ({ snippets }: SnippetsProps): JSX.Element => {
                             .filter((snippet) => parseISO(snippet.created_at!).getFullYear() === year)
                             .map((snippet) => (
                                 <div key={snippet.id} className={styles.snippet}>
-                                    <span className={styles.snippetTitle} title={snippet.title} onClick={() => toggleShow(snippet.id)}>
-                                        {snippet.title}
-                                    </span>
-                                    <span className={styles.snippetDescription} title={snippet.description}>
+                                    <span
+                                        className={styles.snippetTitle}
+                                        title={snippet.description}
+                                        onClick={() => toggleShow(snippet.id)}
+                                    >
                                         {snippet.description}
+                                    </span>
+                                    <span className={styles.snippetDescription} title={snippet.filename}>
+                                        {snippet.filename}
                                     </span>
                                     <div className={`${styles.snippetContent} ${snippet.show ? styles.snippetShow : ''}`}>
                                         <pre className={styles.snippetCode}>{snippet.content}</pre>
@@ -72,7 +76,7 @@ export async function getStaticProps() {
             await fetch(fileUrl)
                 .then((response) => response.text())
                 .then((content) => {
-                    snippet.title = fileName;
+                    snippet.filename = fileName;
                     snippet.content = content;
                     snippet.show = false;
                 });
