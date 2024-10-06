@@ -35,7 +35,7 @@
         "use-sound": "^4.0.1"
     },
     "devDependencies": {
-        "@types/node": "16.11.12",
+        "@types/node": "17.0.29",
         "@types/react": "17.0.37",
         "eslint": "^8.38.0",
         "eslint-config-next": "^13.3.0",
