@@ -40,4 +40,5 @@
 .snippetCode {
     min-height: 0;
     grid-template-rows: 1fr;
+    overflow: hidden;
 }
