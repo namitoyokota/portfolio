@@ -40,5 +40,6 @@
 .snippetCode {
     min-height: 0;
     grid-template-rows: 1fr;
+    color: var(--text-secondary);
     overflow: hidden;
 }
