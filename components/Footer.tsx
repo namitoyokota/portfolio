@@ -15,6 +15,11 @@ const Footer = (): JSX.Element => {
                     <Image alt="link" height="12" width="12" src="/icons/link.svg" />
                 </a>
 
+                <a className="sentence" href="https://www.goodreads.com/user/show/105857646-namito-yokota" target="_blank" rel="noreferrer">
+                    <span>Goodreads</span>
+                    <Image alt="link" height="12" width="12" src="/icons/link.svg" />
+                </a>
+
                 <a className="sentence" href="https://photos.namitoyokota.com" target="_blank" rel="noreferrer">
                     <span>Photos</span>
                     <Image alt="link" height="12" width="12" src="/icons/link.svg" />
