@@ -26,11 +26,11 @@ const Navigation = (): JSX.Element => {
                 </a>
             </Link>
 
-            <Link legacyBehavior href="/bookmarks">
+            {/* <Link legacyBehavior href="/bookmarks">
                 <a className={router.asPath == '/bookmarks' ? styles.active : styles.page}>
                     <span>Bookmarks</span>
                 </a>
-            </Link>
+            </Link> */}
         </>
     );
 };
