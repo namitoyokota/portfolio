@@ -1,0 +1,43 @@
+.list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.snippet {
+    display: flex;
+    flex-direction: column;
+}
+
+.snippetTitle {
+    line-height: 1.2em;
+    margin: 5px 0;
+    transition: 0.15s ease-in-out;
+}
+
+.snippetTitle:hover {
+    cursor: pointer;
+    color: var(--text-highlight);
+}
+
+.snippetDescription {
+    color: var(--text-secondary);
+    font-size: 0.8em;
+}
+
+.snippetContent {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    transition: grid-template-rows 0.5s, padding 0.5s;
+}
+
+.snippetShow {
+    grid-template-rows: 1fr;
+    padding: 10px 0;
+}
+
+.snippetCode {
+    min-height: 0;
+    grid-template-rows: 1fr;
+}
