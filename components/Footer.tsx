@@ -29,6 +29,11 @@ const Footer = (): JSX.Element => {
                     <span>Email</span>
                     <Image alt="link" height="12" width="12" src="/icons/link.svg" />
                 </a>
+
+                <a className="sentence" href="https://resume.namitoyokota.com/resume.html" target="_blank" rel="noreferrer">
+                    <span>Resume</span>
+                    <Image alt="link" height="12" width="12" src="/icons/link.svg" />
+                </a>
             </div>
         </>
     );
