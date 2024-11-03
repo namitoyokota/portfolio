@@ -17,7 +17,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
     return (
         <NextHead>
             <title>{meta.title}</title>
-            <link rel="icon" href="/images/profile-1.png" />
+            <link rel="icon" href="/images/logo.svg" />
             <meta content={meta.description} name="description" />
             <meta property="og:url" content={`${WEBSITE_HOST_URL}${router.asPath}`} />
             <link rel="canonical" href={`${WEBSITE_HOST_URL}${router.asPath}`} />
