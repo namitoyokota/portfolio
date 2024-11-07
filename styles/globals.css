@@ -116,6 +116,21 @@ pre {
     word-wrap: break-word;
 }
 
+article {
+    padding-top: 40px;
+}
+
+article > div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    line-height: 1.25rem;
+}
+
+article > div > pre {
+    color: var(--text-secondary);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;

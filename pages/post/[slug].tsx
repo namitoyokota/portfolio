@@ -1,7 +1,9 @@
 import { ApolloClient, gql, InMemoryCache } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
+import Label from '../../components/Label';
 import Layout from '../../components/Layout';
 import { PostProps } from '../../models/types/post-props';
+import styles from '../../styles/post.module.css';
 
 export const PostPage = ({ post }: PostProps): JSX.Element => {
     return (
@@ -11,15 +13,22 @@ export const PostPage = ({ post }: PostProps): JSX.Element => {
                 description: post.subtitle,
             }}
         >
-            <h1>{post.title}</h1>
-            <span>{post.subtitle}</span>
-            <span>{format(parseISO(post.publishedAt!), 'MMMM dd, yyyy')}</span>
-            <a href={post.url} target="_blank" rel="noopener noreferrer">
-                View Original
-            </a>
-            <article>
-                <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
-            </article>
+            <div className={styles.content}>
+                <h1>{post.title}</h1>
+                <span className="grey">{post.subtitle}</span>
+                <div className={styles.menu}>
+                    <Label alternate={true}>{format(parseISO(post.publishedAt!), 'MMMM dd, yyyy')}</Label>
+                    <Label>
+                        <a href={post.url} target="_blank" rel="noopener noreferrer">
+                            View Original
+                        </a>
+                    </Label>
+                </div>
+
+                <article>
+                    <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
+                </article>
+            </div>
         </Layout>
     );
 };
