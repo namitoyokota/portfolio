@@ -127,6 +127,7 @@ article > div {
     line-height: 1.25rem;
 }
 
+article > div > p > code,
 article > div > pre {
     color: var(--text-secondary);
 }
