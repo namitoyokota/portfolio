@@ -7,11 +7,14 @@ import Layout from '../../components/Layout';
 import { Post } from '../../models/interface/post';
 import styles from '../../styles/post.module.css';
 
-export const PostPage = ({ props }): JSX.Element => {
+export const PostPage = (): JSX.Element => {
+    /** Tracks blog content */
     const [post, setPost] = useState<Post>(null);
 
+    /** Tracks whether blog content has loaded */
     const [loading, setLoading] = useState(true);
 
+    /** Retrieves blog content on page load */
     useEffect(() => {
         const slug = window.location.pathname.split('/')[2];
         const client = new ApolloClient({
