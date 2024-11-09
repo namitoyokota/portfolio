@@ -29,9 +29,12 @@ export const Writings = ({ posts }: WritingsProps): JSX.Element => {
                             .map((writing) => (
                                 <Link legacyBehavior key={writing.id} as={`/post/${writing.slug}`} href={`/post/[slug]`}>
                                     <div className={styles.writing}>
-                                        <span className={styles.title} title={writing.title}>
-                                            {writing.title}
-                                        </span>
+                                        <div className={styles.title} title={writing.title}>
+                                            <span>{writing.title}</span>
+                                            {writing.reactionCount > 0 && (
+                                                <Image alt="trending" height="15" width="15" src="/icons/trending-up.svg" />
+                                            )}
+                                        </div>
                                         <span className={styles.date} title={format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}>
                                             {format(parseISO(writing.publishedAt!), 'MMMM dd, yyyy')}
                                         </span>

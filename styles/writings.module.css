@@ -18,6 +18,8 @@
 }
 
 .title {
+    display: flex;
+    column-gap: 8px;
     line-height: 1.2em;
     margin: 5px 0;
 }
