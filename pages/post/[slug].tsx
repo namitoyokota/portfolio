@@ -53,8 +53,8 @@ export const PostPage = (): JSX.Element => {
             {loading ? (
                 <Layout>
                     <div className={styles.content}>
-                        <Skeleton height={'2rem'} width={'300px'}></Skeleton>
-                        <Skeleton height={'1rem'} width={'500px'}></Skeleton>
+                        <Skeleton height={'2rem'} width={'70%'}></Skeleton>
+                        <Skeleton height={'1rem'} width={'80%'}></Skeleton>
                         <div className={styles.menu}>
                             <Skeleton height={'1rem'} width={'100px'}></Skeleton>
                             <Skeleton height={'1rem'} width={'100px'}></Skeleton>
