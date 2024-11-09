@@ -1,5 +1,5 @@
 .skeleton {
-    background-color: var(--text-hidden);
+    max-width: 100%;
     background: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 60%)
         var(--text-hidden);
     background-size: 200% 100%;

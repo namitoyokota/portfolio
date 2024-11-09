@@ -43,6 +43,7 @@ main {
     flex-direction: column;
     row-gap: 50px;
     padding: 0 20px;
+    overflow: hidden;
 }
 
 section {

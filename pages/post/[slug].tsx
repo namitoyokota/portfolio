@@ -60,8 +60,8 @@ export const PostPage = (): JSX.Element => {
                             <Skeleton height={'1rem'} width={'100px'}></Skeleton>
                         </div>
                         <article>
-                            {Array.from({ length: 5 }, () => (
-                                <Skeleton height={'1rem'} width={'100%'}></Skeleton>
+                            {Array.from({ length: 5 }, (_, index) => (
+                                <Skeleton key={index} height={'1rem'} width={'100%'}></Skeleton>
                             ))}
                         </article>
                     </div>
