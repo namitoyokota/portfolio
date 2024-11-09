@@ -44,8 +44,8 @@ export const PostPage = (): JSX.Element => {
                     }
                 `,
             })
-            .then((response) => setPost(response.data.publication.post))
-            .finally(() => setLoading(false));
+            .then((response) => setPost(response.data.publication.post));
+        // .finally(() => setLoading(false));
     }, []);
 
     return (
@@ -53,11 +53,11 @@ export const PostPage = (): JSX.Element => {
             {loading ? (
                 <Layout>
                     <div className={styles.content}>
-                        <Skeleton height={'2rem'} width={'70%'}></Skeleton>
-                        <Skeleton height={'1rem'} width={'80%'}></Skeleton>
+                        <Skeleton height={'2rem'} width={'min(300px, 70%)'}></Skeleton>
+                        <Skeleton height={'1rem'} width={'min(500px, 85%)'}></Skeleton>
                         <div className={styles.menu}>
-                            <Skeleton height={'1rem'} width={'100px'}></Skeleton>
-                            <Skeleton height={'1rem'} width={'100px'}></Skeleton>
+                            <Skeleton height={'1rem'} width={'min(20%, 100px)'}></Skeleton>
+                            <Skeleton height={'1rem'} width={'min(20%, 100px)'}></Skeleton>
                         </div>
                         <article>
                             {Array.from({ length: 5 }, (_, index) => (
