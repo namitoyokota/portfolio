@@ -7,7 +7,7 @@ const Navigation = (): JSX.Element => {
     const router = useRouter();
 
     return (
-        <>
+        <div className={styles.bar}>
             <Link legacyBehavior href="/">
                 <a className={router.asPath == '/' ? styles.active : styles.page}>
                     <span>Home</span>
@@ -31,7 +31,7 @@ const Navigation = (): JSX.Element => {
                     <span>Bookmarks</span>
                 </a>
             </Link>
-        </>
+        </div>
     );
 };
 
