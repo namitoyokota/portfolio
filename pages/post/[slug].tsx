@@ -4,6 +4,7 @@ import { format, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
 import Label from '../../components/Label';
 import Layout from '../../components/Layout';
+import Skeleton from '../../components/Skeleton';
 import { Post } from '../../models/interface/post';
 import styles from '../../styles/post.module.css';
 
@@ -51,7 +52,19 @@ export const PostPage = (): JSX.Element => {
         <>
             {loading ? (
                 <Layout>
-                    <h1>Loading...</h1>
+                    <div className={styles.content}>
+                        <Skeleton height={'2rem'} width={'300px'}></Skeleton>
+                        <Skeleton height={'1rem'} width={'500px'}></Skeleton>
+                        <div className={styles.menu}>
+                            <Skeleton height={'1rem'} width={'100px'}></Skeleton>
+                            <Skeleton height={'1rem'} width={'100px'}></Skeleton>
+                        </div>
+                        <article>
+                            {Array.from({ length: 5 }, () => (
+                                <Skeleton height={'1rem'} width={'100%'}></Skeleton>
+                            ))}
+                        </article>
+                    </div>
                 </Layout>
             ) : (
                 <Layout
@@ -71,10 +84,7 @@ export const PostPage = (): JSX.Element => {
                                 </a>
                             </Label>
                         </div>
-
-                        <article>
-                            <div dangerouslySetInnerHTML={{ __html: post.content.html }}></div>
-                        </article>
+                        <article dangerouslySetInnerHTML={{ __html: post.content.html }}></article>
                     </div>
                 </Layout>
             )}

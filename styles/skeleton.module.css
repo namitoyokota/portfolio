@@ -1,0 +1,16 @@
+.skeleton {
+    background-color: var(--text-hidden);
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0) 40%, rgba(255, 255, 255, 0.5) 50%, rgba(255, 255, 255, 0) 60%)
+        var(--text-hidden);
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    border-radius: 4px;
+    animation: 1.25s loading ease-in-out infinite;
+    animation-delay: 0.05s;
+}
+
+@keyframes loading {
+    to {
+        background-position-x: -20%;
+    }
+}

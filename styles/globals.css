@@ -127,15 +127,15 @@ article {
     padding-top: 40px;
 }
 
-article > div {
+article {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     line-height: 1.25rem;
 }
 
-article > div > p > code,
-article > div > pre {
+article > p > code,
+article > pre {
     color: var(--text-secondary);
 }
 
