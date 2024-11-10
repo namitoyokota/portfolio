@@ -139,6 +139,11 @@ article > pre {
     color: var(--text-secondary);
 }
 
+article > p,
+article > ul > li {
+    line-height: 1.5rem;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
