@@ -44,8 +44,8 @@ export const PostPage = (): JSX.Element => {
                     }
                 `,
             })
-            .then((response) => setPost(response.data.publication.post));
-        // .finally(() => setLoading(false));
+            .then((response) => setPost(response.data.publication.post))
+            .finally(() => setLoading(false));
     }, []);
 
     return (
