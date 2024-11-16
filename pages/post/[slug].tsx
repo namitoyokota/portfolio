@@ -1,11 +1,10 @@
-'use client';
 import { ApolloClient, gql, InMemoryCache } from '@apollo/client';
 import { format, parseISO } from 'date-fns';
 import { useEffect, useState } from 'react';
 import Label from '../../components/Label';
 import Layout from '../../components/Layout';
 import Skeleton from '../../components/Skeleton';
-import { Post } from '../../models/interface/post';
+import type { Post } from '../../models/interface/post';
 import styles from '../../styles/post.module.css';
 
 export const PostPage = (): JSX.Element => {
@@ -14,16 +13,6 @@ export const PostPage = (): JSX.Element => {
 
     /** Tracks whether blog content has loaded */
     const [loading, setLoading] = useState(true);
-
-    /** Retrieves blog content on page load */
-    useEffect(() => {
-        const slug = window.location.pathname.split('/')[2];
-        if (getCachedPost(slug)) {
-            return;
-        }
-
-        getPost(slug);
-    }, []);
 
     /**
      * Finds and sets blog post previously saved in local storage
@@ -35,6 +24,7 @@ export const PostPage = (): JSX.Element => {
         if (cachedPostString) {
             setPost(JSON.parse(cachedPostString));
             setLoading(false);
+
             return true;
         }
 
@@ -79,6 +69,16 @@ export const PostPage = (): JSX.Element => {
             })
             .finally(() => setLoading(false));
     }
+
+    /** Retrieves blog content on page load */
+    useEffect(() => {
+        const slug = window.location.pathname.split('/')[2];
+        if (getCachedPost(slug)) {
+            return;
+        }
+
+        getPost(slug);
+    }, []);
 
     return (
         <>
