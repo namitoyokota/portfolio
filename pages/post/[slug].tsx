@@ -18,6 +18,34 @@ export const PostPage = (): JSX.Element => {
     /** Retrieves blog content on page load */
     useEffect(() => {
         const slug = window.location.pathname.split('/')[2];
+        if (getCachedPost(slug)) {
+            return;
+        }
+
+        getPost(slug);
+    }, []);
+
+    /**
+     * Finds and sets blog post previously saved in local storage
+     * @param slug Key of the blog post
+     * @returns Whether post was found from cache
+     */
+    function getCachedPost(slug: string): boolean {
+        const cachedPostString = localStorage.getItem(slug);
+        if (cachedPostString) {
+            setPost(JSON.parse(cachedPostString));
+            setLoading(false);
+            return true;
+        }
+
+        return false;
+    }
+
+    /**
+     * Retrieves blog from Hashnode API
+     * @param slug Key of the blog post
+     */
+    function getPost(slug: string): void {
         const client = new ApolloClient({
             uri: 'https://gql.hashnode.com/',
             cache: new InMemoryCache(),
@@ -44,9 +72,13 @@ export const PostPage = (): JSX.Element => {
                     }
                 `,
             })
-            .then((response) => setPost(response.data.publication.post))
+            .then((response) => {
+                const post = response.data.publication.post;
+                setPost(post);
+                localStorage.setItem(slug, JSON.stringify(post));
+            })
             .finally(() => setLoading(false));
-    }, []);
+    }
 
     return (
         <>
