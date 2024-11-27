@@ -25,19 +25,9 @@ $ yarn dev
 
 ## Inspirations
 
--   [Brian Lovin](https://brianlovin.com/)
 -   [Lee Robinson](https://leerob.io/)
--   [Linus Lee](https://thesephist.com/)
--   [Paco Coursey](https://paco.me/)
--   [Braydon Coyer](https://www.braydoncoyer.dev/)
--   [Guillermo Rauch](https://rauchg.com/)
--   [Alex Pate](https://alexjpate.com/)
--   [Conor Dewey](https://www.conordewey.com/)
 -   [Emil Kowalski](https://emilkowal.ski/)
--   [Josh Comeau](https://www.joshwcomeau.com/)
--   [Delba Oliveira](https://delba.dev/)
--   [Takuma Matsuyama](https://www.craftz.dog/)
--   [Dan Mace](https://danmace.com/)
--   [Casey Neistat](https://www.caseyneistat.com/)
+-   [Paco Coursey](https://paco.me/)
+-   [Brian Lovin](https://brianlovin.com/)
+-   [Linus Lee](https://thesephist.com/)
 -   [Poulos Collective](https://www.poulos.co/)
--   [Dribbble Designs](https://dribbble.com/namitoyokota/collections/7037253-Portfolio?utm_source=Clipboard_%22clipboard_collection%22&utm_campaign=%22namitoyokota%22&utm_content=%22Portfolio%22&utm_medium=Social_Share)
