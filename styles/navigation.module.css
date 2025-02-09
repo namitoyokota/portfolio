@@ -11,21 +11,15 @@
     color: var(--text-primary);
 }
 
-.page,
-.hidden {
+.page {
     width: min-content;
     transition: 0.1s ease-in-out;
 }
 
-.page:hover,
-.hidden:hover {
+.page:hover {
     color: var(--text-primary);
 }
 
 .page {
     color: var(--text-secondary);
-}
-
-.hidden {
-    color: var(--text-hidden);
 }

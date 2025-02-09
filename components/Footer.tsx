@@ -1,4 +1,5 @@
 import Image from 'next/legacy/image';
+import Link from 'next/link';
 import styles from '../styles/footer.module.css';
 
 const Footer = (): JSX.Element => {
@@ -24,6 +25,20 @@ const Footer = (): JSX.Element => {
                     <span>Photos</span>
                     <Image alt="link" height="12" width="12" src="/icons/link.svg" />
                 </a>
+
+                <Link legacyBehavior href="/snippets">
+                    <a className="sentence">
+                        <span>Snippets</span>
+                        <Image alt="link" height="12" width="12" src="/icons/link.svg" />
+                    </a>
+                </Link>
+
+                <Link legacyBehavior href="/bookmarks">
+                    <a className="sentence">
+                        <span>Bookmarks</span>
+                        <Image alt="link" height="12" width="12" src="/icons/link.svg" />
+                    </a>
+                </Link>
 
                 <a className="sentence" href="mailto:namitoyokota@icloud.com">
                     <span>Email</span>

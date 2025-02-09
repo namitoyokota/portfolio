@@ -1,5 +1,5 @@
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { LayoutProps } from '../models/types/layout-props';
+import type { LayoutProps } from '../models/types/layout-props';
 import styles from '../styles/layout.module.css';
 import Footer from './Footer';
 import Head from './Head';
