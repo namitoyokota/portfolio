@@ -137,9 +137,12 @@ article > pre {
     color: var(--text-secondary);
 }
 
-article > p,
-article > ul > li {
+article > p {
     line-height: 1.5rem;
+}
+
+article > ul > li {
+    line-height: 1.8rem;
 }
 
 * {
