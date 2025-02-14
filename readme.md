@@ -31,3 +31,4 @@ $ yarn dev
 -   [Brian Lovin](https://brianlovin.com/)
 -   [Linus Lee](https://thesephist.com/)
 -   [Poulos Collective](https://www.poulos.co/)
+-   [Anthony Fu](https://antfu.me/)
