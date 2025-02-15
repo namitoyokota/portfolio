@@ -14,7 +14,7 @@
 -   `public/*` - Static assets
 -   `styles/*` - Global styles and reusable classes
 
-## Running Locally
+## Running locally
 
 ```shell
 $ git clone https://github.com/namitoyokota/portfolio.git
@@ -32,3 +32,14 @@ $ yarn dev
 -   [Linus Lee](https://thesephist.com/)
 -   [Poulos Collective](https://www.poulos.co/)
 -   [Anthony Fu](https://antfu.me/)
+
+## Implementation ideas
+
+-   Add view count for post page.
+-   Add reading time for post page.
+-   Add table of contents for post page.
+-   Add search filter to writing and snippets page.
+-   Add projects page.
+-   Update index page to include Ncontracts.
+-   Break cache for retrieving writings occasionally.
+-   Add statistics page for Azure DevOps and Jira statistics.
