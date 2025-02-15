@@ -42,4 +42,4 @@ $ yarn dev
 -   Add projects page.
 -   Update index page to include Ncontracts.
 -   Break cache for retrieving writings occasionally.
--   Add statistics page for Azure DevOps and Jira statistics.
+-   Add statistics page for Azure DevOps, Jira, Hashnode, GitHub statistics.
