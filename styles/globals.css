@@ -149,6 +149,10 @@ article > ul > li {
     line-height: 1.8rem;
 }
 
+article a {
+    color: var(--text-highlight);
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
