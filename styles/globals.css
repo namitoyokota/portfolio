@@ -153,6 +153,11 @@ article a {
     color: var(--text-highlight);
 }
 
+article > div[data-node-type='callout'] {
+    display: flex;
+    column-gap: 10px;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
