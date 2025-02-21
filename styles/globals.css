@@ -9,9 +9,9 @@
 
 [data-theme='dark'] {
     --background: #101010;
+    --background-highlight: #947e2e;
     --text-primary: #fffcf2;
     --text-secondary: #a3a3a3;
-    --text-highlight: #947e2e;
 }
 
 html,
