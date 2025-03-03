@@ -37,6 +37,7 @@ $ yarn dev
 
 -   Add open source contributions page.
 -   Add developer contribution statistics page.
+-   Add random statistics page: Thingiverse, Unsplash, etc.
 -   Add view count for post page.
 -   Add reading time for post page.
 -   Add table of contents for post page.
