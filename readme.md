@@ -35,6 +35,8 @@ $ yarn dev
 
 ## Implementation ideas
 
+-   Add open source contributions page.
+-   Add developer contribution statistics page.
 -   Add view count for post page.
 -   Add reading time for post page.
 -   Add table of contents for post page.
