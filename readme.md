@@ -35,6 +35,8 @@ $ yarn dev
 
 ## Implementation ideas
 
+-   Add fade in animation to every page.
+-   Refactor writings page to directly route to Hashnode.
 -   Add open source contributions page.
 -   Add developer contribution statistics page.
 -   Add random statistics page: Thingiverse, Unsplash, etc.
