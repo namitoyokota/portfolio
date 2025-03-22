@@ -35,6 +35,8 @@ $ yarn dev
 
 ## Implementation ideas
 
+-   Add Tailwind.
+-   Show LinkedIn recommendation letters.
 -   Add fade in animation to every page.
 -   Refactor writings page to directly route to Hashnode.
 -   Add open source contributions page.
