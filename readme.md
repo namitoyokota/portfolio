@@ -25,6 +25,7 @@ $ yarn dev
 
 ## Inspirations
 
+-   [Kamran Ahmed](https://kamranahmed.info/)
 -   [Lee Robinson](https://leerob.io/)
 -   [Emil Kowalski](https://emilkowal.ski/)
 -   [Paco Coursey](https://paco.me/)
