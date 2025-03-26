@@ -9,6 +9,7 @@
     },
     "dependencies": {
         "@apollo/client": "^3.7.10",
+        "@tailwindcss/postcss": "^4.0.17",
         "@typescript-eslint/eslint-plugin": "^5.58.0",
         "@typescript-eslint/parser": "^5.58.0",
         "@vercel/analytics": "^0.1.11",
@@ -19,11 +20,13 @@
         "graphql": "^16.6.0",
         "next": "^13.3.0",
         "next-themes": "^0.1.1",
+        "postcss": "^8.5.3",
         "prettier": "^2.8.7",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "rough-notation": "^0.5.1",
-        "swr": "^1.2.2"
+        "swr": "^1.2.2",
+        "tailwindcss": "^4.0.17"
     },
     "devDependencies": {
         "@types/node": "17.0.29",
