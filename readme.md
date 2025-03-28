@@ -26,28 +26,7 @@ $ yarn dev
 ## Inspirations
 
 -   [Kamran Ahmed](https://kamranahmed.info/)
--   [Lee Robinson](https://leerob.io/)
--   [Emil Kowalski](https://emilkowal.ski/)
 -   [Paco Coursey](https://paco.me/)
--   [Brian Lovin](https://brianlovin.com/)
+-   [Lee Robinson](https://leerob.io/)
 -   [Linus Lee](https://thesephist.com/)
--   [Poulos Collective](https://www.poulos.co/)
 -   [Anthony Fu](https://antfu.me/)
-
-## Implementation ideas
-
--   Add Tailwind.
--   Show LinkedIn recommendation letters.
--   Add fade in animation to every page.
--   Refactor writings page to directly route to Hashnode.
--   Add open source contributions page.
--   Add developer contribution statistics page.
--   Add random statistics page: Thingiverse, Unsplash, etc.
--   Add view count for post page.
--   Add reading time for post page.
--   Add table of contents for post page.
--   Add search filter to writing and snippets page.
--   Add projects page.
--   Update index page to include Ncontracts.
--   Break cache for retrieving writings occasionally.
--   Add statistics page for Azure DevOps, Jira, Hashnode, GitHub statistics.
