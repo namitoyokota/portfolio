@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import React from 'react';
-import styles from '../styles/Home.module.css';
 import { useRouter } from "next/router";
+import styles from '../styles/Home.module.css';
 
 const Navigation = (): JSX.Element => {
   const router = useRouter();
@@ -23,7 +22,7 @@ const Navigation = (): JSX.Element => {
           <h4>Jesus</h4>
         </a>
       </Link>
-      <Link href="https://www.namito.wiki" passHref>
+      <Link href="https://search.namitoyokota.com" passHref>
         <a className={styles.page}
           target="_blank"
           rel="noopener noreferrer"
