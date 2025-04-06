@@ -49,6 +49,11 @@ export const MainLayout = () => {
         <Route path="/projects/*" element={<Projects />} />
         <Route path="/posts/*" element={<Posts />} />
       </Routes>
+
+      <p>
+        If you want to get in touch, feel free to{' '}
+        <a href="mailto:namitoyokota@icloud.com">email me</a>.
+      </p>
     </div>
   );
 };
