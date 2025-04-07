@@ -31,11 +31,21 @@ interface Post {
   url: string;
 }
 
+interface GetPostResponse {
+  publication: {
+    posts: {
+      edges: {
+        node: Post;
+      }[];
+    };
+  };
+}
+
 export const Dashboard = () => {
   const { data, isLoading, error } = useQuery({
     queryKey: ['posts'],
     queryFn: async (): Promise<Post[]> => {
-      const data = await client.request(GET_LATEST_POSTS);
+      const data: GetPostResponse = await client.request(GET_LATEST_POSTS);
 
       console.log(data.publication.posts.edges.map((edge) => edge.node));
 
