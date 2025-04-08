@@ -58,6 +58,11 @@
     "vite": "6.2.0",
     "vite-tsconfig-paths": "5.1.4"
   },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5",
+    "@tailwindcss/oxide-darwin-arm64": "^4.1.3",
+    "lightningcss-darwin-arm64": "^1.29.3"
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   }
