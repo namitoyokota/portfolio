@@ -1,10 +1,10 @@
 import { Route, Routes } from 'react-router';
-import { Dashboard } from './components/Dashboard';
+import { Projects } from './components/Projects';
 
-export const Projects = () => {
+export const ProjectsModule = () => {
   return (
     <Routes>
-      <Route index element={<Dashboard />} />
+      <Route index element={<Projects />} />
     </Routes>
   );
 };

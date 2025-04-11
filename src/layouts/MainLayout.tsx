@@ -1,7 +1,7 @@
-import { Home } from '@/modules/home';
-import { Posts } from '@/modules/posts';
-import { Projects } from '@/modules/projects';
-import { Work } from '@/modules/work';
+import { HomeModule } from '@/modules/home';
+import { PostsModule } from '@/modules/posts';
+import { ProjectsModule } from '@/modules/projects';
+import { WorkModule } from '@/modules/work';
 import { faBook, faBriefcase, faFolder, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, Route, Routes } from 'react-router';
@@ -39,10 +39,10 @@ export const MainLayout = () => {
       </nav>
 
       <Routes>
-        <Route path="*" element={<Home />} />
-        <Route path="/work/*" element={<Work />} />
-        <Route path="/projects/*" element={<Projects />} />
-        <Route path="/posts/*" element={<Posts />} />
+        <Route path="*" element={<HomeModule />} />
+        <Route path="/work/*" element={<WorkModule />} />
+        <Route path="/projects/*" element={<ProjectsModule />} />
+        <Route path="/posts/*" element={<PostsModule />} />
       </Routes>
 
       <p>

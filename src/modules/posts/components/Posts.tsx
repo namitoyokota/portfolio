@@ -41,40 +41,35 @@ interface GetPostResponse {
   };
 }
 
-export const Dashboard = () => {
-  const { data, isLoading, error } = useQuery({
+export const Posts = () => {
+  const { data, isPending, error } = useQuery({
     queryKey: ['posts'],
     queryFn: async (): Promise<Post[]> => {
       const data: GetPostResponse = await client.request(GET_LATEST_POSTS);
-
-      console.log(data.publication.posts.edges.map((edge) => edge.node));
 
       return data.publication.posts.edges.map((edge) => edge.node);
     },
   });
 
-  if (isLoading) {
-    return <p>Loading...</p>;
-  }
-
-  if (error || !data) {
-    return <p>Error loading posts.</p>;
-  }
-
   return (
     <div className="flex flex-col items-start gap-4">
       <h1 className="mb-2 text-2xl font-bold">Posts</h1>
-      <p>{data.length} posts have been found.</p>
-      <ul>
-        {data.map((post) => (
-          <li key={post.id} className="flex gap-1">
-            <FontAwesomeIcon icon={faLink} />
-            <a href={post.url} target="_blank" rel="noreferrer">
-              {post.title}
-            </a>
-          </li>
-        ))}
-      </ul>
+      {error ? (
+        <p>Error loading posts.</p>
+      ) : isPending ? (
+        <p>Loading...</p>
+      ) : (
+        <ul>
+          {data.map((post) => (
+            <li key={post.id} className="flex gap-1">
+              <FontAwesomeIcon icon={faLink} />
+              <a href={post.url} target="_blank" rel="noreferrer">
+                {post.title}
+              </a>
+            </li>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
