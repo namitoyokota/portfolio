@@ -52,8 +52,14 @@ export const Posts = () => {
   });
 
   return (
-    <div className="flex flex-col items-start gap-4">
+    <>
+      {/* Page Title */}
       <h1 className="mb-2 text-2xl font-bold">Posts</h1>
+
+      {/* Subtitle */}
+      <span className="text-gray-500">How I try to write to share what I learn.</span>
+
+      {/* Posts */}
       {error ? (
         <p>Error loading posts.</p>
       ) : isPending ? (
@@ -70,6 +76,19 @@ export const Posts = () => {
           ))}
         </ul>
       )}
-    </div>
+
+      {/* Subtitle */}
+      <span className="text-gray-500">Research notes</span>
+
+      {/* Notes */}
+      <ul>
+        <li className="flex gap-1">
+          <FontAwesomeIcon icon={faLink} />
+          <a href="https://www.notion.so" target="_blank" rel="noreferrer">
+            Notion
+          </a>
+        </li>
+      </ul>
+    </>
   );
 };
