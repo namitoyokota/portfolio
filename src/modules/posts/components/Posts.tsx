@@ -1,4 +1,4 @@
-import { faLink } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faLink } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useQuery } from '@tanstack/react-query';
 import { gql, GraphQLClient } from 'graphql-request';
@@ -29,6 +29,7 @@ interface Post {
   id: string;
   title: string;
   url: string;
+  publishedAt: string;
 }
 
 interface GetPostResponse {
@@ -65,13 +66,14 @@ export const Posts = () => {
       ) : isPending ? (
         <p>Loading...</p>
       ) : (
-        <ul>
+        <ul className="flex flex-col gap-2">
           {data.map((post) => (
-            <li key={post.id} className="flex gap-1">
-              <FontAwesomeIcon icon={faLink} />
-              <a href={post.url} target="_blank" rel="noreferrer">
+            <li key={post.id} className="flex items-center gap-2">
+              <FontAwesomeIcon icon={faArrowRight} />
+              <a href={post.url} target="_blank" rel="noreferrer" className="font-semibold">
                 {post.title}
               </a>
+              <span className="text-gray-400">{new Date(post.publishedAt).toLocaleDateString()}</span>
             </li>
           ))}
         </ul>
@@ -82,7 +84,7 @@ export const Posts = () => {
 
       {/* Notes */}
       <ul>
-        <li className="flex gap-1">
+        <li className="flex items-center gap-2">
           <FontAwesomeIcon icon={faLink} />
           <a href="https://www.notion.so" target="_blank" rel="noreferrer">
             Notion
