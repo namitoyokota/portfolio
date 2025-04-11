@@ -18,14 +18,40 @@ export const Work = () => {
 
           {/* Major Tools */}
           <div className="flex flex-row gap-2">
-            <a href="https://www.datadoghq.com" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://aws.amazon.com/dynamodb/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-black px-3 py-0.5 text-white"
+            >
+              DynamoDB
+            </a>
+            <a
+              href="https://www.datadoghq.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-black px-3 py-0.5 text-white"
+            >
               DataDog
             </a>
           </div>
 
           {/* Minor Tools */}
           <div className="flex flex-row gap-2">
-            <a href="https://zustand.docs.pmnd.rs" target="_blank" rel="noopener noreferrer">
+            <a
+              href="https://tanstack.com/query/latest"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-1 border-black px-3 py-0.5"
+            >
+              TanStack Query
+            </a>
+            <a
+              href="https://zustand.docs.pmnd.rs"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full border-1 border-black px-3 py-0.5"
+            >
               Zustand
             </a>
           </div>
