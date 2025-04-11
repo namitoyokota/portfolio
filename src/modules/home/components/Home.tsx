@@ -1,3 +1,7 @@
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 export const Home = () => {
   return (
     <>
@@ -20,13 +24,31 @@ export const Home = () => {
 
       {/* Social Media */}
       <div className="flex flex-row gap-2">
-        <a href="https://www.github.com/namitoyokota" target="_blank" rel="noreferrer">
-          GitHub
+        <a
+          href="https://www.github.com/namitoyokota"
+          target="_blank"
+          rel="noreferrer"
+          className="flex flex-row items-center gap-2 rounded-md bg-gray-200 px-3 py-1.5 text-gray-700 hover:text-gray-500"
+        >
+          <FontAwesomeIcon icon={faGithub} />
+          <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/namito" target="_blank" rel="noreferrer">
-          LinkedIn
+        <a
+          href="https://www.linkedin.com/in/namito"
+          target="_blank"
+          rel="noreferrer"
+          className="flex flex-row items-center gap-2 rounded-md bg-gray-200 px-3 py-1.5 text-gray-700 hover:text-gray-500"
+        >
+          <FontAwesomeIcon icon={faLinkedin} />
+          <span>LinkedIn</span>
         </a>
-        <a href="mailto:namitoyokota@icloud.com">Mail</a>
+        <a
+          href="mailto:namitoyokota@icloud.com"
+          className="flex flex-row items-center gap-2 rounded-md bg-gray-200 px-3 py-1.5 text-gray-700 hover:text-gray-500"
+        >
+          <FontAwesomeIcon icon={faEnvelope} />
+          <span>Mail</span>
+        </a>
       </div>
 
       {/* Recommendations */}
