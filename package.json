@@ -62,7 +62,7 @@
     "@esbuild/linux-x64": "0.24.0",
     "@rollup/rollup-linux-x64-gnu": "4.9.5",
     "@tailwindcss/oxide-darwin-arm64": "4.1.3",
-    "@tailwindcss/oxide-linux-x64-gnu": "@4.1.3",
+    "@tailwindcss/oxide-linux-x64-gnu": "4.1.3",
     "lightningcss-darwin-arm64": "1.29.3"
   },
   "lint-staged": {
