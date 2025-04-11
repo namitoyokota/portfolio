@@ -1,15 +1,24 @@
 export const Home = () => {
   return (
     <>
+      {/* Profile Image */}
       <img src="" alt="Profile" className="mb-4 h-32 w-32 rounded-full" />
+
+      {/* Page Title */}
       <h1 className="mb-2 text-2xl font-bold">Hi, I&apos;m Namito 👋🏼</h1>
+
+      {/* Description */}
       <span className="text-gray-500">
         Senior Software Engineer at{' '}
         <a href="https://www.ncontracts.com/" target="_blank" rel="noreferrer">
           Ncontracts
         </a>
       </span>
+
+      {/* Subtitle */}
       <p>5 years of experience, causally looking, my philosophy and Jesus.</p>
+
+      {/* Social Media */}
       <div className="flex flex-row gap-2">
         <a href="https://www.github.com/namitoyokota" target="_blank" rel="noreferrer">
           GitHub
@@ -19,6 +28,8 @@ export const Home = () => {
         </a>
         <a href="mailto:namitoyokota@icloud.com">Mail</a>
       </div>
+
+      {/* Recommendations */}
       <div className="grid grid-cols-2 gap-2">
         <div className="flex flex-col gap-2">
           <h3>Sean Carnes</h3>
