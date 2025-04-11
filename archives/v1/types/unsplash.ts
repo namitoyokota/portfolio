@@ -1,4 +1,4 @@
 export interface Unsplash {
-    downloads: number,
-    views: number
+  downloads: number;
+  views: number;
 }

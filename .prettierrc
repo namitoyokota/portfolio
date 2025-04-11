@@ -5,6 +5,7 @@
   "semi": true,
   "useTabs": false,
   "tabWidth": 2,
+  "printWidth": 120,
   "trailingComma": "all",
   "overrides": [
     {
@@ -12,9 +13,6 @@
       "options": { "parser": "json" }
     }
   ],
-  "plugins": [
-    "prettier-plugin-organize-imports",
-    "prettier-plugin-tailwindcss"
-  ],
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"],
   "tailwindStylesheet": "./src/styles/tailwind.css"
 }

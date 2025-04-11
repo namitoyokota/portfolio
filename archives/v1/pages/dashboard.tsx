@@ -1,14 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { Repository } from '../types/repository';
-import Layout from '../components/Layout';
-import styles from '../styles/Home.module.css';
-import useSWR from 'swr';
-import fetcher from '../lib/fetcher';
-import { Unsplash } from '../types/unsplash';
 import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import useSWR from 'swr';
+import Layout from '../components/Layout';
+import fetcher from '../lib/fetcher';
+import styles from '../styles/Home.module.css';
+import { Repository } from '../types/repository';
+import { Unsplash } from '../types/unsplash';
 
 export const Dashboard = (): JSX.Element => {
-
   /** URL used for GitHub cards */
   const GITHUB_URL = 'https://github.com/namitoyokota?tab=repositories';
 
@@ -46,7 +45,7 @@ export const Dashboard = (): JSX.Element => {
       .then((res) => res.json())
       .then((data: Repository[]) => {
         let starCount = 0;
-        data.forEach((repo: Repository) =>  {
+        data.forEach((repo: Repository) => {
           starCount += repo.stargazers_count;
         });
 
@@ -61,7 +60,6 @@ export const Dashboard = (): JSX.Element => {
         title: 'Dashboard - Namito Yokota',
       }}
     >
-
       <div className={styles.header}>
         <h1 className={styles.title}>Dashboard</h1>
         <p className={styles.description}>Still in the works...</p>
@@ -69,55 +67,34 @@ export const Dashboard = (): JSX.Element => {
 
       <div className={styles.board}>
         <a className={styles.boardcard} href={GITHUB_URL} target="_blank" rel="noreferrer">
-            <p className={styles.description}>
-              <span>GitHub Repos</span>
-              <Image
-                alt="github"
-                height="15px"
-                width="15px"
-                src={ "/icons/github.svg" }
-              />
-            </p>
-            <h2>{repoCount.toLocaleString()}</h2>
+          <p className={styles.description}>
+            <span>GitHub Repos</span>
+            <Image alt="github" height="15px" width="15px" src={'/icons/github.svg'} />
+          </p>
+          <h2>{repoCount.toLocaleString()}</h2>
         </a>
         <a className={styles.boardcard} href={GITHUB_URL} target="_blank" rel="noreferrer">
-            <p className={styles.description}>
-              <span>GitHub Stars</span>
-              <Image
-                alt="github"
-                height="15px"
-                width="15px"
-                src={ "/icons/github.svg" }
-              />
-            </p>
-            <h2>{starCount.toLocaleString()}</h2>
+          <p className={styles.description}>
+            <span>GitHub Stars</span>
+            <Image alt="github" height="15px" width="15px" src={'/icons/github.svg'} />
+          </p>
+          <h2>{starCount.toLocaleString()}</h2>
         </a>
         <a className={styles.boardcard} href={UNSPLASH_URL} target="_blank" rel="noreferrer">
-            <p className={styles.description}>
-              <span>Unsplash Downloads</span>
-              <Image
-                alt="unsplash"
-                height="15px"
-                width="15px"
-                src={ "/icons/camera.svg" }
-              />
-            </p>
-            <h2>{downloads.toLocaleString()}</h2>
+          <p className={styles.description}>
+            <span>Unsplash Downloads</span>
+            <Image alt="unsplash" height="15px" width="15px" src={'/icons/camera.svg'} />
+          </p>
+          <h2>{downloads.toLocaleString()}</h2>
         </a>
         <a className={styles.boardcard} href={UNSPLASH_URL} target="_blank" rel="noreferrer">
-            <p className={styles.description}>
-              <span>Unsplash Views</span>
-              <Image
-                alt="unsplash"
-                height="15px"
-                width="15px"
-                src={ "/icons/camera.svg" }
-              />
-            </p>
-            <h2>{views.toLocaleString()}</h2>
+          <p className={styles.description}>
+            <span>Unsplash Views</span>
+            <Image alt="unsplash" height="15px" width="15px" src={'/icons/camera.svg'} />
+          </p>
+          <h2>{views.toLocaleString()}</h2>
         </a>
       </div>
-
     </Layout>
   );
 };

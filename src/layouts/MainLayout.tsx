@@ -2,12 +2,7 @@ import { Home } from '@/modules/home';
 import { Posts } from '@/modules/posts';
 import { Projects } from '@/modules/projects';
 import { Work } from '@/modules/work';
-import {
-  faBook,
-  faBriefcase,
-  faFolder,
-  faHome,
-} from '@fortawesome/free-solid-svg-icons';
+import { faBook, faBriefcase, faFolder, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, Route, Routes } from 'react-router';
 
@@ -51,8 +46,7 @@ export const MainLayout = () => {
       </Routes>
 
       <p>
-        If you want to get in touch, feel free to{' '}
-        <a href="mailto:namitoyokota@icloud.com">email me</a>.
+        If you want to get in touch, feel free to <a href="mailto:namitoyokota@icloud.com">email me</a>.
       </p>
     </div>
   );

@@ -91,10 +91,7 @@ export default tseslint.config(
             },
             {
               from: ['modules'],
-              allow: [
-                'shared',
-                ['modules', { featureName: '${from.featureName}' }],
-              ],
+              allow: ['shared', ['modules', { featureName: '${from.featureName}' }]],
             },
             {
               from: 'root',
@@ -123,10 +120,7 @@ export default tseslint.config(
         },
       ],
       'no-console': ['warn', { allow: ['error', 'info'] }],
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
+      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
       '@typescript-eslint/naming-convention': [
         'warn',
         {

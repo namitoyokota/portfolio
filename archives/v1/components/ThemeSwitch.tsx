@@ -1,11 +1,9 @@
 import { useTheme } from 'next-themes';
-import React from 'react';
 import Image from 'next/image';
-import styles from '../styles/Home.module.css';
 import useSound from 'use-sound';
+import styles from '../styles/Home.module.css';
 
 const ThemeSwitch = (): JSX.Element => {
-
   /** Sets dark mode or light mode theme */
   const { theme, setTheme } = useTheme();
 
@@ -21,10 +19,10 @@ const ThemeSwitch = (): JSX.Element => {
       alt="theme"
       height="25px"
       width="25px"
-      src={ isDark ? "/icons/dark.svg" : "/icons/light.svg" }
+      src={isDark ? '/icons/dark.svg' : '/icons/light.svg'}
       onClick={() => {
         setTheme(theme === 'dark' ? 'light' : 'dark');
-        play()
+        play();
       }}
     />
   );

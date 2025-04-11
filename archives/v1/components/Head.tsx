@@ -1,6 +1,5 @@
 import NextHead from 'next/head';
 import { useRouter } from 'next/router';
-import React from 'react';
 import { MetaProps } from '../types/layout';
 import Analytics from './Analytics';
 
@@ -34,9 +33,7 @@ const Head = ({ customMeta }: { customMeta?: MetaProps }): JSX.Element => {
       <meta name="twitter:title" content={meta.title} />
       <meta name="twitter:description" content={meta.description} />
       <meta name="twitter:image" content={meta.image} />
-      {meta.date && (
-        <meta property="article:published_time" content={meta.date} />
-      )}
+      {meta.date && <meta property="article:published_time" content={meta.date} />}
     </NextHead>
   );
 };

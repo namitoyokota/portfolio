@@ -4,13 +4,12 @@ import matter from 'gray-matter';
 // @ts-ignore
 import mdxPrism from 'mdx-prism';
 import { GetStaticPaths, GetStaticProps } from 'next';
-import { serialize } from 'next-mdx-remote/serialize';
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote';
+import { serialize } from 'next-mdx-remote/serialize';
 import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import path from 'path';
-import React from 'react';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeSlug from 'rehype-slug';
 import Layout, { WEBSITE_HOST_URL } from '../../components/Layout';
@@ -40,12 +39,8 @@ const PostPage = ({ source, frontMatter }: PostPageProps): JSX.Element => {
   return (
     <Layout customMeta={customMeta}>
       <article>
-        <h1>
-          {frontMatter.title}
-        </h1>
-        <p>
-          {format(parseISO(frontMatter.date!), 'MMMM dd, yyyy')}
-        </p>
+        <h1>{frontMatter.title}</h1>
+        <p>{format(parseISO(frontMatter.date!), 'MMMM dd, yyyy')}</p>
         <div>
           <MDXRemote {...source} components={components} />
         </div>
@@ -77,9 +72,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = postFilePaths
-    .map((path) => path.replace(/\.mdx?$/, ''))
-    .map((slug) => ({ params: { slug } }));
+  const paths = postFilePaths.map((path) => path.replace(/\.mdx?$/, '')).map((slug) => ({ params: { slug } }));
 
   return {
     paths,

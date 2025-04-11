@@ -29,7 +29,9 @@
     display: grid;
     grid-template-rows: 0fr;
     overflow: hidden;
-    transition: grid-template-rows 0.5s, padding 0.5s;
+    transition:
+        grid-template-rows 0.5s,
+        padding 0.5s;
 }
 
 .snippetShow {
