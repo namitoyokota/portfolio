@@ -9,25 +9,23 @@ import { Link, Route, Routes } from 'react-router';
 export const MainLayout = () => {
   return (
     <div className="flex flex-col items-start gap-4 p-8 text-gray-700">
-      <nav className="flex w-full flex-wrap items-center justify-between gap-4">
-        <div className="flex items-center justify-between gap-6">
-          <Link to="/" className="flex items-center gap-2 decoration-2 hover:underline">
-            <FontAwesomeIcon icon={faHome} />
-            <span>Home</span>
-          </Link>
-          <Link to="/work" className="flex items-center gap-2 decoration-2 hover:underline">
-            <FontAwesomeIcon icon={faBriefcase} />
-            <span>Work</span>
-          </Link>
-          <Link to="/projects" className="flex items-center gap-2 decoration-2 hover:underline">
-            <FontAwesomeIcon icon={faFolder} />
-            <span>Projects</span>
-          </Link>
-          <Link to="/posts" className="flex items-center gap-2 decoration-2 hover:underline">
-            <FontAwesomeIcon icon={faBook} />
-            <span>Posts</span>
-          </Link>
-        </div>
+      <nav className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <Link to="/" className="flex items-center gap-2 decoration-2 hover:underline">
+          <FontAwesomeIcon icon={faHome} />
+          <span>Home</span>
+        </Link>
+        <Link to="/work" className="flex items-center gap-2 decoration-2 hover:underline">
+          <FontAwesomeIcon icon={faBriefcase} />
+          <span>Work</span>
+        </Link>
+        <Link to="/projects" className="flex items-center gap-2 decoration-2 hover:underline">
+          <FontAwesomeIcon icon={faFolder} />
+          <span>Projects</span>
+        </Link>
+        <Link to="/posts" className="flex items-center gap-2 decoration-2 hover:underline">
+          <FontAwesomeIcon icon={faBook} />
+          <span>Posts</span>
+        </Link>
       </nav>
 
       <div className="flex flex-col gap-6 py-8">

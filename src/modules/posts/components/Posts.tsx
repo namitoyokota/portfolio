@@ -93,7 +93,7 @@ export const Posts = () => {
             <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
           </div>
           <a href="https://www.notion.so" target="_blank" rel="noreferrer" className="font-semibold">
-            Notion
+            Technical Writing
           </a>
         </li>
       </ul>
