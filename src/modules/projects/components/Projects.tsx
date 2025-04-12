@@ -1,7 +1,7 @@
 export const Projects = () => (
   <>
     {/* Page Title */}
-    <h1 className="mb-2 text-2xl font-bold">Projects</h1>
+    <h1 className="mb-2 text-2xl font-bold text-black">Projects</h1>
 
     {/* Subtitle */}
     <span className="text-gray-500">Talk about how I enjoy things and learning through creating.</span>

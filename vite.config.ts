@@ -13,6 +13,7 @@ export default defineConfig(() => {
   dotenv.config({ path: envPath });
 
   return {
+    assetsInclude: ['**/*.jpeg'],
     plugins: [react(), tailwindcss(), tsconfigPaths(), basicSsl()],
   };
 });

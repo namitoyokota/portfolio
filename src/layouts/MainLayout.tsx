@@ -8,45 +8,42 @@ import { Link, Route, Routes } from 'react-router';
 
 export const MainLayout = () => {
   return (
-    <div className="flex flex-col items-start gap-4 p-4">
+    <div className="flex flex-col items-start gap-4 p-8 text-gray-700">
       <nav className="flex w-full items-center justify-between gap-4">
-        <div className="flex items-center justify-between gap-4">
-          <div className="flex items-center gap-2">
+        <div className="flex items-center justify-between gap-6">
+          <Link to="/" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faHome} />
-            <Link to="/" className="hover:underline">
-              Home
-            </Link>
-          </div>
-          <div className="flex items-center gap-2">
+            <span>Home</span>
+          </Link>
+          <Link to="/work" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faBriefcase} />
-            <Link to="/work" className="hover:underline">
-              Work
-            </Link>
-          </div>
-          <div className="flex items-center gap-2">
+            <span>Work</span>
+          </Link>
+          <Link to="/projects" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faFolder} />
-            <Link to="/projects" className="hover:underline">
-              Projects
-            </Link>
-          </div>
-          <div className="flex items-center gap-2">
+            <span>Projects</span>
+          </Link>
+          <Link to="/posts" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faBook} />
-            <Link to="/posts" className="hover:underline">
-              Posts
-            </Link>
-          </div>
+            <span>Posts</span>
+          </Link>
         </div>
       </nav>
 
-      <Routes>
-        <Route path="*" element={<HomeModule />} />
-        <Route path="/work/*" element={<WorkModule />} />
-        <Route path="/projects/*" element={<ProjectsModule />} />
-        <Route path="/posts/*" element={<PostsModule />} />
-      </Routes>
+      <div className="flex flex-col gap-6 py-8">
+        <Routes>
+          <Route path="*" element={<HomeModule />} />
+          <Route path="/work/*" element={<WorkModule />} />
+          <Route path="/projects/*" element={<ProjectsModule />} />
+          <Route path="/posts/*" element={<PostsModule />} />
+        </Routes>
+      </div>
 
       <p>
-        If you want to get in touch, feel free to <a href="mailto:namitoyokota@icloud.com">email me</a>.
+        For any inquiries,{' '}
+        <a href="mailto:namitoyokota@icloud.com" className="underline decoration-2">
+          send me an email!
+        </a>
       </p>
     </div>
   );

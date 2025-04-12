@@ -1,4 +1,4 @@
-import { faArrowRight, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useQuery } from '@tanstack/react-query';
 import { gql, GraphQLClient } from 'graphql-request';
@@ -55,7 +55,7 @@ export const Posts = () => {
   return (
     <>
       {/* Page Title */}
-      <h1 className="mb-2 text-2xl font-bold">Posts</h1>
+      <h1 className="mb-2 text-2xl font-bold text-black">Posts</h1>
 
       {/* Subtitle */}
       <span className="text-gray-500">How I try to write to share what I learn.</span>
@@ -69,11 +69,13 @@ export const Posts = () => {
         <ul className="flex flex-col gap-2">
           {data.map((post) => (
             <li key={post.id} className="flex items-center gap-2">
-              <FontAwesomeIcon icon={faArrowRight} />
+              <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
+                <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
+              </div>
               <a href={post.url} target="_blank" rel="noreferrer" className="font-semibold">
                 {post.title}
               </a>
-              <span className="text-gray-400">{new Date(post.publishedAt).toLocaleDateString()}</span>
+              <span className="text-sm text-gray-400">{new Date(post.publishedAt).toLocaleDateString()}</span>
             </li>
           ))}
         </ul>
@@ -85,8 +87,10 @@ export const Posts = () => {
       {/* Notes */}
       <ul>
         <li className="flex items-center gap-2">
-          <FontAwesomeIcon icon={faLink} />
-          <a href="https://www.notion.so" target="_blank" rel="noreferrer">
+          <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
+            <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
+          </div>
+          <a href="https://www.notion.so" target="_blank" rel="noreferrer" className="font-semibold">
             Notion
           </a>
         </li>
