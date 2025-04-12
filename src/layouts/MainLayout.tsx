@@ -9,7 +9,7 @@ import { Link, Route, Routes } from 'react-router';
 export const MainLayout = () => {
   return (
     <div className="flex flex-col items-start gap-4 p-8 text-gray-700">
-      <nav className="flex w-full items-center justify-between gap-4">
+      <nav className="flex w-full flex-wrap items-center justify-between gap-4">
         <div className="flex items-center justify-between gap-6">
           <Link to="/" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faHome} />
