@@ -35,6 +35,10 @@ export const Posts = () => {
 
       {/* Subtitle */}
       <span className="text-gray-500">Research notes</span>
+      <p>
+        In order to get a deeper understanding of a topic I&apos;m familiar with, or to learn a completely new field, I
+        like to take precise notes for future reference. Here is my current collection.
+      </p>
 
       {/* Posts */}
       {notesError ? (
