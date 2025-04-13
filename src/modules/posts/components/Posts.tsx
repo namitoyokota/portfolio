@@ -2,6 +2,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useQuery } from '@tanstack/react-query';
 import { gql, GraphQLClient } from 'graphql-request';
+import Skeleton from 'react-loading-skeleton';
 
 const client = new GraphQLClient('https://gql.hashnode.com');
 
@@ -58,13 +59,19 @@ export const Posts = () => {
       <h1 className="mb-2 text-2xl font-bold text-black">Posts</h1>
 
       {/* Subtitle */}
-      <span className="text-gray-500">How I try to write to share what I learn.</span>
+      <p>
+        I write as a way to <b>give back</b> to the developer community, sharing what I&apos;ve learned in hopes that it
+        might help someone else on their journey. It also serves as <b>a note to my future self</b> - a reminder of the
+        lessons I&apos;ve picked up along the way and a resource I can revisit as I continue to grow.
+      </p>
 
       {/* Posts */}
       {error ? (
         <p>Error loading posts.</p>
       ) : isPending ? (
-        <p>Loading...</p>
+        <ul className="flex flex-col gap-2">
+          <Skeleton count={5} />
+        </ul>
       ) : (
         <ul className="flex flex-col gap-2">
           {data.map((post) => (

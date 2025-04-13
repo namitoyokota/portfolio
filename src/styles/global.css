@@ -9,7 +9,7 @@ body {
     'Noto Color Emoji';
   font-feature-settings: normal;
   font-variation-settings: normal;
-  font-size: 1.125rem;
+  font-size: 112.5%;
 }
 
 h1,
@@ -19,4 +19,69 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+.container {
+  list-style: none;
+  column-count: 1;
+}
+
+.card {
+  width: 100%;
+  box-sizing: border-box;
+  break-inside: avoid;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 320px) and (max-width: 759.5px) {
+  .container {
+    column-count: 1;
+  }
+}
+
+@media (min-width: 760px) and (max-width: 979.5px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1023.5px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    column-count: 4;
+  }
+}
+
+details {
+  user-select: none;
+  & summary svg {
+    transform: rotate(90deg);
+  }
+}
+details[open] {
+  & summary svg {
+    transform: rotate(-90deg);
+  }
+}
+
+details[open] summary ~ * {
+  animation: ease-opacity-t-b 0.5s ease;
+}
+
+summary {
+  cursor: pointer;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+/* TO JE TO - TO JE TAJ */
+summary::-webkit-details-marker {
+  display: none;
 }

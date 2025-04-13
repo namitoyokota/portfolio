@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import 'react-loading-skeleton/dist/skeleton.css';
 import { BrowserRouter } from 'react-router';
 import './styles/global.css';
 import './styles/tailwind.css';
