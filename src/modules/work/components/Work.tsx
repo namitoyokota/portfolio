@@ -31,7 +31,7 @@ export const Work = () => {
           </p>
 
           {/* Major Tools */}
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row flex-wrap gap-2">
             <a
               href="https://react.dev/"
               target="_blank"
@@ -91,7 +91,7 @@ export const Work = () => {
           </div>
 
           {/* Minor Tools */}
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row flex-wrap gap-2">
             <a
               href="https://www.datadoghq.com/"
               target="_blank"
