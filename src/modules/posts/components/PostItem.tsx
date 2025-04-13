@@ -8,7 +8,7 @@ interface PostItemProps {
 
 export const PostItem = ({ post }: PostItemProps) => {
   return (
-    <li key={post.id} className="flex items-center gap-3">
+    <li className="flex items-center gap-3">
       <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
         <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
       </div>

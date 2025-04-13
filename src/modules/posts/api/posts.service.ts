@@ -15,13 +15,12 @@ export const useGetPostsQuery = () => {
             posts(first: 30) {
               edges {
                 node {
-                  id
-                  url
+                  slug
                   title
+                  reactionCount
+                  url
                   subtitle
                   publishedAt
-                  reactionCount
-                  slug
                 }
               }
             }
