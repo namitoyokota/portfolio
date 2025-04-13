@@ -33,3 +33,14 @@ export const useGetPostsQuery = () => {
     },
   });
 };
+
+export const useGetNotesQuery = () => {
+  return useQuery({
+    queryKey: ['notes'],
+    queryFn: async (): Promise<Post[]> => {
+      const response = await fetch('https://api.namitoyokota.com/notes.json');
+
+      return response.json();
+    },
+  });
+};

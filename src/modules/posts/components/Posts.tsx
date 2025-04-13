@@ -1,11 +1,10 @@
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Skeleton from 'react-loading-skeleton';
-import { useGetPostsQuery } from '../api/posts.service';
+import { useGetNotesQuery, useGetPostsQuery } from '../api/posts.service';
 import { PostItem } from './PostItem';
 
 export const Posts = () => {
-  const { data, isPending, error } = useGetPostsQuery();
+  const { data: postsData, isPending: isPostsPending, error: postsError } = useGetPostsQuery();
+  const { data: notesData, isPending: isNotesPending, error: notesError } = useGetNotesQuery();
 
   return (
     <>
@@ -20,15 +19,15 @@ export const Posts = () => {
       </p>
 
       {/* Posts */}
-      {error ? (
+      {postsError ? (
         <p>Error loading posts.</p>
-      ) : isPending ? (
+      ) : isPostsPending ? (
         <ul className="flex flex-col gap-2">
           <Skeleton count={5} />
         </ul>
       ) : (
         <ul className="flex flex-col gap-2">
-          {data.map((post) => (
+          {postsData.map((post) => (
             <PostItem post={post} key={post.id} />
           ))}
         </ul>
@@ -37,17 +36,20 @@ export const Posts = () => {
       {/* Subtitle */}
       <span className="text-gray-500">Research notes</span>
 
-      {/* Notes */}
-      <ul>
-        <li className="flex items-center gap-2">
-          <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
-            <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
-          </div>
-          <a href="https://www.notion.so" target="_blank" rel="noreferrer" className="font-semibold">
-            Technical Writing
-          </a>
-        </li>
-      </ul>
+      {/* Posts */}
+      {notesError ? (
+        <p>Error loading posts.</p>
+      ) : isNotesPending ? (
+        <ul className="flex flex-col gap-2">
+          <Skeleton count={5} />
+        </ul>
+      ) : (
+        <ul className="flex flex-col gap-2">
+          {notesData.map((note) => (
+            <PostItem post={note} key={note.id} />
+          ))}
+        </ul>
+      )}
     </>
   );
 };
