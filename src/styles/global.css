@@ -39,21 +39,9 @@ h6 {
   }
 }
 
-@media (min-width: 760px) and (max-width: 979.5px) {
+@media (min-width: 760px) {
   .container {
     column-count: 2;
-  }
-}
-
-@media (min-width: 980px) and (max-width: 1023.5px) {
-  .container {
-    column-count: 3;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    column-count: 4;
   }
 }
 
