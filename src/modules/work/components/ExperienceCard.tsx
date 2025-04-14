@@ -19,7 +19,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
 
       {/* Title and Company */}
       <h3 className="font-semibold">
-        {experience.position} <span className="text-gray-400">at</span>{' '}
+        {experience.position.join(', ')} <span className="text-gray-400">at</span>{' '}
         <a href={experience.url} target="_blank" rel="noreferrer" className="underline decoration-2">
           {experience.company}
         </a>

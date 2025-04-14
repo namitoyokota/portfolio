@@ -2,7 +2,7 @@ import { Tool } from './tool';
 
 export interface Experience {
   company: string;
-  position: string;
+  position: string[];
   location: string;
   startDate: string;
   endDate: string;
