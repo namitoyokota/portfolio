@@ -9,13 +9,12 @@ export const Posts = () => {
   return (
     <>
       {/* Page Title */}
-      <h1 className="mb-2 text-2xl font-bold text-black">Posts</h1>
+      <h1 className="text-2xl font-bold text-black">Posts</h1>
 
       {/* Subtitle */}
       <p>
         I write as a way to <b>give back</b> to the developer community, sharing what I&apos;ve learned in hopes that it
-        might help someone else on their journey. It also serves as <b>a note to my future self</b> - a reminder of the
-        lessons I&apos;ve picked up along the way and a resource I can revisit as I continue to grow.
+        might help someone else on their journey.
       </p>
 
       {/* Posts */}
@@ -23,7 +22,11 @@ export const Posts = () => {
         <p>Error loading posts.</p>
       ) : isPostsPending ? (
         <ul className="flex flex-col gap-2">
-          <Skeleton count={5} />
+          {[...Array(10)].map((_, index) => (
+            <li key={index}>
+              <Skeleton height="1.5rem" />
+            </li>
+          ))}
         </ul>
       ) : (
         <ul className="flex flex-col gap-2">
@@ -34,10 +37,10 @@ export const Posts = () => {
       )}
 
       {/* Subtitle */}
-      <span className="text-gray-500">Research notes</span>
+      <h2 className="text-xl font-bold text-gray-500">Research notes</h2>
       <p>
         In order to get a deeper understanding of a topic I&apos;m familiar with, or to learn a completely new field, I
-        like to take precise notes for future reference. Here is my current collection.
+        like to take precise <b>notes for future reference</b>. Here is my current collection.
       </p>
 
       {/* Posts */}
@@ -45,7 +48,11 @@ export const Posts = () => {
         <p>Error loading posts.</p>
       ) : isNotesPending ? (
         <ul className="flex flex-col gap-2">
-          <Skeleton count={5} />
+          {[...Array(5)].map((_, index) => (
+            <li key={index}>
+              <Skeleton height="1.5rem" />
+            </li>
+          ))}
         </ul>
       ) : (
         <ul className="flex flex-col gap-2">

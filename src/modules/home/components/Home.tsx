@@ -13,7 +13,7 @@ export const Home = () => {
 
         <div className="flex flex-col">
           {/* Page Title */}
-          <h1 className="mb-2 text-2xl font-bold text-black">Hi, I&apos;m Namito 👋🏼</h1>
+          <h1 className="text-2xl font-bold text-black">Hi, I&apos;m Namito 👋🏼</h1>
 
           {/* Description */}
           <span>
