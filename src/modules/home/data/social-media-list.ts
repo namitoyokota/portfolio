@@ -2,6 +2,9 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { SocialMedia } from '../lib/social-media';
 
+/**
+ * Static data of social media links.
+ */
 export const SOCIAL_MEDIA_LIST: SocialMedia[] = [
   {
     name: 'GitHub',

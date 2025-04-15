@@ -1,5 +1,8 @@
 import { Tool } from './tool';
 
+/**
+ * Represents a work experience card data.
+ */
 export interface Experience {
   company: string;
   position: string[];

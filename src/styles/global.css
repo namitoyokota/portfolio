@@ -51,6 +51,7 @@ details {
     transform: rotate(90deg);
   }
 }
+
 details[open] {
   & summary svg {
     transform: rotate(-90deg);
@@ -69,7 +70,6 @@ svg {
   transition: all 0.3s;
 }
 
-/* TO JE TO - TO JE TAJ */
 summary::-webkit-details-marker {
   display: none;
 }

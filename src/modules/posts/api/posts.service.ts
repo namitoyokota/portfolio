@@ -5,6 +5,10 @@ import { PostResponse } from '../lib/post-response';
 
 const client = new GraphQLClient('https://gql.hashnode.com');
 
+/**
+ * Retrieves blog publications on Hashnode.
+ * @returns Posts from Hashnode.
+ */
 export const useGetPostsQuery = () => {
   return useQuery({
     queryKey: ['posts'],
@@ -33,6 +37,10 @@ export const useGetPostsQuery = () => {
   });
 };
 
+/**
+ * Retrieves research notes in my GitHub repository.
+ * @returns Notes from my API.
+ */
 export const useGetNotesQuery = () => {
   return useQuery({
     queryKey: ['notes'],
@@ -44,6 +52,11 @@ export const useGetNotesQuery = () => {
   });
 };
 
+/**
+ * Retrieves research note content in my GitHub repository.
+ * @param slug Slug of the note to retrieve.
+ * @returns Markdown content string.
+ */
 export const useGetNoteContentQuery = (slug: string) => {
   return useQuery({
     queryKey: ['noteContent', slug],
