@@ -27,13 +27,15 @@ export const Home = () => {
 
       {/* Subtitle */}
       <p>
-        I am a <b>full-stack developer</b> with <b>5 years of experience</b> based in <b>Huntsville, Alabama</b>. Over
-        the years, I&apos;ve contributed to the development of cutting-edge SaaS products for mid-size and large
-        companies, helping deliver scalable, high-impact web applications that solve real business problems.{' '}
+        I am a <span className="font-semibold">full-stack developer</span> with{' '}
+        <span className="font-semibold">5 years of experience</span> based in{' '}
+        <span className="font-semibold">Huntsville, Alabama</span>. Over the years, I&apos;ve contributed to the
+        development of cutting-edge SaaS products for mid-size and large companies, helping deliver scalable,
+        high-impact web applications that solve real business problems.{' '}
       </p>
       <p>
-        At the core of who I am is my faith in <b>Jesus Christ</b>. He is the foundation of my life, guiding my values,
-        decisions, and the way I treat others both personally and professionally.
+        At the core of who I am is my faith in <span className="font-semibold">Jesus Christ</span>. He is the foundation
+        of my life, guiding my values, decisions, and the way I treat others both personally and professionally.
       </p>
 
       {/* Social Media */}

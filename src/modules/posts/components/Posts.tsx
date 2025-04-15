@@ -13,8 +13,8 @@ export const Posts = () => {
 
       {/* Subtitle */}
       <p>
-        I write as a way to <b>give back</b> to the developer community, sharing what I&apos;ve learned in hopes that it
-        might help someone else on their journey.
+        I write as a way to <span className="font-semibold">give back</span> to the developer community, sharing what
+        I&apos;ve learned in hopes that it might help someone else on their journey.
       </p>
 
       {/* Posts */}
@@ -37,10 +37,11 @@ export const Posts = () => {
       )}
 
       {/* Subtitle */}
-      <h2 className="text-xl font-bold text-gray-500">Research notes</h2>
+      <h2 className="text-xl font-semibold text-gray-500">Research notes</h2>
       <p>
         In order to get a deeper understanding of a topic I&apos;m familiar with, or to learn a completely new field, I
-        like to take precise <b>notes for future reference</b>. Here is my current collection.
+        like to take precise <span className="font-semibold">notes for future reference</span>. Here is my current
+        collection.
       </p>
 
       {/* Posts */}

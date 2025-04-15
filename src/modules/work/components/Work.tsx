@@ -9,8 +9,8 @@ export const Work = () => {
 
       {/* Subtitle */}
       <p>
-        I have been blessed to work for <b>great companies and teams</b>. Here is a brief history of my employment
-        history and the contributions I made.
+        I have been blessed to work for <span className="font-semibold">great companies and teams</span>. Here is a
+        brief history of my employment history and the contributions I made.
       </p>
 
       {/* Experience List */}
