@@ -43,3 +43,18 @@ export const useGetNotesQuery = () => {
     },
   });
 };
+
+export const useGetNoteContentQuery = (slug: string) => {
+  return useQuery({
+    queryKey: ['noteContent', slug],
+    queryFn: async (): Promise<string> => {
+      const response = await fetch(`https://api.namitoyokota.com/notes/${slug}.md`);
+
+      if (!response.ok) {
+        throw new Error('Failed to fetch note content');
+      }
+
+      return response.text();
+    },
+  });
+};
