@@ -33,7 +33,7 @@ export const MainLayout = () => {
           </Link>
         </nav>
 
-        <div className="flex min-w-full flex-col gap-6 py-8">
+        <div className="flex flex-col gap-6 py-8">
           <Routes>
             <Route path="*" element={<HomeModule />} />
             <Route path="/work/*" element={<WorkModule />} />

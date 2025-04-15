@@ -1,6 +1,8 @@
+import { RevealCard } from '@/components/RevealCard';
 import Skeleton from 'react-loading-skeleton';
 import Markdown from 'react-markdown';
 import { useParams } from 'react-router';
+import remarkGfm from 'remark-gfm';
 import { useGetNoteContentQuery, useGetNotesQuery } from '../api/posts.service';
 
 export const PostContent = () => {
@@ -36,7 +38,9 @@ export const PostContent = () => {
           </div>
         </>
       ) : (
-        <Markdown>{noteContent}</Markdown>
+        <RevealCard>
+          <Markdown remarkPlugins={[remarkGfm]}>{noteContent}</Markdown>
+        </RevealCard>
       )}
     </>
   );
