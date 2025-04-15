@@ -31,7 +31,7 @@ export const Posts = () => {
       ) : (
         <ul className="flex flex-col gap-2">
           {postsData.map((post) => (
-            <PostItem key={post.slug} post={post} viewInternally={false} />
+            <PostItem key={post.slug} post={post} />
           ))}
         </ul>
       )}

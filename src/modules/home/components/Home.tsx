@@ -39,14 +39,14 @@ export const Home = () => {
       {/* Social Media */}
       <div className="flex flex-row gap-2">
         {SOCIAL_MEDIA_LIST.map((socialMedia) => (
-          <SocialMediaCard socialMedia={socialMedia} key={socialMedia.name} />
+          <SocialMediaCard key={socialMedia.name} socialMedia={socialMedia} />
         ))}
       </div>
 
       {/* Recommendations */}
       <ul className="container gap-2">
         {RECOMMENDATION_LIST.map((recommendation) => (
-          <RecommendationCard recommendation={recommendation} key={recommendation.name} />
+          <RecommendationCard key={recommendation.name} recommendation={recommendation} />
         ))}
       </ul>
     </>
