@@ -1,15 +1,24 @@
 import { HomeModule } from '@/modules/home';
 import { PostsModule } from '@/modules/posts';
 import { WorkModule } from '@/modules/work';
-import { faBook, faBriefcase, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faBook, faBriefcase, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link, Route, Routes } from 'react-router';
+import { Link, Route, Routes, useLocation, useNavigate } from 'react-router';
 
 export const MainLayout = () => {
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const isNestedRoute = pathname.split('/').length > 2;
+
   return (
     <div className="flex items-center justify-center">
       <div className="flex max-w-[750px] flex-col items-start gap-4 p-8 text-gray-700">
         <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
+          {isNestedRoute && (
+            <button className="hover:cursor-pointer" onClick={() => navigate(-1)}>
+              <FontAwesomeIcon icon={faArrowLeft} size="sm" />
+            </button>
+          )}
           <Link to="/" className="flex items-center gap-2 decoration-2 hover:underline">
             <FontAwesomeIcon icon={faHome} size="sm" />
             <span>Home</span>

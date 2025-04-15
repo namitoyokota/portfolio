@@ -6,7 +6,7 @@ export const PostsModule = () => {
   return (
     <Routes>
       <Route index element={<Posts />} />
-      <Route path="/:slug" element={<PostContent />} />
+      <Route path=":slug" element={<PostContent />} />
     </Routes>
   );
 };
