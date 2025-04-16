@@ -1,3 +1,4 @@
+import { Statistic } from './statistic';
 import { Tool } from './tool';
 
 /**
@@ -11,6 +12,7 @@ export interface Experience {
   endDate: string;
   description: string;
   url: string;
+  statistics: Statistic[];
   majorTools: Tool[];
   minorTools: Tool[];
   contributions: string[];

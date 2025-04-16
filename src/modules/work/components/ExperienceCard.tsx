@@ -60,21 +60,35 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           ))}
         </div>
 
-        {/* Contributions */}
+        {/* More Details */}
         <details className="question">
           <summary className="flex w-full flex-row items-center justify-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 text-[1rem] text-gray-700 hover:cursor-pointer">
             <span>Show Contributions</span>
             <FontAwesomeIcon icon={faChevronRight} size="xs" />
           </summary>
 
-          {experience.contributions.map((contribution) => (
-            <ul key={contribution} className="flex flex-col gap-2 p-2">
-              <li className="flex items-center gap-2">
+          {/* Statistics */}
+          <div
+            className="grid gap-2 pt-3"
+            style={{ gridTemplateColumns: `repeat(${experience.statistics.length}, 1fr)` }}
+          >
+            {experience.statistics.map((statistic) => (
+              <div key={statistic.title} className="flex flex-col items-center rounded-md bg-gray-300 py-2 text-center">
+                <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
+                <span className="text-sm text-gray-500">{statistic.title}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Contributions */}
+          <ul className="flex flex-col gap-1 p-2">
+            {experience.contributions.map((contribution) => (
+              <li key={contribution} className="flex items-center gap-2">
                 <FontAwesomeIcon icon={faCode} size="xs" className="text-gray-400" />
                 <span className="text-[1rem]">{contribution}</span>
               </li>
-            </ul>
-          ))}
+            ))}
+          </ul>
         </details>
       </div>
     </RevealCard>

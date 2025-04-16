@@ -25,7 +25,14 @@ const NCONTRACTS: Experience = {
     { name: 'Zustand', url: 'https://zustand.docs.pmnd.rs' },
     { name: 'Chart.js', url: 'https://www.chartjs.org/' },
   ],
-  contributions: ['Lorem ipsum dolor sit amet consectetur adipisicing elit.'],
+  statistics: [
+    { value: '500', title: 'pull requests completed' },
+    { value: '21', title: 'documents written' },
+  ],
+  contributions: [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  ],
 };
 
 const VENMINDER: Experience = {
@@ -52,7 +59,11 @@ const VENMINDER: Experience = {
     { name: 'mathjs', url: '' },
     { name: 'boto3', url: '' },
   ],
-  contributions: ['Lorem ipsum dolor sit amet consectetur adipisicing elit.'],
+  statistics: [],
+  contributions: [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  ],
 };
 
 const HEXAGON: Experience = {
@@ -78,7 +89,11 @@ const HEXAGON: Experience = {
     { name: 'Moment.js', url: '' },
     { name: 'Sinon', url: '' },
   ],
-  contributions: ['Lorem ipsum dolor sit amet consectetur adipisicing elit.'],
+  statistics: [],
+  contributions: [
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  ],
 };
 
 /**
