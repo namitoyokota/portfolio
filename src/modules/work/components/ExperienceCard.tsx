@@ -73,7 +73,10 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             style={{ gridTemplateColumns: `repeat(${experience.statistics.length}, 1fr)` }}
           >
             {experience.statistics.map((statistic) => (
-              <div key={statistic.title} className="flex flex-col items-center rounded-md bg-gray-300 py-2 text-center">
+              <div
+                key={statistic.title}
+                className="flex h-min flex-col items-center rounded-md bg-gray-300 py-2 text-center"
+              >
                 <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
                 <span className="text-sm text-gray-500">{statistic.title}</span>
               </div>
