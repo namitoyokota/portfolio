@@ -24,6 +24,7 @@ const NCONTRACTS: Experience = {
     { name: 'React Query', url: 'https://tanstack.com/query/latest' },
     { name: 'Zustand', url: 'https://zustand.docs.pmnd.rs' },
     { name: 'Chart.js', url: 'https://www.chartjs.org/' },
+    { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
   ],
   statistics: [
     { value: '500', title: 'pull requests completed' },
@@ -54,6 +55,7 @@ const VENMINDER: Experience = {
   minorTools: [
     { name: 'Figma', url: '' },
     { name: 'ProseMirror', url: '' },
+    { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
     { name: 'Bootstrap', url: '' },
     { name: 'Font Awesome', url: '' },
     { name: 'mathjs', url: '' },
