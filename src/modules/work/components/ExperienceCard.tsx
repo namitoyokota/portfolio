@@ -1,5 +1,5 @@
 import { RevealCard } from '@/components/RevealCard';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronRight, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Experience } from '../lib/experience';
 
@@ -67,7 +67,14 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             <FontAwesomeIcon icon={faChevronRight} size="xs" />
           </summary>
 
-          <p className="py-2 text-[1rem]">{experience.contributions}</p>
+          {experience.contributions.map((contribution) => (
+            <ul key={contribution} className="flex flex-col gap-2 p-2">
+              <li className="flex items-center gap-2">
+                <FontAwesomeIcon icon={faCode} size="xs" className="text-gray-400" />
+                <span className="text-[1rem]">{contribution}</span>
+              </li>
+            </ul>
+          ))}
         </details>
       </div>
     </RevealCard>
