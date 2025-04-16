@@ -1,15 +1,7 @@
 import HunterProfileImageSrc from '@/assets/hunter.jpg';
 import JessProfileImageSrc from '@/assets/jess.jpg';
 import PatrickProfileImageSrc from '@/assets/patrick.webp';
-import SeanProfileImageSrc from '@/assets/sean.jpg';
 import { Recommendation } from '../lib/recommendation';
-
-const RECOMMENDATION_FROM_SEAN: Recommendation = {
-  name: 'Sean Carnes',
-  position: 'Engineering Manager at Venminder',
-  imageUrl: SeanProfileImageSrc,
-  letter: 'TBA',
-};
 
 const RECOMMENDATION_FROM_JESS: Recommendation = {
   name: 'Jess McPheron',
@@ -39,7 +31,6 @@ const RECOMMENDATION_FROM_PATRICK: Recommendation = {
  * Static array of recommendations received on LinkedIn
  */
 export const RECOMMENDATION_LIST: Recommendation[] = [
-  RECOMMENDATION_FROM_SEAN,
   RECOMMENDATION_FROM_JESS,
   RECOMMENDATION_FROM_HUNTER,
   RECOMMENDATION_FROM_PATRICK,
