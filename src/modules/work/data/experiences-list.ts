@@ -55,11 +55,11 @@ const VENMINDER: Experience = {
   minorTools: [
     { name: 'Figma', url: '' },
     { name: 'ProseMirror', url: '' },
-    { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
     { name: 'Bootstrap', url: '' },
     { name: 'Font Awesome', url: '' },
     { name: 'mathjs', url: '' },
     { name: 'boto3', url: '' },
+    { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
   ],
   statistics: [],
   contributions: [

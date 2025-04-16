@@ -1,4 +1,3 @@
-import { RevealNotation } from '@/components/RevealNotation';
 import { HomeModule } from '@/modules/home';
 import { PostsModule } from '@/modules/posts';
 import { WorkModule } from '@/modules/work';
@@ -44,9 +43,9 @@ export const MainLayout = () => {
 
         <p>
           For any inquiries,{' '}
-          <RevealNotation>
-            <a href="mailto:namitoyokota@icloud.com">send me an email!</a>
-          </RevealNotation>
+          <a href="mailto:namitoyokota@icloud.com" className="underline decoration-2">
+            send me an email!
+          </a>
         </p>
       </div>
     </div>
