@@ -13,8 +13,10 @@ export const RevealNotation = ({ children }: RevealNotationProps) => {
   useEffect(() => {
     if (isInView) {
       const timeout = setTimeout(() => {
-        const annotation = annotate(ref.current, { type: 'underline', color: '#FF6347', padding: 1 });
-        annotation.show();
+        if (ref.current) {
+          const annotation = annotate(ref.current, { type: 'underline', color: '#FF6347', padding: 1 });
+          annotation.show();
+        }
       }, 500);
 
       return () => {
