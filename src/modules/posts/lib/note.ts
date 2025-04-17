@@ -1,7 +1,7 @@
 /**
- * Represents an object returned by Hashnode API.
+ * Represents an object returned by Notion API.
  */
-export interface Post {
+export interface Note {
   slug: string;
   title: string;
   reactionCount: number;

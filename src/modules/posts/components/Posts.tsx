@@ -1,5 +1,6 @@
 import Skeleton from 'react-loading-skeleton';
 import { useGetNotesQuery, useGetPostsQuery } from '../api/posts.service';
+import { NoteItem } from './NoteItem';
 import { PostItem } from './PostItem';
 
 export const Posts = () => {
@@ -44,9 +45,9 @@ export const Posts = () => {
         collection.
       </p>
 
-      {/* Posts */}
+      {/* Notes */}
       {notesError ? (
-        <p>Error loading posts.</p>
+        <p>Error loading notes.</p>
       ) : isNotesPending ? (
         <ul className="flex flex-col gap-2">
           {[...Array(5)].map((_, index) => (
@@ -58,7 +59,7 @@ export const Posts = () => {
       ) : (
         <ul className="flex flex-col gap-1">
           {notesData.map((note) => (
-            <PostItem key={note.slug} post={note} viewInternally={true} />
+            <NoteItem key={note.slug} note={note} />
           ))}
         </ul>
       )}
