@@ -2,7 +2,6 @@ import { RevealCard } from '@/components/RevealCard';
 import { RevealNotation } from '@/components/RevealNotation';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Link } from 'react-router';
 import { Note } from '../lib/note';
 
 interface NoteItemProps {
@@ -10,7 +9,11 @@ interface NoteItemProps {
 }
 
 export const NoteItem = ({ note }: NoteItemProps) => {
-  const renderNoteLink = () => <Link to={note.slug}>{note.title}</Link>;
+  const renderNoteLink = () => (
+    <a href={note.url} target="_blank" rel="noreferrer">
+      {note.title}
+    </a>
+  );
 
   return (
     <RevealCard>

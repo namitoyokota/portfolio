@@ -1,5 +1,5 @@
 /**
- * Represents an object returned by Notion API.
+ * Represents an object returned by personal API.
  */
 export interface Note {
   slug: string;
