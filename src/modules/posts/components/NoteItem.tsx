@@ -23,7 +23,7 @@ export const NoteItem = ({ note }: NoteItemProps) => {
         </div>
         <div className="flex flex-col gap-1">
           <div>{note.reactionCount > 0 ? <RevealNotation>{renderNoteLink()}</RevealNotation> : renderNoteLink()}</div>
-          <span className="hidden text-sm text-gray-400 sm:block">{note.subtitle}</span>
+          <span className="text-sm text-gray-400">{note.subtitle}</span>
         </div>
       </li>
     </RevealCard>
