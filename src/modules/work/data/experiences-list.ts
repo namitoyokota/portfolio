@@ -97,7 +97,10 @@ const HEXAGON: Experience = {
     { name: 'Moment.js', url: '' },
     { name: 'Sinon', url: '' },
   ],
-  statistics: [],
+  statistics: [
+    { value: '782', title: 'pull requests completed' },
+    { value: '7', title: 'epics completed' },
+  ],
   contributions: [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
