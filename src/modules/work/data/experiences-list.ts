@@ -61,7 +61,13 @@ const VENMINDER: Experience = {
     { name: 'boto3', url: '' },
     { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
   ],
-  statistics: [],
+  statistics: [
+    { value: '546', title: 'pull requests completed' },
+    { value: '1,341', title: 'pull requests reviewed' },
+    { value: '167', title: 'user stories completed' },
+    { value: '105', title: 'bugs fixed' },
+    { value: '26', title: 'documents written' },
+  ],
   contributions: [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
