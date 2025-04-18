@@ -21,30 +21,6 @@ h6 {
   margin: 0;
 }
 
-.container {
-  list-style: none;
-  column-count: 1;
-}
-
-.card {
-  width: 100%;
-  box-sizing: border-box;
-  break-inside: avoid;
-  margin-bottom: 0.5rem;
-}
-
-@media (min-width: 320px) and (max-width: 759.5px) {
-  .container {
-    column-count: 1;
-  }
-}
-
-@media (min-width: 760px) {
-  .container {
-    column-count: 2;
-  }
-}
-
 details {
   user-select: none;
   & summary svg {

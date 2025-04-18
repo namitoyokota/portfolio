@@ -46,7 +46,7 @@ export const Home = () => {
       </div>
 
       {/* Recommendations */}
-      <ul className="container gap-2">
+      <ul className="list-none gap-2 [column-count:1] sm:[column-count:1] md:[column-count:2]">
         {RECOMMENDATION_LIST.map((recommendation) => (
           <RecommendationCard key={recommendation.name} recommendation={recommendation} />
         ))}

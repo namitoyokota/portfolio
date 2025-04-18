@@ -8,7 +8,7 @@ interface RecommendationCardProps {
 export const RecommendationCard = ({ recommendation }: RecommendationCardProps) => {
   return (
     <RevealCard>
-      <li className="card flex flex-col gap-3 rounded-lg bg-gray-200 px-3 py-2 text-gray-800">
+      <li className="mb-2 box-border flex w-full break-inside-avoid flex-col gap-3 rounded-lg bg-gray-200 px-3 py-2 text-gray-800">
         <div className="grid grid-cols-[40px_auto] items-center gap-3">
           <img
             src={recommendation.imageUrl}
