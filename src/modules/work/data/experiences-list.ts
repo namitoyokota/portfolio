@@ -27,8 +27,9 @@ const NCONTRACTS: Experience = {
     { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
   ],
   statistics: [
-    { value: '500', title: 'pull requests completed' },
-    { value: '21', title: 'documents written' },
+    { value: '30', title: 'pull requests completed' },
+    { value: '80', title: 'pull requests reviewed' },
+    { value: '4', title: 'production releases led' },
   ],
   contributions: [
     'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
