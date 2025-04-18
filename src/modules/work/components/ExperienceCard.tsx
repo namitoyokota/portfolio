@@ -28,7 +28,11 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         </h3>
 
         {/* Responsibilities */}
-        <p className="text-[1rem] text-gray-600">{experience.description}</p>
+        {experience.descriptions.map((description) => (
+          <p key={description} className="text-[1rem] text-gray-600">
+            {description}
+          </p>
+        ))}
 
         {/* Major Tools */}
         <div className="flex flex-row flex-wrap gap-2">

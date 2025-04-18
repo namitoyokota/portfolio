@@ -10,7 +10,7 @@ export interface Experience {
   location: string;
   startDate: string;
   endDate: string;
-  description: string;
+  descriptions: string[];
   url: string;
   statistics: Statistic[];
   majorTools: Tool[];
