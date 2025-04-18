@@ -102,8 +102,14 @@ const HEXAGON: Experience = {
     { value: '7', title: 'epics completed' },
   ],
   contributions: [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    "Created an end-to-end internal test tool to measure the product's performance under stress",
+    'Implemented an ability to draw line buffer shapes to the existing Leaflet maps.',
+    "Added new changelogs dialog for viewing organization's action history using an infinite scroll element.",
+    'Developed a workflow to create an incident from the user interface.',
+    'Upgraded the existing feature flags architecture to allow for hierarchical settings (organization, group, and user).',
+    'Added a new filtering system for the icon manager dialog.',
+    'Created a new admin page for managing data backups by organization.',
+    'Created a new admin page for implementing incident priority categories.',
   ],
 };
 
