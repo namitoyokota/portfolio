@@ -45,7 +45,8 @@ const VENMINDER: Experience = {
   startDate: 'December 2022',
   endDate: 'September 2024',
   descriptions: [
-    'Responsibilities: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime dignissimos veritatis error rem necessitatibus quaerat, dolore soluta, beatae quisquam consequatur voluptatem dolores accusamus expedita at a, sit repellat voluptatibus.',
+    'I led the front-end development of an internal web application generating over 60% of company revenue.',
+    'In the third-party risk management space, collecting and reviewing vendor documents is a time-consuming and manual process. We automated this process using AI, which allowed us to re-use vendor documents and save significant time on delivery.',
   ],
   url: 'https://venminder.com/',
   majorTools: [
