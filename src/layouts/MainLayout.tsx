@@ -1,3 +1,4 @@
+import { NotFound } from '@/components/NotFound';
 import { HomeModule } from '@/modules/home';
 import { PostsModule } from '@/modules/posts';
 import { WorkModule } from '@/modules/work';
@@ -35,9 +36,10 @@ export const MainLayout = () => {
 
         <div className="flex flex-col gap-6 py-8">
           <Routes>
-            <Route path="*" element={<HomeModule />} />
+            <Route path="/" element={<HomeModule />} />
             <Route path="/work/*" element={<WorkModule />} />
             <Route path="/posts/*" element={<PostsModule />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
 
