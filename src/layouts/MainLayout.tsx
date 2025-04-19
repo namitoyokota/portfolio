@@ -13,7 +13,7 @@ export const MainLayout = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="flex max-w-[750px] flex-col items-start gap-4 p-8 text-gray-700">
+      <div className="flex w-full max-w-[750px] flex-col items-start gap-4 p-8 text-gray-700">
         <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
           {isNestedRoute && (
             <button className="hover:cursor-pointer" onClick={() => navigate(-1)}>
