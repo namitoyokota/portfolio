@@ -92,7 +92,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           <ul className="flex flex-col gap-1 p-2">
             {experience.contributions.map((contribution) => (
               <li key={contribution} className="flex items-center gap-2">
-                <FontAwesomeIcon icon={faCode} size="xs" className="text-gray-400" />
+                <FontAwesomeIcon icon={faCode} size="2xs" className="text-gray-400" />
                 <span className="text-[1rem]">{contribution}</span>
               </li>
             ))}

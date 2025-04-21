@@ -28,13 +28,14 @@ const NCONTRACTS: Experience = {
     { name: 'OIDC', url: 'https://auth0.com/docs/authenticate/protocols/openid-connect-protocol' },
   ],
   statistics: [
-    { value: '30', title: 'pull requests completed' },
     { value: '80', title: 'pull requests reviewed' },
     { value: '4', title: 'production releases led' },
+    { value: '26', title: 'documents published' },
   ],
   contributions: [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Serving as the project lead for a new React frontend initiative. ',
+    'Eliminated 60 minutes of production release downtime.',
+    'Integrated DataDog RUM (Real User Monitoring) into the existing front-end project.',
   ],
 };
 
@@ -69,12 +70,13 @@ const VENMINDER: Experience = {
     { value: '546', title: 'pull requests completed' },
     { value: '1,341', title: 'pull requests reviewed' },
     { value: '167', title: 'user stories completed' },
-    { value: '105', title: 'bugs fixed' },
-    { value: '26', title: 'documents written' },
   ],
   contributions: [
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+    'Lead an automation project to streamline the generation of assessment layouts.',
+    'Led an end-to-end testing initiative using PlayWright in a nightly CI pipeline.',
+    'Led the data migration and normalization process in DynamoDB for re-using assessment controls answers.',
+    'Developed a dynamic calculation engine to automate the generation of Financial Health Assessments.',
+    'Established a standardized architecture for browser and memory caching, server communication, and code quality.',
   ],
 };
 
@@ -108,16 +110,11 @@ const HEXAGON: Experience = {
     { value: '7', title: 'epics completed' },
   ],
   contributions: [
-    'Created NPM packages to streamline TypeScript code reuse between web and mobile applications.',
-    "Created an end-to-end internal test tool to measure the product's performance under stress",
-    'Implemented an ability to draw line buffer shapes to the existing Leaflet maps.',
-    "Added new changelogs dialog for viewing organization's action history using an infinite scroll element.",
-    'Developed a workflow to create an incident from the user interface.',
-    'Upgraded the existing feature flags architecture to allow for hierarchical settings (organization, group, and user).',
-    'Added a new filtering system for the icon manager dialog.',
-    'Created a new admin page for managing data backups by organization.',
-    'Created a new admin page for implementing incident priority categories.',
-    'Facilitated training and development of entry-level front-end engineers.',
+    'Created shared TypeScript NPM packages to enable seamless code reuse between web and mobile platforms.',
+    'Upgraded the feature flags architecture to support hierarchical settings, enabling configuration at the organization, group, and user levels.',
+    'Developed a changelog feature for all administrator pages, providing a detailed history of user interactions.',
+    'Built an internal testing tool to evaluate product performance under stress.',
+    'Facilitated the training and development of entry-level front-end engineers.',
   ],
 };
 
