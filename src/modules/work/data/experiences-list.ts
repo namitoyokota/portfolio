@@ -7,7 +7,9 @@ const NCONTRACTS: Experience = {
   startDate: 'September 2024',
   endDate: 'Present',
   descriptions: [
-    'Responsibilities: Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime dignissimos veritatis error rem necessitatibus quaerat, dolore soluta, beatae quisquam consequatur voluptatem dolores accusamus expedita at a, sit repellat voluptatibus.',
+    'After the acquisition of Venminder by Ncontracts, I transitioned into leading the front-end development for an existing application, focusing on its seamless integration into the Ncontracts ecosystem.',
+    'My role involves overseeing the migration of the application from Aurelia to React, ensuring the transition is smooth and the new platform is scalable and maintainable. I am also leading the setup of authentication and authorization systems using OIDC.',
+    'Read more about the Control Assessments application below in the Venminder section.',
   ],
   url: 'https://ncontracts.com/',
   majorTools: [
@@ -46,8 +48,8 @@ const VENMINDER: Experience = {
   startDate: 'December 2022',
   endDate: 'September 2024',
   descriptions: [
-    'I led the front-end development of an internal web application generating over 60% of company revenue.',
-    'In the third-party risk management space, collecting and reviewing vendor documents is a time-consuming and manual process. We automated this process using AI, which allowed us to re-use vendor documents and save significant time on delivery.',
+    'I served as the lead front-end developer for an internal web application using Aurelia, optimizing the UI to ensure seamless interaction.',
+    "Control Assessments project generated over 60% of company revenue, designed to automate the process of delivering assessments to clients. By incorporating artificial intelligence and re-using vendor documents, this project scaled the company's operations and drove revenue.",
   ],
   url: 'https://venminder.com/',
   majorTools: [
@@ -87,8 +89,8 @@ const HEXAGON: Experience = {
   startDate: 'January 2021',
   endDate: 'November 2022',
   descriptions: [
-    'I contributed to the front-end development of HxGN Connect, a distributed SaaS surveillance solution, using Angular as part of a cross-functional team of 20 front-end and back-end engineers.',
-    'This project was one of my most rewarding experiences, largely due to the sophisticated technology stack. We implemented a micro-frontend architecture comprising over 40 interconnected npm packages, all orchestrated through a single root repository that powered the main application.',
+    'As an entry-level front-end developer, I was responsible for working within a micro-frontend architecture using Angular to implement new features and enhance existing UI components.',
+    'HxGN Connect project, a distributed SaaS surveillance solution, was part of a large-scale initiative within a global organization. This project was critical to enhancing safety and operational efficiency for customers by providing real-time monitoring and management of surveillance systems across various industries.',
   ],
   url: 'https://hexagon.com/company/divisions/safety-infrastructure-geospatial',
   majorTools: [
