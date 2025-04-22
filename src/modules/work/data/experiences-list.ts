@@ -74,7 +74,7 @@ const VENMINDER: Experience = {
     { value: '167', title: 'user stories completed' },
   ],
   contributions: [
-    'Lead an automation project to streamline the generation of assessment layouts.',
+    'Led an automation project to streamline the generation of assessment layouts.',
     'Led an end-to-end testing initiative using PlayWright in a nightly CI pipeline.',
     'Led the data migration and normalization process in DynamoDB for re-using assessment controls answers.',
     'Developed a dynamic calculation engine to automate the generation of Financial Health Assessments.',
