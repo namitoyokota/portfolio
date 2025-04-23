@@ -18,7 +18,7 @@ export const SOCIAL_MEDIA_LIST: SocialMedia[] = [
   },
   {
     name: 'Mail',
-    url: 'mailto:namitoyokota.com',
+    url: 'mailto:namitoyokota@icloud.com',
     icon: faEnvelope,
   },
 ];
