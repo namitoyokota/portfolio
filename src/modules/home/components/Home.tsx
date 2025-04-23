@@ -1,4 +1,4 @@
-import SelfieImageSrc from '@/assets/selfie.jpeg';
+import SelfieImageSrc from '@/assets/selfie.jpg';
 import { RECOMMENDATION_LIST } from '../data/recommendation-list';
 import { SOCIAL_MEDIA_LIST } from '../data/social-media-list';
 import { RecommendationCard } from './RecommendationCard';
