@@ -1,8 +1,15 @@
 import { NotFound } from '@/components/NotFound';
-import { Route, Routes } from 'react-router';
+import { useEffect } from 'react';
+import { Route, Routes, useLocation } from 'react-router';
 import { Work } from './components/Work';
 
 export const WorkModule = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    document.title = 'Namito Yokota | Work';
+  }, [location.pathname]);
+
   return (
     <Routes>
       <Route index element={<Work />} />
