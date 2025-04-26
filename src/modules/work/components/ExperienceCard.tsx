@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <RevealCard>
-      <div className="flex flex-col gap-3 rounded-lg bg-gray-200 p-3 text-gray-800">
+      <div className="flex flex-col gap-3 rounded-lg border-2 border-gray-300 p-5 text-gray-800">
         {/* Location and Date */}
         <div className="flex justify-between text-sm text-gray-500">
           <span>{experience.location}</span>
@@ -81,7 +81,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             style={{ gridTemplateColumns: `repeat(${experience.statistics.length}, 1fr)` }}
           >
             {experience.statistics.map((statistic) => (
-              <div key={statistic.title} className="flex flex-col items-center rounded-md bg-gray-300 py-2 text-center">
+              <div key={statistic.title} className="flex flex-col items-center rounded-md bg-gray-100 py-2 text-center">
                 <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
                 <span className="text-sm text-gray-500">{statistic.title}</span>
               </div>
