@@ -27,4 +27,4 @@ dist-ssr
 *.sw?
 
 # App settings
-config/.env
+.env

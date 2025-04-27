@@ -1,6 +1,9 @@
 /// <reference types="vite/client" />
 
-interface ImportMetaEnv {}
+interface ImportMetaEnv {
+  VITE_POSTHOG_KEY: string;
+  VITE_POSTHOG_HOST: string;
+}
 
 interface ImportMeta {
   /** Custom environment variables */
