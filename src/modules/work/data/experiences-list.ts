@@ -35,7 +35,8 @@ const NCONTRACTS: Experience = {
     { value: '26', title: 'documents published' },
   ],
   contributions: [
-    'Serving as the project lead for a new React frontend initiative. ',
+    'Serving as the project lead for a new React frontend initiative.',
+    'Created a company-wide client-side diagnostics site to help users troubleshoot network problems.',
     'Eliminated 60 minutes of production release downtime.',
     'Integrated DataDog RUM (Real User Monitoring) into the existing front-end project.',
   ],
