@@ -36,6 +36,7 @@ const NCONTRACTS: Experience = {
   ],
   contributions: [
     'Serving as the project lead for a new React frontend initiative.',
+    'Architected an Azure DevOps pipeline to publish PlayWright report and preview from the internal tools UI.',
     'Created a company-wide client-side diagnostics site to help users troubleshoot network problems.',
     'Eliminated 60 minutes of production release downtime.',
     'Integrated DataDog RUM (Real User Monitoring) into the existing front-end project.',
