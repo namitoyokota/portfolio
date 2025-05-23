@@ -31,7 +31,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         {/* Responsibilities */}
         <p className="text-[1rem] text-gray-600">{experience.descriptions[0]}</p>
         <details className="group">
-          <summary className="flex cursor-pointer list-none items-center gap-1.5 pb-2 text-[1rem] text-blue-500 [&::-webkit-details-marker]:hidden">
+          <summary className="flex cursor-pointer list-none items-center gap-1.5 pb-2 text-[1rem] text-gray-500 [&::-webkit-details-marker]:hidden">
             <FontAwesomeIcon
               icon={faArrowRight}
               size="xs"
