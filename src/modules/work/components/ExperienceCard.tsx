@@ -99,7 +99,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                       {experience.statistics.map((statistic) => (
                         <div
                           key={statistic.title}
-                          className="flex flex-col items-center rounded-md bg-gray-100 py-2 text-center"
+                          className="flex flex-col items-center rounded-md bg-gray-100 p-2 text-center"
                         >
                           <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
                           <span className="text-sm text-gray-500">{statistic.title}</span>
