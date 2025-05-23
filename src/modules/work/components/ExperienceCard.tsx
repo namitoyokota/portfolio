@@ -1,6 +1,7 @@
 import { RevealCard } from '@/components/RevealCard';
 import { faChevronDown, faCode } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Drawer } from 'vaul';
 import { Experience } from '../lib/experience';
 
 interface ExperienceCardProps {
@@ -64,40 +65,53 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           ))}
         </div>
 
-        {/* More Details */}
-        <details className="group">
-          <summary className="flex w-full cursor-pointer flex-row items-center justify-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 text-[1rem] text-gray-700 hover:text-gray-500">
-            <span>Show Contributions</span>
-            <FontAwesomeIcon
-              icon={faChevronDown}
-              size="xs"
-              className="transition-transform duration-300 group-open:rotate-[-180deg]"
-            />
-          </summary>
+        <Drawer.Root>
+          <Drawer.Trigger>
+            <button className="flex w-full cursor-pointer flex-row items-center justify-center gap-3 rounded-md bg-gray-100 px-3 py-1.5 text-[1rem] text-gray-700 hover:text-gray-500">
+              <span>Show Contributions</span>
+              <FontAwesomeIcon icon={faChevronDown} size="xs" />
+            </button>
+          </Drawer.Trigger>
+          <Drawer.Portal>
+            <Drawer.Overlay className="fixed inset-0 bg-black/40" />
+            <Drawer.Content className="fixed right-0 bottom-0 left-0 h-fit bg-gray-100 outline-none">
+              <div className="bg-white p-8">
+                <div className="flex items-center justify-center">
+                  <div className="flex w-full max-w-[750px] flex-col items-start gap-4 text-gray-700">
+                    {/* Title */}
+                    <h2 className="text-xl font-semibold">Contributions @ {experience.company}</h2>
 
-          {/* Statistics */}
-          <div
-            className="grid gap-2 pt-3"
-            style={{ gridTemplateColumns: `repeat(${experience.statistics.length}, 1fr)` }}
-          >
-            {experience.statistics.map((statistic) => (
-              <div key={statistic.title} className="flex flex-col items-center rounded-md bg-gray-100 py-2 text-center">
-                <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
-                <span className="text-sm text-gray-500">{statistic.title}</span>
+                    {/* Contributions */}
+                    <ul className="flex flex-col gap-1 p-2">
+                      {experience.contributions.map((contribution) => (
+                        <li key={contribution} className="flex items-center gap-2">
+                          <FontAwesomeIcon icon={faCode} size="2xs" className="text-gray-400" />
+                          <span className="text-[1rem]">{contribution}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* Statistics */}
+                    <div
+                      className="grid w-full gap-2 pt-3"
+                      style={{ gridTemplateColumns: `repeat(${experience.statistics.length}, 1fr)` }}
+                    >
+                      {experience.statistics.map((statistic) => (
+                        <div
+                          key={statistic.title}
+                          className="flex flex-col items-center rounded-md bg-gray-100 py-2 text-center"
+                        >
+                          <span className="text-[1rem] font-semibold text-gray-800">{statistic.value}</span>
+                          <span className="text-sm text-gray-500">{statistic.title}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
               </div>
-            ))}
-          </div>
-
-          {/* Contributions */}
-          <ul className="flex flex-col gap-1 p-2">
-            {experience.contributions.map((contribution) => (
-              <li key={contribution} className="flex items-center gap-2">
-                <FontAwesomeIcon icon={faCode} size="2xs" className="text-gray-400" />
-                <span className="text-[1rem]">{contribution}</span>
-              </li>
-            ))}
-          </ul>
-        </details>
+            </Drawer.Content>
+          </Drawer.Portal>
+        </Drawer.Root>
       </div>
     </RevealCard>
   );

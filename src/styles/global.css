@@ -20,7 +20,3 @@ h5,
 h6 {
   margin: 0;
 }
-
-details summary::-webkit-details-marker {
-  display: none;
-}
