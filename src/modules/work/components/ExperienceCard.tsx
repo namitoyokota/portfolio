@@ -1,5 +1,5 @@
 import { RevealCard } from '@/components/RevealCard';
-import { faChevronDown, faCode } from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight, faChevronDown, faStarOfLife } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Drawer } from 'vaul';
 import { Experience } from '../lib/experience';
@@ -11,7 +11,7 @@ interface ExperienceCardProps {
 export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <RevealCard>
-      <div className="flex flex-col gap-3 rounded-lg border-2 border-gray-300 p-5 text-gray-800">
+      <div className="flex flex-col gap-3 rounded-lg border-2 border-dashed border-gray-100 p-5 text-gray-800 dark:border-gray-300">
         {/* Location and Date */}
         <div className="flex justify-between text-sm text-gray-500">
           <span>{experience.location}</span>
@@ -29,11 +29,24 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
         </h3>
 
         {/* Responsibilities */}
-        {experience.descriptions.map((description) => (
-          <p key={description} className="text-[1rem] text-gray-600">
-            {description}
-          </p>
-        ))}
+        <p className="text-[1rem] text-gray-600">{experience.descriptions[0]}</p>
+        <details className="group">
+          <summary className="flex cursor-pointer list-none items-center gap-1.5 pb-2 text-[1rem] text-blue-500 [&::-webkit-details-marker]:hidden">
+            <FontAwesomeIcon
+              icon={faArrowRight}
+              size="xs"
+              className="transition-transform duration-300 group-open:rotate-[90deg]"
+            />
+            <span>Read more</span>
+          </summary>
+          <div className="flex flex-col gap-3">
+            {experience.descriptions.slice(1).map((description) => (
+              <p key={description} className="text-[1rem] text-gray-600">
+                {description}
+              </p>
+            ))}
+          </div>
+        </details>
 
         {/* Major Tools */}
         <div className="flex flex-row flex-wrap gap-2">
@@ -77,7 +90,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             <Drawer.Content className="fixed right-0 bottom-0 left-0 h-fit bg-gray-100 outline-none">
               <div className="bg-white p-8">
                 <div className="flex items-center justify-center">
-                  <div className="flex w-full max-w-[750px] flex-col items-start gap-4 text-gray-700">
+                  <div className="flex w-full max-w-[750px] flex-col items-start gap-2 text-gray-700">
                     {/* Title */}
                     <h2 className="text-xl font-semibold">Contributions @ {experience.company}</h2>
 
@@ -85,7 +98,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                     <ul className="flex flex-col gap-1 p-2">
                       {experience.contributions.map((contribution) => (
                         <li key={contribution} className="flex items-center gap-2">
-                          <FontAwesomeIcon icon={faCode} size="2xs" className="text-gray-400" />
+                          <FontAwesomeIcon icon={faStarOfLife} size="2xs" className="text-blue-300" />
                           <span className="text-[1rem]">{contribution}</span>
                         </li>
                       ))}
