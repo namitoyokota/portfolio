@@ -90,17 +90,20 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
             <Drawer.Content className="fixed right-0 bottom-0 left-0 h-fit bg-gray-100 outline-none">
               <div className="bg-white p-8">
                 <div className="flex items-center justify-center">
-                  <div className="flex w-full max-w-[750px] flex-col items-start gap-2 text-gray-700">
+                  <div className="flex w-full max-w-[750px] flex-col items-start gap-4 text-gray-700">
                     {/* Title */}
                     <h2 className="text-xl font-semibold">Contributions @ {experience.company}</h2>
 
                     {/* Contributions */}
-                    <ul className="flex flex-col gap-1 p-2">
+                    <ul className="flex flex-col gap-1.5">
                       {experience.contributions.map((contribution) => (
-                        <li key={contribution} className="flex items-center gap-2">
-                          <FontAwesomeIcon icon={faStarOfLife} size="2xs" className="text-blue-300" />
-                          <span className="text-[1rem]">{contribution}</span>
-                        </li>
+                        <>
+                          <li key={contribution} className="flex items-center gap-2">
+                            <FontAwesomeIcon icon={faStarOfLife} size="2xs" className="text-blue-300" />
+                            <span className="text-[1rem]">{contribution}</span>
+                          </li>
+                          <hr className="mx-auto h-0.5 w-full rounded-sm border-0 bg-gray-100 dark:bg-gray-100"></hr>
+                        </>
                       ))}
                     </ul>
 
