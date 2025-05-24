@@ -11,7 +11,7 @@ interface ExperienceCardProps {
 export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
     <RevealCard>
-      <div className="flex flex-col gap-3 rounded-lg border-2 border-dashed border-gray-100 p-5 text-gray-800 dark:border-gray-300">
+      <div className="flex flex-col gap-3 rounded-lg border-2 border-dashed border-gray-300 p-5 text-gray-800">
         {/* Location and Date */}
         <div className="flex justify-between text-sm text-gray-500">
           <span>{experience.location}</span>
@@ -102,7 +102,7 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
                             <FontAwesomeIcon icon={faStarOfLife} size="2xs" className="text-blue-300" />
                             <span className="text-[1rem]">{contribution}</span>
                           </li>
-                          <hr className="mx-auto h-0.5 w-full rounded-sm border-0 bg-gray-100 dark:bg-gray-100"></hr>
+                          <hr className="mx-auto h-0.5 w-full rounded-sm border-0 bg-gray-100"></hr>
                         </>
                       ))}
                     </ul>
