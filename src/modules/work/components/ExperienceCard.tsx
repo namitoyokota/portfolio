@@ -88,8 +88,9 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           <Drawer.Portal>
             <Drawer.Overlay className="fixed inset-0 bg-black/40" />
             <Drawer.Content className="fixed right-0 bottom-0 left-0 h-fit bg-gray-100 outline-none">
-              <div className="bg-white p-8">
-                <div className="flex items-center justify-center">
+              <div className="bg-white p-6">
+                <hr className="mx-auto h-1 w-12 rounded-sm border-0 bg-gray-300"></hr>
+                <div className="flex items-center justify-center px-2 py-6">
                   <div className="flex w-full max-w-[750px] flex-col items-start gap-4 text-gray-700">
                     {/* Title */}
                     <h2 className="text-xl font-semibold">Contributions @ {experience.company}</h2>
