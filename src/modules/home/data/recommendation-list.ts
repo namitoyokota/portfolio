@@ -13,7 +13,7 @@ const RECOMMENDATION_FROM_JESS: Recommendation = {
 
 const RECOMMENDATION_FROM_HUNTER: Recommendation = {
   name: 'Hunter Simpson',
-  position: 'Senior Software Engineer at Ncontracts',
+  position: 'Senior Software Engineer at Omatic',
   imageUrl: HunterProfileImageSrc,
   letter:
     'I have had the pleasure of working with Namito the past 4+ years spanning 3 different companies. Namito is one of the hardest-working individuals I have ever met. He constantly strives to better himself and to never stop growing in his craft. He cares deeply about the work he does and how it impacts not only the clients but also other developers as well. He is humble, knowledgeable, and passionate, and his drive challenges me to grow as well. He is a great developer and a person of high character, and I would absolutely recommend him for any position he sets his mind to.',
