@@ -41,7 +41,9 @@ export const ExternalImage = ({ src, alt, className, placeholder, ...props }: Ex
           {...props}
         />
       ) : hasError ? (
-        <div style={{ color: 'red' }}>Image failed to load.</div>
+        <div className="flex h-full items-center justify-center border-2 border-red-200 text-red-600">
+          Image failed to load.
+        </div>
       ) : placeholder ? (
         <img src={placeholder} alt="placeholder" />
       ) : (

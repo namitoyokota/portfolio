@@ -32,14 +32,20 @@ export const Photos = () => {
       {/* Photo Gallery */}
       <div className="grid grid-cols-2 gap-4">
         <div className="flex flex-col gap-4">
+          <ExternalImage
+            className="w-full max-w-[750px]"
+            src="https://invalid-url.com/image.jpg"
+            placeholder="https://placehold.co/1000x2000"
+            alt="Invalid Image"
+          />
           {externalImages.map((image, index) => {
             return (
               <ExternalImage
                 key={index}
                 src={image.fullImageUrl}
                 alt={image.alt || `Image ${index + 1}`}
-                className="w-full max-w-[750px] rounded-lg shadow-md"
-                placeholder="https://placehold.co/1000x750"
+                className="w-full max-w-[750px]"
+                placeholder="https://placehold.co/400x600"
               />
             );
           })}
