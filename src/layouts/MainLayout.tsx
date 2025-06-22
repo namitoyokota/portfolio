@@ -1,8 +1,9 @@
 import { NotFound } from '@/components/NotFound';
 import { HomeModule } from '@/modules/home';
+import { PhotosModule } from '@/modules/photos';
 import { PostsModule } from '@/modules/posts';
 import { WorkModule } from '@/modules/work';
-import { faArrowLeft, faBook, faBriefcase, faHome } from '@fortawesome/free-solid-svg-icons';
+import { faArrowLeft, faBook, faBriefcase, faCamera, faHome } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link, Route, Routes, useLocation, useNavigate } from 'react-router';
 
@@ -32,6 +33,10 @@ export const MainLayout = () => {
             <FontAwesomeIcon icon={faBook} size="sm" />
             <span>Posts</span>
           </Link>
+          <Link to="/photos" className="flex items-center gap-2 decoration-2 hover:underline">
+            <FontAwesomeIcon icon={faCamera} size="sm" />
+            <span>Photos</span>
+          </Link>
         </nav>
 
         <div className="flex flex-col gap-6 py-8">
@@ -39,6 +44,7 @@ export const MainLayout = () => {
             <Route path="/" element={<HomeModule />} />
             <Route path="/work/*" element={<WorkModule />} />
             <Route path="/posts/*" element={<PostsModule />} />
+            <Route path="/photos/*" element={<PhotosModule />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
