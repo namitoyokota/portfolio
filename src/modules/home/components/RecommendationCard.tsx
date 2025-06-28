@@ -1,4 +1,4 @@
-import { RevealCard } from '@/components/RevealCard';
+import { FadeInCard } from '@/components/FadeInCard';
 import { Recommendation } from '../lib/recommendation';
 
 interface RecommendationCardProps {
@@ -7,7 +7,7 @@ interface RecommendationCardProps {
 
 export const RecommendationCard = ({ recommendation }: RecommendationCardProps) => {
   return (
-    <RevealCard>
+    <FadeInCard>
       <li className="mb-2 box-border flex w-full break-inside-avoid flex-col gap-3 rounded-lg bg-gray-200 px-3 py-2 text-gray-800">
         <div className="grid grid-cols-[40px_auto] items-center gap-3">
           <img
@@ -22,6 +22,6 @@ export const RecommendationCard = ({ recommendation }: RecommendationCardProps) 
         </div>
         <p className="text-[1rem] text-gray-600">{recommendation.letter}</p>
       </li>
-    </RevealCard>
+    </FadeInCard>
   );
 };

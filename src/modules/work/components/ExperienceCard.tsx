@@ -1,4 +1,4 @@
-import { RevealCard } from '@/components/RevealCard';
+import { SlideInCard } from '@/components/SlideInCard';
 import { faArrowRight, faChevronDown, faStarOfLife } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Drawer } from 'vaul';
@@ -10,7 +10,7 @@ interface ExperienceCardProps {
 
 export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
   return (
-    <RevealCard>
+    <SlideInCard>
       <div className="flex flex-col gap-3 rounded-lg border-2 border-dashed border-gray-300 p-5 text-gray-800">
         {/* Location and Date */}
         <div className="flex justify-between text-sm text-gray-500">
@@ -130,6 +130,6 @@ export const ExperienceCard = ({ experience }: ExperienceCardProps) => {
           </Drawer.Portal>
         </Drawer.Root>
       </div>
-    </RevealCard>
+    </SlideInCard>
   );
 };
