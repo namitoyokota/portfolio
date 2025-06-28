@@ -1,4 +1,4 @@
-import { RevealCard } from '@/components/RevealCard';
+import { SlideUpCard } from '@/components/SlideUpCard';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Post } from '../lib/post';
@@ -9,7 +9,7 @@ interface PostItemProps {
 
 export const PostItem = ({ post }: PostItemProps) => {
   return (
-    <RevealCard>
+    <SlideUpCard>
       <li className="flex items-center gap-3 py-1">
         <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
           <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
@@ -19,6 +19,6 @@ export const PostItem = ({ post }: PostItemProps) => {
         </a>
         <span className="hidden text-sm text-gray-400 sm:block">{new Date(post.publishedAt).toLocaleDateString()}</span>
       </li>
-    </RevealCard>
+    </SlideUpCard>
   );
 };

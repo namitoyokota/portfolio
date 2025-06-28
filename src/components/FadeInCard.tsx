@@ -1,11 +1,11 @@
 import { motion, useAnimation, useInView } from 'motion/react';
 import { useEffect, useRef } from 'react';
 
-interface RevealCardProps {
+interface FadeInCardProps {
   children: React.ReactNode;
 }
 
-export const RevealCard = ({ children }: RevealCardProps) => {
+export const FadeInCard = ({ children }: FadeInCardProps) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -20,8 +20,8 @@ export const RevealCard = ({ children }: RevealCardProps) => {
     <div ref={ref} style={{ position: 'relative', overflow: 'hidden' }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
-          visible: { opacity: 1, y: 0 },
+          hidden: { opacity: 0 },
+          visible: { opacity: 1 },
         }}
         initial="hidden"
         animate={mainControls}

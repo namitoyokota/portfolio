@@ -1,4 +1,4 @@
-import { RevealCard } from '@/components/RevealCard';
+import { SlideUpCard } from '@/components/SlideUpCard';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Note } from '../lib/note';
@@ -9,7 +9,7 @@ interface NoteItemProps {
 
 export const NoteItem = ({ note }: NoteItemProps) => {
   return (
-    <RevealCard>
+    <SlideUpCard>
       <li className="flex items-center gap-3 py-1">
         <div className="flex items-center rounded-md bg-gray-200 px-1.5 py-1 text-gray-600">
           <FontAwesomeIcon icon={faArrowRight} className="rotate-315" />
@@ -21,6 +21,6 @@ export const NoteItem = ({ note }: NoteItemProps) => {
           <span className="text-sm text-gray-400">{note.subtitle}</span>
         </div>
       </li>
-    </RevealCard>
+    </SlideUpCard>
   );
 };
