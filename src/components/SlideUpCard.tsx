@@ -20,7 +20,7 @@ export const SlideUpCard = ({ children }: SlideUpCardProps) => {
     <div ref={ref} style={{ position: 'relative', overflow: 'hidden' }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 75 },
+          hidden: { opacity: 0, y: '100%' },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"

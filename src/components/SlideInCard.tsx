@@ -20,7 +20,7 @@ export const SlideInCard = ({ children }: SlideInCardProps) => {
     <div ref={ref} style={{ position: 'relative', overflow: 'hidden' }}>
       <motion.div
         variants={{
-          hidden: { opacity: 0, x: 100 },
+          hidden: { opacity: 0, x: '100%' },
           visible: { opacity: 1, x: 0 },
         }}
         initial="hidden"
