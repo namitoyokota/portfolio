@@ -1,4 +1,6 @@
+import { useEffect } from 'react';
 import Skeleton from 'react-loading-skeleton';
+import { toast } from 'sonner';
 import { useGetNotesQuery, useGetPostsQuery } from '../api/posts.service';
 import { NoteItem } from './NoteItem';
 import { PostItem } from './PostItem';
@@ -6,6 +8,18 @@ import { PostItem } from './PostItem';
 export const Posts = () => {
   const { data: postsData, isPending: isPostsPending, error: postsError } = useGetPostsQuery();
   const { data: notesData, isPending: isNotesPending, error: notesError } = useGetNotesQuery();
+
+  useEffect(() => {
+    if (postsError) {
+      toast.error('Failed to load blog posts.');
+    }
+  }, [postsError]);
+
+  useEffect(() => {
+    if (notesError) {
+      toast.error('Failed to load research notes.');
+    }
+  }, [notesError]);
 
   return (
     <>
@@ -20,7 +34,7 @@ export const Posts = () => {
 
       {/* Posts */}
       {postsError ? (
-        <p>Error loading posts.</p>
+        <small className="text-gray-500">It looks empty in here...</small>
       ) : isPostsPending ? (
         <ul className="flex flex-col gap-2">
           {[...Array(10)].map((_, index) => (
@@ -47,7 +61,7 @@ export const Posts = () => {
 
       {/* Notes */}
       {notesError ? (
-        <p>Error loading notes.</p>
+        <small className="text-gray-500">It looks empty in here...</small>
       ) : isNotesPending ? (
         <ul className="flex flex-col gap-2">
           {[...Array(5)].map((_, index) => (

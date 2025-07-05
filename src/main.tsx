@@ -6,6 +6,7 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import 'react-loading-skeleton/dist/skeleton.css';
 import { BrowserRouter } from 'react-router';
+import { Toaster } from 'sonner';
 import './styles/global.css';
 import './styles/tailwind.css';
 
@@ -26,6 +27,7 @@ createRoot(document.getElementById('root') as Element).render(
     <PostHogProvider apiKey={import.meta.env.VITE_POSTHOG_KEY} options={options}>
       <QueryClientProvider client={queryClient}>
         <ReactQueryDevtools />
+        <Toaster richColors />
         <BrowserRouter>
           <MainLayout />
         </BrowserRouter>
