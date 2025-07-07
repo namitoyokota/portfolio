@@ -58,6 +58,7 @@
     "typescript": "5.8.2",
     "typescript-eslint": "8.26.0",
     "vite": "6.2.0",
+    "vite-plugin-capo": "^1.0.2",
     "vite-tsconfig-paths": "5.1.4"
   },
   "optionalDependencies": {
