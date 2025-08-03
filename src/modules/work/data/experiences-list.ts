@@ -1,11 +1,42 @@
 import { Experience } from '../lib/experience';
 
+const GEICO: Experience = {
+  company: 'GEICO',
+  position: ['Senior Frontend Engineer'],
+  location: 'Chevy Chase, MD (Remote)',
+  startDate: 'July 2025',
+  endDate: 'Present',
+  descriptions: [
+    'I oversee the front-end development of a high-visibility internal data engineering platform that enables 15+ teams across the organization to manage, schedule, and monitor pipelines for cross-system data transfers.',
+    'Most of my contribution revolves around collaborating with cross-functional leaders - including engineering management and product - to discuss architecture, prioritize roadmap goals, and plan the future of the platform',
+    'I also have the opportunity to mentor and support 12 junior engineers through regular code reviews, pair programming, and technical guidance to accelerate their growth.',
+  ],
+  url: 'https://geico.com',
+  majorTools: [
+    { name: 'React', url: 'https://react.dev' },
+    { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
+  ],
+  minorTools: [
+    { name: 'Tailwind', url: 'https://tailwindcss.com/' },
+    { name: 'React Query', url: 'https://tanstack.com/query/latest' },
+    { name: 'Zustand', url: 'https://zustand.docs.pmnd.rs' },
+    { name: 'Zod', url: 'https://zod.dev/' },
+  ],
+  statistics: [],
+  contributions: [
+    'Integrating the internal React component library.',
+    'Setting coding standards, folder structure, and ESLint/Prettier rules.',
+    'Implementing observability tool to understand user workflows.',
+    'Create product roadmap and goals aligned with overall business goals.',
+  ],
+};
+
 const NCONTRACTS: Experience = {
   company: 'Ncontracts',
   position: ['Senior Software Engineer'],
   location: 'Brentwood, TN (Remote)',
   startDate: 'September 2024',
-  endDate: 'Present',
+  endDate: 'July 2025',
   descriptions: [
     'After the acquisition of Venminder by Ncontracts, I transitioned into leading the front-end development for an existing application, focusing on its seamless integration into the Ncontracts ecosystem.',
     'My role involves overseeing the migration of the application from Aurelia to React, ensuring the transition is smooth and the new platform is scalable and maintainable. I am also leading the setup of authentication and authorization systems using OIDC.',
@@ -14,7 +45,7 @@ const NCONTRACTS: Experience = {
   url: 'https://ncontracts.com/',
   majorTools: [
     { name: 'React', url: 'https://react.dev/' },
-    { name: 'TypeScript', url: '' },
+    { name: 'TypeScript', url: 'https://www.typescriptlang.org/' },
     { name: 'C#', url: 'https://dotnet.microsoft.com/en-us/languages/csharp' },
     { name: 'AWS', url: 'https://aws.amazon.com/' },
   ],
@@ -125,4 +156,4 @@ const HEXAGON: Experience = {
 /**
  * Static array of work experiences
  */
-export const EXPERIENCE_LIST: Experience[] = [NCONTRACTS, VENMINDER, HEXAGON];
+export const EXPERIENCE_LIST: Experience[] = [GEICO, NCONTRACTS, VENMINDER, HEXAGON];
