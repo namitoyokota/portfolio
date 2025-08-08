@@ -17,9 +17,9 @@ export const Home = () => {
 
           {/* Description */}
           <span>
-            Senior Software Engineer at{' '}
-            <a href="https://www.ncontracts.com/" target="_blank" rel="noreferrer" className="underline decoration-2">
-              Ncontracts
+            Senior Frontend Engineer at{' '}
+            <a href="https://www.geico.com/" target="_blank" rel="noreferrer" className="underline decoration-2">
+              GEICO
             </a>
           </span>
         </div>
